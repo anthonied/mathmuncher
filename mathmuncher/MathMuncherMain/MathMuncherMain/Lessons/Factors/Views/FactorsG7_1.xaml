@@ -640,7 +640,7 @@
     		</Canvas>
     		<TextBox x:Name="txtHidden" Height="10" Canvas.Left="221.848" TextWrapping="Wrap" Text="TextBox" Canvas.Top="624.767" Width="10" BorderThickness="0" FontSize="8" Opacity="0" d:IsHidden="True"/>
     	</Canvas>
-    	<Canvas x:Name="cmdNext" Height="48.577" Width="181.473" Cursor="Hand" MouseLeftButtonUp="cmdNext_Copy_MouseLeftButtonUp" HorizontalAlignment="Right" Margin="0,0,149,186" VerticalAlignment="Bottom" Grid.Row="1" d:IsHidden="True">
+    	<Canvas x:Name="cmdNext" Height="48.577" Width="181.473" Cursor="Hand" MouseLeftButtonUp="cmdNext_Copy_MouseLeftButtonUp" HorizontalAlignment="Right" Margin="0,0,149,186" VerticalAlignment="Bottom" Grid.Row="1">
     		<Path Data="F1M507.1108,51.7349C507.1108,65.1499,496.2358,76.0239,482.8218,76.0239L349.9258,76.0239C336.5118,76.0239,325.6378,65.1499,325.6378,51.7349C325.6378,38.3209,336.5118,27.4469,349.9258,27.4469L482.8218,27.4469C496.2358,27.4469,507.1108,38.3209,507.1108,51.7349" Fill="#FFDD5B03" Height="48.577" Stretch="Fill" Width="181.473"/>
     		<Path Data="F1M506.9097,48.6660000000001C505.4007,36.7020000000001,495.1957,27.4470000000001,482.8227,27.4470000000001L349.9257,27.4470000000001C337.5527,27.4470000000001,327.3467,36.7020000000001,325.8377,48.6660000000001z" Fill="#FFEA9963" Height="21.219" Canvas.Left="0.2" Stretch="Fill" Width="181.072"/>
     		<TextBlock x:Name="textBlock1" Height="37" TextWrapping="Wrap" Text="volgende &gt;&gt;" Canvas.Top="8" Width="163" FontFamily="AmerType Md BT" FontSize="24" Foreground="White" RenderTransformOrigin="0.699,0.27" Canvas.Left="18" Cursor="Hand"/>

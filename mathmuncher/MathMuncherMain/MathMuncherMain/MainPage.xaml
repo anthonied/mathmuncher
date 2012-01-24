@@ -65,6 +65,9 @@
                     
                     <HyperlinkButton x:Name="Link2" Style="{StaticResource LinkStyle}" 
                                      NavigateUri="/About" TargetName="ContentFrame" Content="about"/>
+                    <Rectangle x:Name="Divider7" Style="{StaticResource DividerStyle}"/>
+                    <HyperlinkButton x:Name="lPriemFaktore" Style="{StaticResource LinkStyle}" 
+                    	NavigateUri="/Lessons/Factors/Views/PrimeFactors" TargetName="ContentFrame" Content="priemfaktore"/>
 
                 </StackPanel>
             </Border>

@@ -25,6 +25,14 @@ namespace MathMuncherMain.Lessons.Factors.ViewModels
         public string sLessonState1Heading { get; set; }
     }
 
+    public class PrimeFactor_Messages
+    {
+        public string sMainHeading { get; set; }
+        public string sMessageIntroduction { get; set; }
+        public string sLessonState1Heading { get; set; }
+        public string sExtraInfo { get; set; }
+    }
+
     public class MessageBundles
     {
         public FactorG7_1_Messages Set_G7_1_Afrikaans()
@@ -44,5 +52,16 @@ namespace MathMuncherMain.Lessons.Factors.ViewModels
             FactorG7_GGF_Messages.sLessonState1Heading = "Jy is nou so slim.  Jy kan nou die GGF bepaal.";
             return (FactorG7_GGF_Messages);
         }
+
+        public PrimeFactor_Messages Set_G7_PF_Afrikaans()
+        {
+            PrimeFactor_Messages PrimeFactor_Messages = new PrimeFactor_Messages();
+            PrimeFactor_Messages.sMainHeading = "Priemfaktore";
+            PrimeFactor_Messages.sMessageIntroduction = "Soek die priemgetalle tussen die lys/versameling faktore";
+            PrimeFactor_Messages.sLessonState1Heading = "Kom ons voltooi eers die ry priemgetalle";
+            PrimeFactor_Messages.sExtraInfo = "- 1 is NOOIT 'n priemgetal nie/n- 2 is die enigste heelgetal wat ook 'n priemgetal is/n- 'n Priemgetal het net 2 faktore; 1, en die getal self/n- 'n Saamgestelde getal is enige getal met meer as 2 faktore";
+            return (PrimeFactor_Messages);
+        }
+
     }
 }
