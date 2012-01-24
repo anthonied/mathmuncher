@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+C:\Development\Math_Tech_Spike\WPF + SilverLight\MenuBar\MenuBar\MenuBar.csproj
+-------------------------------------------------------------------------------
+Updating <Import> from '$(MSBuildExtensionsPath)\Microsoft\Silverlight\V3.0\Microsoft.Silverlight.CSharp.targets' to '$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets'
+Updating <TargetFrameworkVersion> value from 'v3.5' to 'v4.0'
+Setting <SilverlightVersion> value to '$(TargetFrameworkVersion)'
+Updating <ExpressionBlendVersion> value from '3.0.1927.0' to '4.0.20525.0'
+Updating ToolsVersion from '3.5' to '4.0'
+Setting <Utf8Output> value to 'true'
+Updating <Include> of <Reference Include="Microsoft.Expression.Interactions, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"> from 'Microsoft.Expression.Interactions, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' to 'Microsoft.Expression.Interactions'
+Updating <Include> of <Reference Include="System.Windows.Interactivity, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"> from 'System.Windows.Interactivity, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' to 'System.Windows.Interactivity'
+Saving file
+
+
+--------------------------------------------------------------------
+C:\Development\Math_Tech_Spike\WPF + SilverLight\MenuBar\MenuBar.sln
+--------------------------------------------------------------------
+Setting solution format header to 'Microsoft Visual Studio Solution File, Format Version 11.00'
+Saving file
+
+

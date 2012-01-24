@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{89D2E280-E079-44AF-ABF7-195630DF5173}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MathMuncherMain</RootNamespace>
+    <AssemblyName>MathMuncherMain</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>MathMuncherMain.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>MathMuncherMain.App</SilverlightAppEntry>
+    <TestPageFileName>MathMuncherMainTestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>
+    </LinkedServerProject>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.20525.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=2.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Microsoft SDKs\Silverlight\v3.0\Libraries\Client\System.ComponentModel.DataAnnotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.DomainServices.Client, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Toolkit.Internals, Version=4.0.5.0, Culture=neutral, PublicKeyToken=2c5c654d367bf4a7" />
+    <Reference Include="System.Windows.Interactivity" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Windows.Controls" />
+    <Reference Include="System.Windows.Controls.Navigation" />
+    <Reference Include="System.Xml.Serialization, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Calculations.cs" />
+    <Compile Include="Classes\FactorAnswers.cs" />
+    <Compile Include="Classes\List.cs" />
+    <Compile Include="Classes\Session.cs" />
+    <Compile Include="Classes\ViewModelBase.cs" />
+    <Compile Include="Design Templates\Signs.xaml.cs">
+      <DependentUpon>Signs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Design Templates\UserControl1.xaml.cs">
+      <DependentUpon>UserControl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Design Templates\UserControl10.xaml.cs">
+      <DependentUpon>UserControl10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Design Templates\UserControl11.xaml.cs">
+      <DependentUpon>UserControl11.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Design Templates\UserControl2.xaml.cs">
+      <DependentUpon>UserControl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Design Templates\UserControl3.xaml.cs">
+      <DependentUpon>UserControl3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Design Templates\UserControl4.xaml.cs">
+      <DependentUpon>UserControl4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Design Templates\UserControl5.xaml.cs">
+      <DependentUpon>UserControl5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Design Templates\UserControl6.xaml.cs">
+      <DependentUpon>UserControl6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Design Templates\UserControl7.xaml.cs">
+      <DependentUpon>UserControl7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Design Templates\UserControl8.xaml.cs">
+      <DependentUpon>UserControl8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Design Templates\UserControl9.xaml.cs">
+      <DependentUpon>UserControl9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Exercises\Factors\ViewModels\FactorsG7_1ViewModel.cs" />
+    <Compile Include="Exercises\Factors\ViewModels\FactorsG7_GGFViewModel.cs" />
+    <Compile Include="Exercises\Factors\ViewModels\FormData.cs" />
+    <Compile Include="Exercises\Factors\ViewModels\ServerData.cs" />
+    <Compile Include="Exercises\Factors\Views\FactorsG7_1.xaml.cs">
+      <DependentUpon>FactorsG7_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Exercises\Factors\Views\FactorsG7_GGF.xaml.cs">
+      <DependentUpon>FactorsG7_GGF.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Exercises\Multiplication\Anthropods\ViewModels\FormData.cs" />
+    <Compile Include="Exercises\Multiplication\Anthropods\ViewModels\AnthropodsViewModel.cs" />
+    <Compile Include="Exercises\Multiplication\Anthropods\ViewModels\ServerData.cs" />
+    <Compile Include="Exercises\Multiplication\Caterpillar\ViewModels\CaterpillarViewModel.cs" />
+    <Compile Include="Exercises\Multiplication\Caterpillar\ViewModels\FormData.cs" />
+    <Compile Include="Exercises\Multiplication\Caterpillar\ViewModels\ServerData.cs" />
+    <Compile Include="Exercises\Multiplication\Caterpillar\Views\CaterpillarView.xaml.cs">
+      <DependentUpon>CaterpillarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Exercises\ViewModels\ExerciseStartViewModel.cs" />
+    <Compile Include="Exercises\ViewModels\MessageBundles.cs" />
+    <Compile Include="Exercises\Views\ExerciseStart.xaml.cs">
+      <DependentUpon>ExerciseStart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lessons\Factors\ViewModels\FactorsG7_1ViewModel.cs" />
+    <Compile Include="Lessons\Factors\ViewModels\FactorsG7_GGFViewModel.cs" />
+    <Compile Include="Lessons\Factors\ViewModels\MessageBundles.cs" />
+    <Compile Include="Lessons\Factors\Views\FactorsG7_1.xaml.cs">
+      <DependentUpon>FactorsG7_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lessons\Factors\Views\FactorsG7_GGF.xaml.cs">
+      <DependentUpon>FactorsG7_GGF.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SampleData\Sampledata.cs" />
+    <Compile Include="Service References\Exercise\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ErrorWindow.xaml.cs">
+      <DependentUpon>ErrorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Exercises\Multiplication\ruspe.xaml.cs">
+      <DependentUpon>ruspe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Exercises\Multiplication\Anthropods\Views\Anthropod1.xaml.cs">
+      <DependentUpon>Anthropod1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Resource Include="Assets\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Page Include="Design Templates\Signs.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Design Templates\UserControl1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Design Templates\UserControl10.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Design Templates\UserControl11.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Design Templates\UserControl2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Design Templates\UserControl3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Design Templates\UserControl4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Design Templates\UserControl5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Design Templates\UserControl6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Design Templates\UserControl7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Design Templates\UserControl8.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Design Templates\UserControl9.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Exercises\Factors\Views\FactorsG7_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Exercises\Factors\Views\FactorsG7_GGF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Exercises\Multiplication\Caterpillar\Views\CaterpillarView.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Exercises\Views\ExerciseStart.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Lessons\Factors\Views\FactorsG7_1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lessons\Factors\Views\FactorsG7_GGF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ErrorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Exercises\Multiplication\ruspe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Exercises\Multiplication\Anthropods\Views\Anthropod1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Resource Include="Design Templates\Slaag_Images\Image.png" />
+    <Resource Include="Design Templates\Tuisblad_Images\Image.png" />
+    <Resource Include="Design Templates\Tuisblad_Images\Image1.png" />
+    <Resource Include="Design Templates\Tuisblad_Images\Image10.png" />
+    <Resource Include="Design Templates\Tuisblad_Images\Image11.png" />
+    <Resource Include="Design Templates\Tuisblad_Images\Image2.png" />
+    <Resource Include="Design Templates\Tuisblad_Images\Image3.png" />
+    <Resource Include="Design Templates\Tuisblad_Images\Image4.png" />
+    <Resource Include="Design Templates\Tuisblad_Images\Image5.png" />
+    <Resource Include="Design Templates\Tuisblad_Images\Image6.png" />
+    <Resource Include="Design Templates\Tuisblad_Images\Image7.png" />
+    <Resource Include="Design Templates\Tuisblad_Images\Image8.png" />
+    <Resource Include="Design Templates\Tuisblad_Images\Image9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Service References\Exercise\configuration91.svcinfo" />
+    <None Include="Service References\Exercise\configuration.svcinfo" />
+    <None Include="Service References\Exercise\MathMuncherMain.Exercise.anthropodExerciseResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Exercise\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Resource Include="Images\konsep2.jpg" />
+    <Content Include="ServiceReferences.ClientConfig" />
+    <None Include="Service References\Exercise\exercise.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Exercise\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UserControls\Factors\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

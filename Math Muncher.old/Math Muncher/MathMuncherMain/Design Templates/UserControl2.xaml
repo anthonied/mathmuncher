@@ -1,0 +1,562 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="Math_Muncher.UserControl2"
+	d:DesignWidth="640" d:DesignHeight="480">
+
+	<Grid x:Name="LayoutRoot">
+		<Canvas x:Name="_02" HorizontalAlignment="Left" Height="841.89" UseLayoutRounding="False" VerticalAlignment="Top" Width="595.28">
+			<Canvas x:Name="Layer_1" Height="779.818" Canvas.Left="24.344" Canvas.Top="23.981" Width="564.018">
+				<Path Data="M134.1875,66.395C134.1875,71.126,130.3525,74.959,125.6235,74.959C120.8925,74.959,117.0575,71.126,117.0575,66.395C117.0575,61.666,120.8925,57.832,125.6235,57.832C130.3525,57.832,134.1875,61.666,134.1875,66.395z" Fill="#FFE71C73" Height="19.127" Canvas.Left="91.714" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="32.851" Width="19.13"/>
+				<Path Data="M247.6221,53.6431C247.6221,58.4781,243.7021,62.3981,238.8671,62.3981C234.0311,62.3981,230.1111,58.4781,230.1111,53.6431C230.1111,48.8071,234.0311,44.8881,238.8671,44.8881C243.7021,44.8881,247.6221,48.8071,247.6221,53.6431z" Fill="#FFE71C73" Height="19.51" Canvas.Left="204.767" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="19.907" Width="19.511"/>
+				<Path Data="M246.097,138.528L307.764,138.528L307.764,129.393L246.097,129.393z" Height="9.135" Canvas.Left="221.753" Stretch="Fill" Canvas.Top="105.412" Width="61.667">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="3.418" RadiusX="0.288">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M307.764,138.528L246.097,138.528L246.097,129.393L307.764,129.393z" Height="11.135" Canvas.Left="220.753" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="104.412" Width="63.667"/>
+				<Path Data="F1M234.678,86.881L238.021,95.383L295.411,72.818L292.069,64.3150000000001z" Height="31.068" Canvas.Left="210.334" Stretch="Fill" Canvas.Top="40.334" Width="60.733">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="1.206" RadiusX="0.351">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M295.4116,72.8179L238.0216,95.3829L234.6776,86.8809L292.0686,64.3159L295.4116,72.8179z" Height="33.067" Canvas.Left="209.334" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="39.335" Width="62.734"/>
+				<Path Data="F1M247.567,227.533L307.362,242.619L309.594,233.759L249.802,218.676z" Height="23.943" Canvas.Left="223.223" Stretch="Fill" Canvas.Top="194.695" Width="62.027">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="1.029" RadiusX="0.226">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M307.3613,242.6187L247.5673,227.5337L249.8023,218.6757L309.5933,233.7587L307.3613,242.6187z" Height="25.943" Canvas.Left="222.223" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="193.695" Width="64.026"/>
+				<Path Data="F1M243.761,181.034L243.962,190.167L305.615,188.788L305.412,179.656z" Height="10.511" Canvas.Left="219.417" Stretch="Fill" Canvas.Top="155.675" Width="61.854">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="3.019" RadiusX="0.291">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M305.6152,188.7881L243.9622,190.1671L243.7612,181.0351L305.4122,179.6551L305.6152,188.7881z" Height="12.512" Canvas.Left="218.417" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="154.674" Width="63.854"/>
+				<Path Data="F1M234.678,245.662L268.179,297.435L275.849,292.472L242.349,240.699z" Height="56.736" Canvas.Left="210.334" Stretch="Fill" Canvas.Top="216.718" Width="41.171">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="-0.042" RadiusX="-0.033">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M268.1792,297.4351L234.6782,245.6621L242.3492,240.6991L275.8492,292.4711L268.1792,297.4351z" Height="58.736" Canvas.Left="209.334" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="215.718" Width="43.171"/>
+				<Path Data="M59.747,155.431L121.414,155.431L121.414,146.294L59.747,146.294z" Height="9.137" Canvas.Left="35.403" Stretch="Fill" Canvas.Top="122.313" Width="61.667">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="3.417" RadiusX="0.288">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M121.414,155.431L59.747,155.431L59.747,146.295L121.414,146.295z" Height="11.136" Canvas.Left="34.403" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="121.314" Width="63.667"/>
+				<Path Data="F1M59.416,87.659L120.244,97.802L121.746,88.792L60.919,78.647z" Height="19.155" Canvas.Left="35.072" Stretch="Fill" Canvas.Top="54.666" Width="62.33">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="1.41" RadiusX="0.246">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M120.2437,97.8018L59.4157,87.6578L60.9197,78.6468L121.7457,88.7918L120.2437,97.8018z" Height="21.155" Canvas.Left="34.072" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="53.666" Width="64.33"/>
+				<Path Data="F1M63.868,250.526L66.064,259.395L125.923,244.573L123.727,235.705z" Height="23.69" Canvas.Left="39.524" Stretch="Fill" Canvas.Top="211.724" Width="62.055">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="1.513" RadiusX="0.328">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M125.9229,244.5723L66.0639,259.3943L63.8679,250.5263L123.7269,235.7053L125.9229,244.5723z" Height="25.689" Canvas.Left="38.524" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="210.724" Width="64.055"/>
+				<Path Data="F1M57.411,197.937L57.613,207.07L119.264,205.69L119.061,196.557z" Height="10.513" Canvas.Left="33.067" Stretch="Fill" Canvas.Top="172.576" Width="61.853">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="3.018" RadiusX="0.291">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M119.2642,205.6899L57.6132,207.0689L57.4102,197.9359L119.0612,196.5569L119.2642,205.6899z" Height="12.512" Canvas.Left="32.066" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="171.576" Width="63.854"/>
+				<Path Data="F1M102.668,296.378L110.693,300.744L140.161,246.573L132.136,242.208z" Height="58.536" Canvas.Left="78.324" Stretch="Fill" Canvas.Top="218.227" Width="37.493">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.6" RadiusX="0.533">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M140.1606,246.5728L110.6926,300.7448L102.6686,296.3778L132.1366,242.2078L140.1606,246.5728z" Height="60.537" Canvas.Left="77.325" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="217.227" Width="39.492"/>
+				<Path Data="M292.158,153.832L338.979,153.832L338.979,114.091L292.158,114.091z" Height="39.741" Canvas.Left="267.814" Stretch="Fill" Canvas.Top="90.11" Width="46.821">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.871" RadiusX="0.42">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M338.979,153.832L292.158,153.832L292.158,114.091L338.979,114.091z" Height="41.741" Canvas.Left="266.814" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="89.11" Width="48.821"/>
+				<Path Data="M298.482,204.782L345.303,204.782L345.303,165.04L298.482,165.04z" Height="39.742" Canvas.Left="274.138" Stretch="Fill" Canvas.Top="141.059" Width="46.821">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.871" RadiusX="0.42">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M345.303,204.782L298.482,204.782L298.482,165.04L345.303,165.04z" Height="41.742" Canvas.Left="273.138" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="140.059" Width="48.821"/>
+				<Path Data="F1M295.501,256.4L341.67,264.187L348.279,224.999L302.111,217.211z" Height="46.976" Canvas.Left="271.157" Stretch="Fill" Canvas.Top="193.23" Width="52.778">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.784" RadiusX="0.396">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M341.6699,264.187L295.5019,256.399L302.1109,217.211L348.2789,224.999L341.6699,264.187z" Height="48.976" Canvas.Left="270.158" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="192.23" Width="54.777"/>
+				<Path Data="F1M26.169,186.754L29.201,226.38L75.883,222.809L72.854,183.183z" Height="43.197" Canvas.Left="1.825" Stretch="Fill" Canvas.Top="159.202" Width="49.714">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.771" RadiusX="0.38">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M75.8838,222.8086L29.2008,226.3796L26.1698,186.7546L72.8548,183.1826L75.8838,222.8086z" Height="45.197" Canvas.Left="0.826" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="158.202" Width="51.714"/>
+				<Path Data="F1M29.684,244.377L39.883,282.787L85.136,270.769L74.936,232.36z" Height="50.427" Canvas.Left="5.34" Stretch="Fill" Canvas.Top="208.379" Width="55.452">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.581" RadiusX="0.3">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M85.1362,270.769L39.8832,282.787L29.6842,244.377L74.9362,232.359L85.1362,270.769z" Height="52.428" Canvas.Left="4.34" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="207.378" Width="57.452"/>
+				<Path Data="F1M73.522,317.666L116.941,335.189L131.814,298.335L88.394,280.814z" Height="54.375" Canvas.Left="49.178" Stretch="Fill" Canvas.Top="256.833" Width="58.292">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.702" RadiusX="0.372">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M116.9409,335.189L73.5219,317.667L88.3949,280.814L131.8139,298.335L116.9409,335.189z" Height="56.375" Canvas.Left="48.178" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="255.833" Width="60.292"/>
+				<Path Data="F1M242.462,291.888L259.787,327.654L301.922,307.242L284.597,271.475z" Height="56.179" Canvas.Left="218.118" Stretch="Fill" Canvas.Top="247.494" Width="59.46">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.429" RadiusX="0.23">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M301.9219,307.2422L259.7869,327.6532L242.4619,291.8882L284.5969,271.4742L301.9219,307.2422z" Height="58.179" Canvas.Left="217.118" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="246.493" Width="61.46"/>
+				<Path Data="F1M24.344,159.309L70.355,167.974L77.711,128.917L31.699,120.252z" Height="47.722" Canvas.Left="0" Stretch="Fill" Canvas.Top="96.271" Width="53.367">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.776" RadiusX="0.394">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M70.355,167.9736L24.344,159.3086L31.699,120.2526L77.711,128.9176L70.355,167.9736z" Height="49.721" Canvas.Left="-1" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="95.272" Width="55.367"/>
+				<Path Data="F1M35.187,90.819L79.351,106.367L92.549,68.8819999999999L48.385,53.333z" Height="53.034" Canvas.Left="10.843" Stretch="Fill" Canvas.Top="29.352" Width="57.362">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.717" RadiusX="0.377">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M79.3511,106.3667L35.1871,90.8197L48.3851,53.3337L92.5491,68.8817L79.3511,106.3667z" Height="55.033" Canvas.Left="9.843" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="28.353" Width="59.362"/>
+				<Path Data="F1M278.066,54.638L287.758,93.181L333.164,81.765L323.474,43.222z" Height="49.959" Canvas.Left="253.722" Stretch="Fill" Canvas.Top="19.241" Width="55.098">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.593" RadiusX="0.306">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M333.1641,81.7642L287.7581,93.1812L278.0661,54.6392L323.4751,43.2222L333.1641,81.7642z" Height="51.959" Canvas.Left="252.722" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="18.241" Width="57.098"/>
+				<Path Data="M112.11,251.202L260.564,251.202L260.564,82.953L112.11,82.953z" Height="168.249" Canvas.Left="87.766" Stretch="Fill" Canvas.Top="58.972" Width="148.454">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.643" RadiusX="0.414">
+							<GradientStop Color="#FFBD1622" Offset="0"/>
+							<GradientStop Color="#FFE6322A" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M260.564,251.202L112.11,251.202L112.11,82.954L260.564,82.954z" Height="170.248" Canvas.Left="86.766" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="57.973" Width="150.454"/>
+				<Path Data="F1M133.019,34.889C125.366,46.2809999999999,125.169,55.852,125.624,57.832L125.624,57.832C126.077,59.808,125.481,61.5890000000001,125.481,61.5890000000001L125.481,61.5890000000001L128.123,62.388L130.35,60.076C130.35,60.076,135.957,33.6420000000001,145.124,41.296L145.124,41.296C154.291,48.951,150.908,46.014,150.908,46.014L150.908,46.014L154.912,37.025C154.912,37.025,147.861,30.326,141.016,30.326L141.016,30.326C138.133,30.326,135.287,31.513,133.019,34.889" Height="32.062" Canvas.Left="101.137" Stretch="Fill" Canvas.Top="6.345" Width="29.431">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="1022.02" RadiusX="0.421">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M130.3501,60.0762C130.3501,60.0762,135.9571,33.6422,145.1241,41.2962C154.2911,48.9512,150.9081,46.0132,150.9081,46.0132L154.9131,37.0252C154.9131,37.0252,140.6731,23.4972,133.0191,34.8882C125.3651,46.2812,125.1691,55.8522,125.6231,57.8312C126.0771,59.8082,125.4801,61.5892,125.4801,61.5892L128.1231,62.3892L130.3501,60.0762z" Height="34.063" Canvas.Left="100.136" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="5.345" Width="31.433"/>
+				<Path Data="F1M194.175,42.239L202.844,47.74C202.844,47.74,200.578,52.327,206.869,40.16L206.869,40.16C213.157,27.991,231.944,47.841,231.944,47.841L231.944,47.841L235.473,48.547L237.964,46.271C237.964,46.271,236.46,45.066,236.003,43.061L236.003,43.061C235.549,41.055,230.738,32.777,216.949,27.337L216.949,27.337C215.322,26.696,213.763,26.413,212.278,26.413L212.278,26.413C201.165,26.413,194.175,42.239,194.175,42.239" Height="22.175" Canvas.Left="169.831" Stretch="Fill" Canvas.Top="2.432" Width="43.789">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.468,0.688" GradientOrigin="0.468,0.688" RadiusY="1477.723" RadiusX="-0.221">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M231.9443,47.8407999999999C231.9443,47.8407999999999,213.1563,27.9917999999999,206.8683,40.1597999999999C200.5773,52.3277999999999,202.8433,47.7397999999999,202.8433,47.7397999999999L194.1753,42.2387999999999C194.1753,42.2387999999999,203.1583,21.8987999999999,216.9483,27.3367999999999C230.7373,32.7767999999999,235.5483,41.0547999999999,236.0033,43.0607999999999C236.4603,45.0657999999999,237.9633,46.2717999999999,237.9633,46.2717999999999L235.4733,48.5467999999999L231.9443,47.8407999999999z" Height="24.175" Canvas.Left="168.831" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="1.432" Width="45.788"/>
+				<Path Data="F1M153.122,37.0410000000001C142.596,51.319,145.635,71.427,159.914,81.954L159.914,81.954C174.192,92.482,194.3,89.443,204.826,75.1660000000001L204.826,75.1660000000001C215.355,60.888,212.314,40.779,198.037,30.252L198.037,30.252C192.298,26.02,185.62,23.98,178.999,23.981L178.999,23.981C169.145,23.982,159.419,28.501,153.122,37.0410000000001" Height="64.244" Canvas.Left="122.509" Stretch="Fill" Canvas.Top="0" Width="64.244">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.588" RadiusX="0.542">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M204.8262,75.1655C194.3002,89.4425,174.1922,92.4815,159.9142,81.9545C145.6352,71.4264999999999,142.5962,51.3194999999999,153.1222,37.0405C163.6502,22.7625,183.7582,19.7235,198.0372,30.2525C212.3142,40.7785,215.3542,60.8875,204.8262,75.1655z" Height="66.243" Canvas.Left="121.509" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="-1" Width="66.243"/>
+				<Path Data="F1M173.7158,51.8335C171.9288,54.2575,168.2268,54.5625,165.4498,52.5145C162.6738,50.4685,161.8698,46.8395,163.6578,44.4165C165.4448,41.9905,169.1478,41.6875,171.9238,43.7335C174.7008,45.7815,175.5058,49.4075,173.7158,51.8335" Fill="#FF1D1D1B" Height="11.494" Canvas.Left="138.362" Stretch="Fill" Canvas.Top="18.397" Width="11.964"/>
+				<Path Data="F1M196.1855,51.8335C194.3975,54.2565,190.6955,54.5625,187.9185,52.5155C185.1405,50.4685,184.3395,46.8395,186.1265,44.4165C187.9145,41.9905,191.6165,41.6875,194.3945,43.7345C197.1705,45.7815,197.9725,49.4075,196.1855,51.8335" Fill="#FF1D1D1B" Height="11.493" Canvas.Left="160.83" Stretch="Fill" Canvas.Top="18.397" Width="11.963"/>
+				<Path Data="F1M199.0898,64.4082C199.0898,64.4082,175.1728,80.1952,168.9388,71.2902L162.7058,62.3882" Fill="#FF1D1D1B" Height="11.625" Canvas.Left="138.362" Stretch="Fill" Canvas.Top="38.407" Width="36.384"/>
+				<Canvas x:Name="TextBlock" Height="18.281" Canvas.Left="65.109" Canvas.Top="274.488" Width="25.686">
+					<Path Data="F1M92.4375,306.78125C91.546875,306.40625,90.90625,305.890625,90.5,305.234375C90.09375,304.578125,89.90625,303.859375,89.90625,303.078125C89.90625,301.75,90.359375,300.65625,91.296875,299.78125C92.234375,298.90625,93.5625,298.46875,95.28125,298.46875C96.96875,298.46875,98.296875,298.90625,99.234375,299.78125C100.171875,300.65625,100.640625,301.75,100.640625,303.078125C100.640625,303.921875,100.421875,304.65625,99.984375,305.296875C99.546875,305.953125,98.953125,306.4375,98.171875,306.78125C99.171875,307.1875,99.921875,307.765625,100.4375,308.53125C100.953125,309.296875,101.21875,310.171875,101.21875,311.171875C101.21875,312.828125,100.6875,314.171875,99.640625,315.203125C98.578125,316.234375,97.1875,316.75,95.4375,316.75C93.796875,316.75,92.4375,316.328125,91.375,315.46875C90.09375,314.46875,89.453125,313.078125,89.453125,311.328125C89.453125,310.359375,89.6875,309.46875,90.171875,308.65625C90.640625,307.84375,91.40625,307.21875,92.4375,306.78125L92.4375,306.78125 M93.15625,303.328125C93.15625,304.015625,93.34375,304.5625,93.734375,304.9375C94.109375,305.3125,94.625,305.5,95.28125,305.5C95.921875,305.5,96.4375,305.3125,96.828125,304.921875C97.21875,304.546875,97.421875,304,97.421875,303.3125C97.421875,302.671875,97.21875,302.15625,96.84375,301.765625C96.453125,301.390625,95.9375,301.1875,95.3125,301.1875C94.65625,301.1875,94.125,301.390625,93.734375,301.78125C93.34375,302.171875,93.15625,302.6875,93.15625,303.328125L93.15625,303.328125 M92.828125,311C92.828125,311.9375,93.0625,312.671875,93.546875,313.203125C94.03125,313.734375,94.640625,314,95.375,314C96.078125,314,96.65625,313.75,97.125,313.234375C97.59375,312.734375,97.828125,312,97.828125,311.03125C97.828125,310.1875,97.578125,309.515625,97.109375,309.015625C96.640625,308.515625,96.046875,308.25,95.328125,308.25C94.484375,308.25,93.84375,308.546875,93.4375,309.125C93.03125,309.703125,92.828125,310.328125,92.828125,311L92.828125,311" Fill="#FF1D1D1B" Height="18.281" Canvas.Left="0" Stretch="Fill" Canvas.Top="0" Width="11.766"/>
+					<Path Data="F1M106.357794,306.78125C105.467169,306.40625,104.826544,305.890625,104.420294,305.234375C104.014044,304.578125,103.826544,303.859375,103.826544,303.078125C103.826544,301.75,104.279669,300.65625,105.217169,299.78125C106.154669,298.90625,107.482794,298.46875,109.201544,298.46875C110.889044,298.46875,112.217169,298.90625,113.154669,299.78125C114.092169,300.65625,114.560919,301.75,114.560919,303.078125C114.560919,303.921875,114.342169,304.65625,113.904669,305.296875C113.467169,305.953125,112.873419,306.4375,112.092169,306.78125C113.092169,307.1875,113.842169,307.765625,114.357794,308.53125C114.873419,309.296875,115.139044,310.171875,115.139044,311.171875C115.139044,312.828125,114.607794,314.171875,113.560919,315.203125C112.498419,316.234375,111.107794,316.75,109.357794,316.75C107.717169,316.75,106.357794,316.328125,105.295294,315.46875C104.014044,314.46875,103.373419,313.078125,103.373419,311.328125C103.373419,310.359375,103.607794,309.46875,104.092169,308.65625C104.560919,307.84375,105.326544,307.21875,106.357794,306.78125L106.357794,306.78125 M107.076544,303.328125C107.076544,304.015625,107.264044,304.5625,107.654669,304.9375C108.029669,305.3125,108.545294,305.5,109.201544,305.5C109.842169,305.5,110.357794,305.3125,110.748419,304.921875C111.139044,304.546875,111.342169,304,111.342169,303.3125C111.342169,302.671875,111.139044,302.15625,110.764044,301.765625C110.373419,301.390625,109.857794,301.1875,109.232794,301.1875C108.576544,301.1875,108.045294,301.390625,107.654669,301.78125C107.264044,302.171875,107.076544,302.6875,107.076544,303.328125L107.076544,303.328125 M106.748419,311C106.748419,311.9375,106.982794,312.671875,107.467169,313.203125C107.951544,313.734375,108.560919,314,109.295294,314C109.998419,314,110.576544,313.75,111.045294,313.234375C111.514044,312.734375,111.748419,312,111.748419,311.03125C111.748419,310.1875,111.498419,309.515625,111.029669,309.015625C110.560919,308.515625,109.967169,308.25,109.248419,308.25C108.404669,308.25,107.764044,308.546875,107.357794,309.125C106.951544,309.703125,106.748419,310.328125,106.748419,311L106.748419,311" Fill="#FF1D1D1B" Height="18.281" Canvas.Left="13.92" Stretch="Fill" Canvas.Top="0" Width="11.766"/>
+				</Canvas>
+				<Path Data="F1M434.024,451.693C426.469,457.829,413.252,468.452,413.252,468.452L413.252,468.452L415.614,471.52L417.501,471.52C417.501,471.52,436.385,455.47,439.924,459.719L439.924,459.719C443.465,463.967,446.772,467.743,446.772,467.743L446.772,467.743L452.906,462.786C452.906,462.786,444.743,450.373,437.656,450.371L437.656,450.371C436.394,450.371,435.166,450.765,434.024,451.693" Height="21.149" Canvas.Left="388.908" Stretch="Fill" Canvas.Top="426.39" Width="39.654">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="-0.441" RadiusX="-0.134">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M417.501,471.5205C417.501,471.5205,436.385,455.4695,439.925,459.7185C443.465,463.9665,446.772,467.7435,446.772,467.7435L452.906,462.7865C452.906,462.7865,441.577,445.5555,434.024,451.6935C426.47,457.8295,413.252,468.4525,413.252,468.4525L415.613,471.5205L417.501,471.5205z" Height="23.149" Canvas.Left="387.908" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="425.391" Width="41.654"/>
+				<Path Data="F1M360.14,455.233C349.285,465.147,342.203,471.52,342.203,471.52L342.203,471.52L346.687,476.949C346.687,476.949,355.893,464.204,362.503,462.314L362.503,462.314C369.112,460.426,375.485,465.62,379.26,468.689L379.26,468.689C383.04,471.757,388.704,480.49,388.704,480.49L388.704,480.49L392.952,474.116C392.952,474.116,376.974,453.159,365.538,453.156L365.538,453.156C363.568,453.156,361.736,453.777,360.14,455.233" Height="27.334" Canvas.Left="317.859" Stretch="Fill" Canvas.Top="429.175" Width="50.749">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="-0.437" RadiusX="-0.134">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M392.9521,474.1162C392.9521,474.1162,371.0001,445.3192,360.1401,455.2332C349.2851,465.1462,342.2031,471.5202,342.2031,471.5202L346.6871,476.9492C346.6871,476.9492,355.8931,464.2042,362.5031,462.3142C369.1121,460.4262,375.4851,465.6202,379.2601,468.6882C383.0401,471.7572,388.7041,480.4892,388.7041,480.4892L392.9521,474.1162z" Height="29.333" Canvas.Left="316.859" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="428.175" Width="52.749"/>
+				<Path Data="F1M358.476,521.566L452.602,525.357L403.294,452.977z" Height="72.38" Canvas.Left="334.132" Stretch="Fill" Canvas.Top="428.996" Width="94.126">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="-0.34" RadiusX="-0.149">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFC6C6C5" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M403.2949,452.9766L452.6019,525.3566L358.4769,521.5656L403.2949,452.9766z" Height="74.38" Canvas.Left="333.133" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="427.996" Width="96.125"/>
+				<Path Data="F1M411.87,494.57L398.121,493.949C398.121,493.949,402.709,506.849,411.87,494.57" Height="5.922" Canvas.Left="373.777" Stretch="Fill" Canvas.Top="469.968" Width="13.749">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.534,0.274" GradientOrigin="0.534,0.274" RadiusY="0.003" RadiusX="0.001">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M398.1211,493.9492C398.1211,493.9492,402.7091,506.8482,411.8701,494.5702" Height="7.921" Canvas.Left="372.777" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="468.968" Width="15.749"/>
+				<Path Data="F1M423.948,501.706C417.812,507.843,382.642,504.066,382.642,504.066L382.642,504.066C382.642,504.066,386.654,509.023,401.525,519.643L401.525,519.643C409.345,525.229,416.84,518.277,421.295,511.326L421.295,511.326C424.613,506.149,426.246,500.972,425.07,500.973L425.07,500.973C424.823,500.973,424.453,501.201,423.948,501.706" Height="20.705" Canvas.Left="358.298" Stretch="Fill" Canvas.Top="476.992" Width="42.808">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="-0.476" RadiusX="-0.131">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M382.6426,504.0664C382.6426,504.0664,417.8126,507.8434,423.9476,501.7064C430.0846,495.5694,416.3936,530.2604,401.5256,519.6434C386.6536,509.0234,382.6426,504.0664,382.6426,504.0664z" Height="22.705" Canvas.Left="357.299" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="475.992" Width="44.808"/>
+				<Path Data="M349.2217,476.2881C349.2217,481.3391,345.1267,485.4341,340.0757,485.4341C335.0227,485.4341,330.9277,481.3391,330.9277,476.2881C330.9277,471.2361,335.0227,467.1401,340.0757,467.1401C345.1267,467.1401,349.2217,471.2361,349.2217,476.2881z" Fill="#FFE30614" Height="20.294" Canvas.Left="305.584" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="442.159" Width="20.294"/>
+				<Path Data="M462.6738,471.6465C462.6738,476.8125,458.4878,480.9965,453.3218,480.9965C448.1578,480.9965,443.9728,476.8125,443.9728,471.6465C443.9728,466.4825,448.1578,462.2955,453.3218,462.2955C458.4878,462.2955,462.6738,466.4825,462.6738,471.6465z" Fill="#FFE30614" Height="20.701" Canvas.Left="418.629" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="437.315" Width="20.701"/>
+				<Path Data="F1M397.9531,492.6748C396.0441,495.2658,392.0921,495.5918,389.1241,493.4048C386.1601,491.2188,385.3021,487.3448,387.2111,484.7548C389.1191,482.1658,393.0741,481.8408,396.0391,484.0278C399.0061,486.2138,399.8651,490.0858,397.9531,492.6748" Fill="#FF1D1D1B" Height="12.275" Canvas.Left="361.85" Stretch="Fill" Canvas.Top="458.598" Width="12.777"/>
+				<Path Data="F1M421.9502,492.6748C420.0422,495.2648,416.0872,495.5918,413.1222,493.4048C410.1542,491.2188,409.3002,487.3448,411.2072,484.7548C413.1172,482.1658,417.0712,481.8408,420.0382,484.0278C423.0032,486.2138,423.8602,490.0858,421.9502,492.6748" Fill="#FF1D1D1B" Height="12.274" Canvas.Left="385.847" Stretch="Fill" Canvas.Top="458.598" Width="12.777"/>
+				<Path Data="F1M447.413,592.812L509.967,613.418L513.019,604.152L450.464,583.546z" Height="29.872" Canvas.Left="423.069" Stretch="Fill" Canvas.Top="559.565" Width="65.606">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.803" RadiusX="0.208">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M509.9668,613.418L447.4128,592.812L450.4648,583.546L513.0188,604.151L509.9668,613.418z" Height="31.872" Canvas.Left="422.069" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="558.565" Width="67.606"/>
+				<Path Data="F1M455.65,548.153L456.201,557.892L521.956,554.179L521.407,544.437z" Height="13.455" Canvas.Left="431.306" Stretch="Fill" Canvas.Top="520.456" Width="66.306">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="2.577" RadiusX="0.297">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M521.9561,554.1787L456.2011,557.8927L455.6501,548.1527L521.4071,544.4377L521.9561,554.1787z" Height="15.455" Canvas.Left="430.306" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="519.457" Width="68.306"/>
+				<Path Data="F1M406.336,683.588L461.949,718.869L467.176,710.629L411.565,675.35z" Height="43.519" Canvas.Left="381.992" Stretch="Fill" Canvas.Top="651.369" Width="60.84">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.344" RadiusX="0.14">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M461.9492,718.8691L406.3362,683.5881L411.5642,675.3491L467.1762,710.6291L461.9492,718.8691z" Height="45.52" Canvas.Left="380.992" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="650.368" Width="62.84"/>
+				<Path Data="F1M427.991,644.48L490.992,663.682L493.838,654.348L430.839,635.149z" Height="28.533" Canvas.Left="403.647" Stretch="Fill" Canvas.Top="611.168" Width="65.847">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.867" RadiusX="0.213">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M490.9922,663.6816L427.9912,644.4796L430.8392,635.1496L493.8382,654.3476L490.9922,663.6816z" Height="30.532" Canvas.Left="402.647" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="610.169" Width="67.847"/>
+				<Path Data="F1M393.301,708.7L432.769,761.425L440.58,755.576L401.112,702.854z" Height="58.571" Canvas.Left="368.957" Stretch="Fill" Canvas.Top="678.873" Width="47.279">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.005" RadiusX="0.004">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M432.7686,761.4248L393.3006,708.6998L401.1126,702.8538L440.5806,755.5748L432.7686,761.4248z" Height="60.571" Canvas.Left="367.957" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="677.873" Width="49.28"/>
+				<Path Data="F1M311.374,689.274L314.106,698.642L377.333,680.202L374.602,670.836z" Height="27.806" Canvas.Left="287.03" Stretch="Fill" Canvas.Top="646.855" Width="65.959">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="-1.399" RadiusX="-0.335">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M311.374,689.2744L374.602,670.8364L377.333,680.2024L314.106,698.6414L311.374,689.2744z" Height="29.805" Canvas.Left="286.03" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="645.855" Width="67.959"/>
+				<Path Data="F1M325.879,734.677L330.12,743.464L389.432,714.831L385.189,706.045z" Height="37.419" Canvas.Left="301.535" Stretch="Fill" Canvas.Top="682.064" Width="63.553">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="-1.088" RadiusX="-0.364">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M325.8789,734.6768L385.1899,706.0448L389.4319,714.8308L330.1199,743.4638L325.8789,734.6768z" Height="39.419" Canvas.Left="300.535" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="681.064" Width="65.553"/>
+				<Path Data="F1M287.39,571.321L287.75,581.072L353.561,578.66L353.207,568.908z" Height="12.164" Canvas.Left="263.046" Stretch="Fill" Canvas.Top="544.927" Width="66.171">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="-2.813" RadiusX="-0.294">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M287.3896,571.3213L353.2066,568.9083L353.5616,578.6603L287.7496,581.0723L287.3896,571.3213z" Height="14.164" Canvas.Left="262.046" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="543.927" Width="68.172"/>
+				<Path Data="F1M295.987,629.406L298.926,638.709L361.723,618.86L358.786,609.558z" Height="29.151" Canvas.Left="271.643" Stretch="Fill" Canvas.Top="585.577" Width="65.736">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="-1.345" RadiusX="-0.339">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M295.9863,629.4062L358.7863,609.5572L361.7223,618.8602L298.9253,638.7092L295.9863,629.4062z" Height="31.152" Canvas.Left="270.642" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="584.576" Width="67.736"/>
+				<Path Data="F1M287.422,524.144L348.421,548.977L352.1,539.94L291.1,515.106z" Height="33.871" Canvas.Left="263.078" Stretch="Fill" Canvas.Top="491.125" Width="64.678">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="-0.638" RadiusX="-0.19">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M291.1006,515.1064L352.0996,539.9404L348.4206,548.9764L287.4216,524.1444L291.1006,515.1064z" Height="35.87" Canvas.Left="262.078" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="490.125" Width="66.678"/>
+				<Path Data="F1M389.961,734.374L475.879,526.656L335.198,520.992z" Height="213.382" Canvas.Left="310.854" Stretch="Fill" Canvas.Top="497.011" Width="140.681">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="-0.248" RadiusX="-0.214">
+							<GradientStop Color="#FF1470B7" Offset="0"/>
+							<GradientStop Color="#FF009EE3" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M335.1982,520.9922L475.8802,526.6562L389.9612,734.3742L335.1982,520.9922z" Height="215.382" Canvas.Left="309.854" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="496.011" Width="142.682"/>
+				<Path Data="F1M473.144,686.853L530.287,660.303L479.717,625.728z" Height="61.125" Canvas.Left="448.8" Stretch="Fill" Canvas.Top="601.747" Width="57.143">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.269,0.466" GradientOrigin="0.269,0.466" RadiusY="0.71" RadiusX="0.431">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M479.7168,625.7285L473.1448,686.8525L530.2868,660.3035L479.7168,625.7285z" Height="63.124" Canvas.Left="447.801" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="600.748" Width="59.142"/>
+				<Canvas x:Name="TextBlock1" Height="16.094" Canvas.Left="458.517" Canvas.Top="626.548" Width="23.048">
+					<Path Data="F1M485.50195,657.8418C484.7207,657.5293,484.142575,657.076175,483.798825,656.49805C483.43945,655.919925,483.267575,655.2793,483.267575,654.5918C483.267575,653.419925,483.673825,652.451175,484.486325,651.68555C485.298825,650.919925,486.4707,650.5293,487.986325,650.5293C489.486325,650.5293,490.642575,650.919925,491.4707,651.68555C492.298825,652.451175,492.7207,653.419925,492.7207,654.5918C492.7207,655.326175,492.517575,655.982425,492.142575,656.544925C491.767575,657.107425,491.236325,657.544925,490.548825,657.8418C491.423825,658.201175,492.080075,658.7168,492.5332,659.388675C492.986325,660.06055,493.2207,660.8418,493.2207,661.7168C493.2207,663.169925,492.75195,664.357425,491.830075,665.263675C490.892575,666.169925,489.6582,666.62305,488.12695,666.62305C486.68945,666.62305,485.486325,666.24805,484.548825,665.49805C483.423825,664.607425,482.861325,663.388675,482.861325,661.8418C482.861325,660.99805,483.06445,660.2168,483.486325,659.49805C483.9082,658.7793,484.580075,658.232425,485.50195,657.8418L485.50195,657.8418 M486.111325,654.81055C486.111325,655.4043,486.2832,655.87305,486.62695,656.2168C486.9707,656.56055,487.423825,656.7168,487.986325,656.7168C488.548825,656.7168,489.017575,656.56055,489.361325,656.2168C489.705075,655.87305,489.87695,655.4043,489.87695,654.794925C489.87695,654.232425,489.705075,653.7793,489.361325,653.43555C489.017575,653.0918,488.580075,652.919925,488.017575,652.919925C487.423825,652.919925,486.9707,653.0918,486.62695,653.43555C486.2832,653.7793,486.111325,654.24805,486.111325,654.81055L486.111325,654.81055 M485.8457,661.544925C485.8457,662.388675,486.048825,663.0293,486.4707,663.49805C486.892575,663.9668,487.423825,664.18555,488.080075,664.18555C488.68945,664.18555,489.205075,663.9668,489.611325,663.5293C490.017575,663.0918,490.236325,662.43555,490.236325,661.576175C490.236325,660.857425,490.017575,660.263675,489.611325,659.81055C489.18945,659.37305,488.6582,659.138675,488.0332,659.138675C487.2832,659.138675,486.736325,659.4043,486.37695,659.9043C486.017575,660.4043,485.8457,660.951175,485.8457,661.544925L485.8457,661.544925" Fill="#FF1D1D1B" Height="16.094" Canvas.Left="0" Stretch="Fill" Canvas.Top="0" Width="10.359"/>
+					<Path Data="F1M498.1907596,657.8418C497.4095096,657.5293,496.8313846,657.076175,496.4876346,656.49805C496.1282596,655.919925,495.9563846,655.2793,495.9563846,654.5918C495.9563846,653.419925,496.3626346,652.451175,497.1751346,651.68555C497.9876346,650.919925,499.1595096,650.5293,500.6751346,650.5293C502.1751346,650.5293,503.3313846,650.919925,504.1595096,651.68555C504.9876346,652.451175,505.4095096,653.419925,505.4095096,654.5918C505.4095096,655.326175,505.2063846,655.982425,504.8313846,656.544925C504.4563846,657.107425,503.9251346,657.544925,503.2376346,657.8418C504.1126346,658.201175,504.7688846,658.7168,505.2220096,659.388675C505.6751346,660.06055,505.9095096,660.8418,505.9095096,661.7168C505.9095096,663.169925,505.4407596,664.357425,504.5188846,665.263675C503.5813846,666.169925,502.3470096,666.62305,500.8157596,666.62305C499.3782596,666.62305,498.1751346,666.24805,497.2376346,665.49805C496.1126346,664.607425,495.5501346,663.388675,495.5501346,661.8418C495.5501346,660.99805,495.7532596,660.2168,496.1751346,659.49805C496.5970096,658.7793,497.2688846,658.232425,498.1907596,657.8418L498.1907596,657.8418 M498.8001346,654.81055C498.8001346,655.4043,498.9720096,655.87305,499.3157596,656.2168C499.6595096,656.56055,500.1126346,656.7168,500.6751346,656.7168C501.2376346,656.7168,501.7063846,656.56055,502.0501346,656.2168C502.3938846,655.87305,502.5657596,655.4043,502.5657596,654.794925C502.5657596,654.232425,502.3938846,653.7793,502.0501346,653.43555C501.7063846,653.0918,501.2688846,652.919925,500.7063846,652.919925C500.1126346,652.919925,499.6595096,653.0918,499.3157596,653.43555C498.9720096,653.7793,498.8001346,654.24805,498.8001346,654.81055L498.8001346,654.81055 M498.5345096,661.544925C498.5345096,662.388675,498.7376346,663.0293,499.1595096,663.49805C499.5813846,663.9668,500.1126346,664.18555,500.7688846,664.18555C501.3782596,664.18555,501.8938846,663.9668,502.3001346,663.5293C502.7063846,663.0918,502.9251346,662.43555,502.9251346,661.576175C502.9251346,660.857425,502.7063846,660.263675,502.3001346,659.81055C501.8782596,659.37305,501.3470096,659.138675,500.7220096,659.138675C499.9720096,659.138675,499.4251346,659.4043,499.0657596,659.9043C498.7063846,660.4043,498.5345096,660.951175,498.5345096,661.544925L498.5345096,661.544925" Fill="#FF1D1D1B" Height="16.094" Canvas.Left="12.689" Stretch="Fill" Canvas.Top="0" Width="10.359"/>
+				</Canvas>
+				<Path Data="F1M524.353,573.413L569.888,529.859L510.87,513.431z" Height="59.982" Canvas.Left="486.526" Stretch="Fill" Canvas.Top="489.45" Width="59.018">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.297,0.403" GradientOrigin="0.297,0.403" RadiusY="0.526" RadiusX="0.304">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M510.8701,513.4307L524.3521,573.4127L569.8881,529.8597L510.8701,513.4307z" Height="61.982" Canvas.Left="485.526" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="488.45" Width="61.018"/>
+				<Path Data="F1M501.716,636.115L558.858,609.567L508.287,574.991z" Height="61.124" Canvas.Left="477.372" Stretch="Fill" Canvas.Top="551.01" Width="57.142">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.269,0.466" GradientOrigin="0.269,0.466" RadiusY="0.71" RadiusX="0.431">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M508.2871,574.9902L501.7161,636.1152L558.8571,609.5662L508.2871,574.9902z" Height="63.125" Canvas.Left="476.372" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="550.009" Width="59.141"/>
+				<Path Data="F1M435.671,734.177L498.68,733.893L467.149,681.372z" Height="52.805" Canvas.Left="411.327" Stretch="Fill" Canvas.Top="657.391" Width="63.009">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.438,0.56" GradientOrigin="0.438,0.56" RadiusY="0.98" RadiusX="0.467">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M467.1484,681.3711L435.6704,734.1771L498.6794,733.8921L467.1484,681.3711z" Height="54.806" Canvas.Left="410.326" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="656.39" Width="65.009"/>
+				<Path Data="F1M404.1,774.059L459.647,803.798L456.917,742.598z" Height="61.2" Canvas.Left="379.756" Stretch="Fill" Canvas.Top="718.617" Width="55.547">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.636,0.395" GradientOrigin="0.636,0.395" RadiusY="0.812" RadiusX="0.508">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M456.917,742.5986L404.1,774.0586L459.647,803.7986L456.917,742.5986z" Height="63.2" Canvas.Left="378.756" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="717.618" Width="57.547"/>
+				<Path Data="F1M264.563,700.316L324.324,720.282L311.332,660.414z" Height="59.868" Canvas.Left="240.219" Stretch="Fill" Canvas.Top="636.433" Width="59.761">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.562,0.447" GradientOrigin="0.562,0.447" RadiusY="0.866" RadiusX="0.493">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M311.332,660.4141L264.563,700.3151L324.324,720.2821L311.332,660.4141z" Height="61.868" Canvas.Left="239.219" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="635.433" Width="61.761"/>
+				<Path Data="F1M302.848,781.161L359.99,754.613L309.42,720.038z" Height="61.123" Canvas.Left="278.504" Stretch="Fill" Canvas.Top="696.057" Width="57.142">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.269,0.466" GradientOrigin="0.269,0.466" RadiusY="0.71" RadiusX="0.431">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M309.4199,720.0381L302.8489,781.1611L359.9899,754.6131L309.4199,720.0381z" Height="63.123" Canvas.Left="277.505" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="695.057" Width="59.141"/>
+				<Path Data="F1M257.329,637.01L315.984,660.025L306.089,599.569z" Height="60.456" Canvas.Left="232.985" Stretch="Fill" Canvas.Top="575.588" Width="58.655">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.583,0.431" GradientOrigin="0.583,0.431" RadiusY="0.849" RadiusX="0.497">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M306.0889,599.5684L257.3289,637.0094L315.9839,660.0254L306.0889,599.5684z" Height="62.457" Canvas.Left="231.985" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="574.587" Width="60.655"/>
+				<Path Data="F1M234.166,575.841L289.122,606.66L287.588,545.416z" Height="61.244" Canvas.Left="209.822" Stretch="Fill" Canvas.Top="521.435" Width="54.956">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.645,0.389" GradientOrigin="0.645,0.389" RadiusY="0.806" RadiusX="0.51">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M287.5879,545.416L234.1659,575.841L289.1219,606.66L287.5879,545.416z" Height="63.244" Canvas.Left="208.822" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="520.435" Width="56.956"/>
+				<Path Data="F1M281.07,546.249L311.44,493.044L249.982,491.442z" Height="54.807" Canvas.Left="225.638" Stretch="Fill" Canvas.Top="467.461" Width="61.458">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.549,0.232" GradientOrigin="0.549,0.232" RadiusY="0.602" RadiusX="0.305">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M311.4395,493.0439L249.9825,491.4409L281.0705,546.2489L311.4395,493.0439z" Height="56.808" Canvas.Left="224.638" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="466.46" Width="63.457"/>
+				<Path Data="M111.9648,704.4521C111.7218,705.6741,108.1018,763.6701,108.7148,766.9651C109.3268,770.2601,91.3118,760.3241,84.0518,764.9051C76.7918,769.4891,78.3808,774.2491,81.8618,775.8931C85.3438,777.5401,96.1458,774.2981,104.8148,775.3901C113.4828,776.4831,122.3348,778.2461,122.3348,778.2461C122.3348,778.2461,115.2148,724.7781,117.8308,711.6531C120.4448,698.5271,113.0028,702.4371,113.0028,702.4371L111.9648,704.4521z" Fill="#FF2D2E83" Height="78.354" Canvas.Left="53.582" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="676.911" Width="45.409"/>
+				<Path Data="M143.084,705.9434C143.75,706.9954,169.52,758.8404,170.376,761.9814C171.231,765.1234,180.661,751.7754,187.881,754.1994C195.101,756.6264,195.812,761.3334,193.882,763.6614C191.948,765.9924,182.633,765.6354,176.626,768.7054C170.621,771.7794,164.745,775.5024,164.745,775.5024C164.745,775.5024,148.756,725.1954,141.589,713.8934C134.424,702.5894,141.511,704.3624,141.511,704.3624L143.084,705.9434z" Fill="#FF2D2E83" Height="73.241" Canvas.Left="113.04" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="679.28" Width="58.417"/>
+				<Path Data="M189.668,643.5674C189.668,643.5674,206.502,628.5334,207.739,619.9404C208.974,611.3504,204.34,617.6274,202.95,614.3234C201.56,611.0204,197.545,608.2114,201.715,607.2204C205.885,606.2284,207.12,608.2114,207.12,608.2114C207.12,608.2114,202.332,604.9064,206.658,599.1234C210.981,593.3404,218.548,590.5304,221.174,599.7844C223.8,609.0374,221.482,613.0024,219.012,615.1494C216.541,617.2974,216.852,626.3864,214.534,632.3334C212.216,638.2814,196.619,653.1504,189.668,654.1424C182.72,655.1324,181.39,655.2984,181.39,655.2984L183.489,643.8994L189.668,643.5674z" Fill="#FF2D2E83" Height="63.512" Canvas.Left="156.046" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="568.806" Width="42.944"/>
+				<Path Data="M79.1768,701.8174C79.1768,701.8174,62.3478,716.8624,61.1178,725.4534C59.8858,734.0464,64.5178,727.7674,65.9088,731.0694C67.3018,734.3744,71.3168,737.1794,67.1488,738.1744C62.9798,739.1664,61.7418,737.1854,61.7418,737.1854C61.7418,737.1854,66.5318,740.4894,62.2088,746.2734C57.8898,752.0574,50.3238,754.8714,47.6938,745.6194C45.0618,736.3674,47.3778,732.4034,49.8458,730.2534C52.3178,728.1034,52.0018,719.0154,54.3158,713.0654C56.6298,707.1184,72.2208,692.2404,79.1708,691.2464C86.1168,690.2484,87.4478,690.0834,87.4478,690.0834L85.3558,701.4844L79.1768,701.8174z" Fill="#FF2D2E83" Height="63.53" Canvas.Left="21.186" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="665.102" Width="42.918"/>
+				<Path Data="F1M122.515,613.589C120.602,613.297,118.634,613.137,116.623,613.137L116.623,613.137C97.901,613.137,82.724,626.29,82.724,642.516L82.724,642.516C82.724,644.276,82.912,645.995,83.255,647.671L83.255,647.671C74.957,650.839,69.164,657.957,69.164,666.246L69.164,666.246C69.164,676.748,78.449,685.385,90.365,686.468L90.365,686.468C82.443,690.534,77.073,698.362,77.073,707.357L77.073,707.357C77.073,720.537,88.583,731.222,102.781,731.222L102.781,731.222C112.339,731.222,120.659,726.369,125.091,719.183L125.091,719.183C129.546,726.249,140.138,731.222,152.5,731.222L152.5,731.222C168.883,731.222,182.163,722.494,182.163,711.729L182.163,711.729C182.163,706.382,178.886,701.541,173.582,698.02L173.582,698.02C186.495,695.793,196.288,685.074,196.288,672.18L196.288,672.18C196.288,662.745,191.045,654.476,183.177,649.843L183.177,649.843C186.416,645.656,188.378,640.244,188.378,634.324L188.378,634.324C188.378,621.063,178.577,610.311,166.484,610.311L166.484,610.311C161.572,610.311,157.054,612.108,153.4,615.104L153.4,615.104C149.423,610.32,143.68,607.294,137.271,607.294L137.271,607.294C131.567,607.294,126.393,609.695,122.515,613.589" Height="123.928" Canvas.Left="44.82" Stretch="Fill" Canvas.Top="583.313" Width="127.124">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.506" RadiusX="0.494">
+							<GradientStop Color="WhiteSmoke" Offset="0"/>
+							<GradientStop Color="sc#1, 0.8348255, 0.8641353, 0.9006734" Offset="0.610443115234375"/>
+							<GradientStop Color="sc#1, 0.6646485, 0.7576819, 0.8736591" Offset="0.7698894739151001"/>
+							<GradientStop Color="sc#1, 0.438891739, 0.6164609, 0.8378219" Offset="0.87665826082229614"/>
+							<GradientStop Color="sc#1, 0.168899119, 0.447568417, 0.794962645" Offset="0.95973926782608032"/>
+							<GradientStop Color="sc#1, 0, 0.341914415, 0.768151164" Offset="1"/>
+							<GradientStop Color="#FF009EE3" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M196.2881,672.1797C196.2881,662.7447,191.0451,654.4757,183.1771,649.8427C186.4161,645.6567,188.3781,640.2437,188.3781,634.3247C188.3781,621.0637,178.5771,610.3117,166.4841,610.3117C161.5731,610.3117,157.0531,612.1087,153.4001,615.1037C149.4241,610.3207,143.6801,607.2937,137.2711,607.2937C131.5671,607.2937,126.3931,609.6947,122.5161,613.5887C120.6021,613.2967,118.6351,613.1367,116.6231,613.1367C97.9011,613.1367,82.7241,626.2897,82.7241,642.5157C82.7241,644.2767,82.9121,645.9947,83.2541,647.6707C74.9571,650.8387,69.1641,657.9567,69.1641,666.2457C69.1641,676.7477,78.4481,685.3847,90.3651,686.4677C82.4421,690.5337,77.0731,698.3617,77.0731,707.3577C77.0731,720.5367,88.5821,731.2217,102.7811,731.2217C112.3391,731.2217,120.6601,726.3687,125.0911,719.1837C129.5461,726.2487,140.1381,731.2217,152.5001,731.2217C168.8831,731.2217,182.1631,722.4937,182.1631,711.7287C182.1631,706.3817,178.8861,701.5407,173.5821,698.0197C186.4961,695.7927,196.2881,685.0747,196.2881,672.1797z" Height="125.928" Canvas.Left="43.82" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="582.313" Width="129.124"/>
+				<Canvas x:Name="TextBlock2" Height="70.219" Canvas.Left="88.506" Canvas.Top="611.294" Width="45.188">
+					<Path Data="F1M124.334,667.197275C120.92775,665.759775,118.443375,663.791025,116.8965,661.2754C115.349625,658.759775,114.584,655.99415,114.584,652.99415C114.584,647.86915,116.36525,643.634775,119.943375,640.291025C123.5215,636.947275,128.61525,635.2754,135.209,635.2754C141.74025,635.2754,146.80275,636.947275,150.412125,640.291025C154.0215,643.634775,155.834,647.86915,155.834,652.99415C155.834,656.18165,155.005875,659.0254,153.349625,661.509775C151.693375,663.99415,149.36525,665.884775,146.36525,667.197275C150.17775,668.728525,153.068375,670.9629,155.05275,673.9004C157.037125,676.8379,158.037125,680.228525,158.037125,684.072275C158.037125,690.416025,156.005875,695.572275,151.959,699.541025C147.912125,703.509775,142.537125,705.49415,135.818375,705.49415C129.568375,705.49415,124.36525,703.853525,120.209,700.572275C115.30275,696.697275,112.849625,691.384775,112.849625,684.634775C112.849625,680.916025,113.7715,677.509775,115.61525,674.4004C117.459,671.291025,120.36525,668.884775,124.334,667.197275L124.334,667.197275 M127.05275,653.93165C127.05275,656.55665,127.787125,658.603525,129.2715,660.072275C130.755875,661.541025,132.74025,662.2754,135.209,662.2754C137.709,662.2754,139.709,661.541025,141.209,660.05665C142.709,658.572275,143.459,656.509775,143.459,653.884775C143.459,651.416025,142.709,649.447275,141.224625,647.9629C139.74025,646.478525,137.787125,645.728525,135.349625,645.728525C132.818375,645.728525,130.80275,646.478525,129.30275,647.978525C127.80275,649.478525,127.05275,651.4629,127.05275,653.93165L127.05275,653.93165 M125.834,683.36915C125.834,686.99415,126.755875,689.822275,128.61525,691.853525C130.474625,693.884775,132.80275,694.9004,135.584,694.9004C138.30275,694.9004,140.55275,693.93165,142.334,691.978525C144.11525,690.0254,145.005875,687.197275,145.005875,683.509775C145.005875,680.291025,144.099625,677.7129,142.287125,675.759775C140.474625,673.80665,138.17775,672.822275,135.3965,672.822275C132.17775,672.822275,129.7715,673.93165,128.193375,676.1504C126.61525,678.36915,125.834,680.7754,125.834,683.36915L125.834,683.36915" Fill="#FF1D1D1B" Height="70.219" Canvas.Left="0" Stretch="Fill" Canvas.Top="0" Width="45.188"/>
+				</Canvas>
+				<Path Data="F1M439.871,119.087C433.498,128.573,433.335,136.542,433.713,138.189L433.713,138.189C434.091,139.836,433.594,141.318,433.594,141.318L433.594,141.318L435.795,141.984L437.648,140.058C437.648,140.058,442.318,118.049,449.951,124.422L449.951,124.422C457.583,130.795,454.766,128.349,454.766,128.349L454.766,128.349L458.101,120.865C458.101,120.865,452.229,115.288,446.529,115.287L446.529,115.287C444.129,115.287,441.76,116.276,439.871,119.087" Height="26.697" Canvas.Left="409.25" Stretch="Fill" Canvas.Top="91.306" Width="24.507">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="1227.404" RadiusX="0.421">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M437.6484,140.0586C437.6484,140.0586,442.3174,118.0486,449.9504,124.4216C457.5834,130.7946,454.7654,128.3496,454.7654,128.3496L458.1004,120.8656C458.1004,120.8656,446.2444,109.6016,439.8714,119.0866C433.4984,128.5726,433.3354,136.5416,433.7124,138.1896C434.0904,139.8356,433.5934,141.3186,433.5934,141.3186L435.7944,141.9846L437.6484,140.0586z" Height="28.697" Canvas.Left="408.249" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="90.307" Width="26.507"/>
+				<Path Data="F1M517.063,122.336L524.281,126.916C524.281,126.916,522.394,130.736,527.632,120.605L527.632,120.605C532.868,110.473,548.511,127,548.511,127L548.511,127L551.45,127.588L553.523,125.694C553.523,125.694,552.271,124.689,551.892,123.02L551.892,123.02C551.513,121.349,547.507,114.457,536.026,109.928L536.026,109.928C534.671,109.394,533.373,109.158,532.136,109.159L532.136,109.159C522.884,109.16,517.063,122.336,517.063,122.336" Height="18.463" Canvas.Left="492.719" Stretch="Fill" Canvas.Top="85.178" Width="36.46">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.468,0.688" GradientOrigin="0.468,0.688" RadiusY="1774.789" RadiusX="-0.221">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M548.5117,127C548.5117,127,532.8677,110.473,527.6317,120.604C522.3947,130.736,524.2817,126.916,524.2817,126.916L517.0637,122.336C517.0637,122.336,524.5427,105.399,536.0257,109.928C547.5067,114.457,551.5127,121.35,551.8917,123.02C552.2717,124.689,553.5237,125.693,553.5237,125.693L551.4497,127.588L548.5117,127z" Height="20.464" Canvas.Left="491.72" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="84.177" Width="38.46"/>
+				<Path Data="F1M454.388,125.358C439.699,145.283,443.94,173.344,463.867,188.036L463.867,188.036C483.792,202.726,511.853,198.486,526.542,178.56L526.542,178.56C541.236,158.634,536.993,130.573,517.069,115.883L517.069,115.883C509.061,109.979,499.74,107.132,490.501,107.132L490.501,107.132C476.748,107.132,463.177,113.439,454.388,125.358" Height="89.653" Canvas.Left="421.296" Stretch="Fill" Canvas.Top="83.151" Width="89.654">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.588" RadiusX="0.542">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M526.542,178.5605C511.853,198.4855,483.792,202.7265,463.867,188.0355C443.94,173.3435,439.698,145.2835,454.389,125.3575C469.081,105.4315,497.142,101.1895,517.069,115.8835C536.993,130.5735,541.235,158.6345,526.542,178.5605z" Height="91.654" Canvas.Left="420.296" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="82.151" Width="91.654"/>
+				<Path Data="M440.8438,145.3203C440.8438,149.2593,437.6508,152.4513,433.7128,152.4513C429.7738,152.4513,426.5808,149.2593,426.5808,145.3203C426.5808,141.3823,429.7738,138.1893,433.7128,138.1893C437.6508,138.1893,440.8438,141.3823,440.8438,145.3203z" Fill="#FFE71C73" Height="16.262" Canvas.Left="401.237" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="113.208" Width="16.263"/>
+				<Path Data="M560.8135,128.6367C560.8135,132.6617,557.5495,135.9257,553.5235,135.9257C549.4975,135.9257,546.2335,132.6617,546.2335,128.6367C546.2335,124.6107,549.4975,121.3467,553.5235,121.3467C557.5495,121.3467,560.8135,124.6107,560.8135,128.6367z" Fill="#FFE71C73" Height="16.579" Canvas.Left="520.89" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="96.366" Width="16.58"/>
+				<Path Data="M468.6035,164.3584L472.5775,160.9144C472.5775,160.9144,479.5515,173.2634,487.7345,174.8234C495.9165,176.3794,504.3895,172.6884,505.9625,171.2654C507.0365,170.2954,508.1985,166.1054,508.1985,166.1054L512.5445,170.4474" Height="16.285" Canvas.Left="443.259" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="135.933" Width="45.941"/>
+				<Path Data="M468.9717,134.167C468.9717,134.167,474.0847,148.849,489.1867,139.455" Height="10.427" Canvas.Left="443.628" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="109.186" Width="22.215"/>
+				<Path Data="M494.25,137.71C494.25,137.71,499.364,152.393,514.468,142.998" Height="10.428" Canvas.Left="468.906" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="112.729" Width="22.218"/>
+				<Path Data="M468.7803,135.5576L463.0813,141.3216" Height="7.764" Canvas.Left="437.737" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="110.577" Width="7.699"/>
+				<Path Data="M471.6201,139.8662C471.6901,139.8542,466.4321,147.3592,466.4321,147.3592" Height="9.493" Canvas.Left="441.088" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="114.885" Width="7.189"/>
+				<Path Data="M476.4014,142.3555L473.8124,150.6025" Height="10.247" Canvas.Left="448.468" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="117.374" Width="4.589"/>
+				<Path Data="M514.249,143.7129L517.264,150.7519" Height="9.039" Canvas.Left="488.905" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="118.732" Width="5.015"/>
+				<Path Data="M508.0205,146.3721L509.5245,152.7241" Height="8.352" Canvas.Left="482.677" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="121.391" Width="3.504"/>
+				<Path Data="M502.4268,146.7803L500.3978,153.6253" Height="8.845" Canvas.Left="475.054" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="121.799" Width="4.029"/>
+				<Path Data="M432.3311,332.8281C432.3311,332.8281,425.3601,361.2241,421.7911,364.2641C418.2221,367.3041,403.7921,356.5481,390.0411,367.1941C376.2901,377.8401,393.8901,395.4161,409.4901,391.5431C425.0891,387.6701,430.6511,391.6181,432.7441,386.8891C434.8391,382.1561,431.9761,373.1441,431.9761,373.1441C431.9761,373.1441,438.9231,341.1651,440.6901,338.5121C442.4601,335.8611,432.3311,332.8281,432.3311,332.8281z" Fill="#FFA21A5B" Height="61.263" Canvas.Left="359.74" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="307.847" Width="57.813"/>
+				<Path Data="M417.4814,370.3691C417.4814,370.3691,412.6024,352.6581,408.1584,357.9841C403.7134,363.3121,413.8094,372.8511,416.3444,371.8551C418.7084,370.9261,414.5534,377.4531,418.4874,371.4201C418.7754,370.9781,419.1064,370.4691,419.4874,369.8851C425.0634,361.3211,433.3804,358.4941,428.0194,364.8821C422.6594,371.2671,420.9154,371.9731,420.9154,371.9731L434.4654,373.2451" Fill="#FFA21A5B" Height="19.024" Canvas.Left="381.698" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="332.004" Width="29.423"/>
+				<Path Data="M517.3828,336.0098C517.3828,336.0098,523.8388,364.4058,527.1438,367.4458C530.4488,370.4858,543.8118,359.7298,556.5458,370.3758C569.2788,381.0218,552.9818,398.5978,538.5348,394.7248C524.0898,390.8518,518.9388,394.7998,517.0008,390.0708C515.0608,385.3378,517.7128,376.3258,517.7128,376.3258C517.7128,376.3258,511.2788,344.3468,509.6428,341.6938C508.0038,339.0428,517.3828,336.0098,517.3828,336.0098z" Fill="#FFA21A5B" Height="61.263" Canvas.Left="484.107" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="311.029" Width="53.685"/>
+				<Path Data="M519.5,378.0596C519.5,378.0596,524.018,360.3486,528.134,365.6746C532.249,371.0026,522.9,380.5416,520.553,379.5456C518.364,378.6166,522.211,385.1436,518.568,379.1106C518.302,378.6686,517.995,378.1596,517.643,377.5756C512.479,369.0116,504.776,366.1846,509.741,372.5726C514.705,378.9576,516.32,379.6636,516.32,379.6636L503.771,380.9356" Fill="#FFA21A5B" Height="19.024" Canvas.Left="478.427" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="339.695" Width="27.396"/>
+				<Path Data="M401.8604,250.9922C401.8604,250.9922,379.2144,271.2382,377.5594,282.7992C375.9004,294.3622,382.1334,285.9132,384.0064,290.3562C385.8814,294.8042,391.2834,298.5792,385.6734,299.9192C380.0644,301.2522,378.3984,298.5882,378.3984,298.5882C378.3984,298.5882,384.8444,303.0332,379.0264,310.8172C373.2144,318.6012,363.0334,322.3872,359.4934,309.9352C355.9524,297.4862,359.0684,292.1512,362.3904,289.2572C365.7154,286.3652,365.2914,274.1362,368.4054,266.1282C371.5194,258.1252,392.5004,238.1032,401.8524,236.7642C411.2014,235.4222,412.9904,235.2002,412.9904,235.2002L410.1754,250.5442L401.8604,250.9922z" Fill="#FFA21A5B" Height="84.803" Canvas.Left="332.583" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="210.219" Width="57.063"/>
+				<Path Data="M544.4033,227.6934C544.4033,227.6934,567.0573,207.4614,568.7213,195.8984C570.3833,184.3394,564.1483,192.7844,562.2763,188.3394C560.4063,183.8934,555.0053,180.1134,560.6153,178.7804C566.2263,177.4454,567.8883,180.1134,567.8883,180.1134C567.8883,180.1134,561.4463,175.6664,567.2673,167.8834C573.0853,160.1024,583.2673,156.3204,586.8013,168.7734C590.3353,181.2244,587.2163,186.5614,583.8913,189.4504C580.5663,192.3404,580.9843,204.5724,577.8653,212.5744C574.7463,220.5794,553.7573,240.5894,544.4033,241.9234C535.0523,243.2564,533.2633,243.4804,533.2633,243.4804L536.0893,228.1394L544.4033,227.6934z" Fill="#FFA21A5B" Height="84.778" Canvas.Left="507.919" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="135.721" Width="57.099"/>
+				<Path Data="F1M416.872,201.839C416.301,209.283,420.349,216.372,427.359,221.841L427.359,221.841C409.142,223.563,394.366,237.441,392.99,255.394L392.99,255.394C391.983,268.529,398.4,280.602,408.86,287.892L408.86,287.892C403.906,293.374,400.596,300.699,399.964,308.942L399.964,308.942C398.55,327.402,411.049,343.417,427.886,344.707L427.886,344.707C434.723,345.23,441.206,343.212,446.612,339.432L446.612,339.432C451.638,346.515,459.311,351.34,468.234,352.025L468.234,352.025C476.175,352.632,483.636,349.843,489.448,344.834L489.448,344.834C492.081,345.445,494.803,345.877,497.605,346.091L497.605,346.091C523.669,348.088,546.202,331.395,547.933,308.805L547.933,308.805C548.12,306.354,548.043,303.94,547.745,301.572L547.745,301.572C559.633,298.045,568.458,288.754,569.342,277.214L569.342,277.214C570.462,262.593,558.458,249.578,541.983,246.798L541.983,246.798C553.447,241.983,561.757,231.66,562.716,219.134L562.716,219.134C564.121,200.784,549.238,184.681,529.47,183.167L529.47,183.167C516.163,182.148,504.06,188.016,497.126,197.547L497.126,197.547C491.674,187.236,477.461,179.182,460.25,177.865L460.25,177.865C458.616,177.74,456.995,177.678,455.401,177.678L455.401,177.678C434.749,177.677,417.938,187.924,416.872,201.839" Height="174.429" Canvas.Left="368.542" Stretch="Fill" Canvas.Top="153.697" Width="176.528">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.508" GradientOrigin="0.5,0.508" RadiusY="-0.501" RadiusX="-0.495">
+							<GradientStop Color="WhiteSmoke" Offset="0"/>
+							<GradientStop Color="sc#1, 0.8348255, 0.8641353, 0.9006734" Offset="0.610443115234375"/>
+							<GradientStop Color="sc#1, 0.6646485, 0.7576819, 0.8736591" Offset="0.7698894739151001"/>
+							<GradientStop Color="sc#1, 0.438891739, 0.6164609, 0.8378219" Offset="0.87665826082229614"/>
+							<GradientStop Color="sc#1, 0.168899119, 0.447568417, 0.794962645" Offset="0.95973926782608032"/>
+							<GradientStop Color="sc#1, 0, 0.341914415, 0.768151164" Offset="1"/>
+							<GradientStop Color="#FF009EE3" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M392.9893,255.3945C391.9833,268.5295,398.4003,280.6015,408.8603,287.8915C403.9053,293.3735,400.5963,300.6995,399.9643,308.9415C398.5503,327.4025,411.0493,343.4165,427.8853,344.7075C434.7223,345.2305,441.2063,343.2115,446.6123,339.4315C451.6373,346.5145,459.3113,351.3395,468.2343,352.0245C476.1753,352.6315,483.6353,349.8425,489.4483,344.8335C492.0813,345.4445,494.8023,345.8765,497.6043,346.0905C523.6703,348.0875,546.2023,331.3945,547.9323,308.8045C548.1203,306.3545,548.0433,303.9405,547.7443,301.5725C559.6333,298.0445,568.4583,288.7535,569.3423,277.2135C570.4623,262.5935,558.4583,249.5785,541.9823,246.7985C553.4473,241.9835,561.7573,231.6595,562.7163,219.1335C564.1213,200.7845,549.2373,184.6815,529.4693,183.1665C516.1633,182.1475,504.0603,188.0155,497.1263,197.5465C491.6753,187.2355,477.4613,179.1825,460.2503,177.8645C437.4423,176.1175,418.0203,186.8505,416.8723,201.8385C416.3023,209.2835,420.3483,216.3725,427.3583,221.8405C409.1413,223.5635,394.3653,237.4415,392.9893,255.3945z" Height="176.429" Canvas.Left="367.542" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Canvas.Top="152.697" Width="178.529"/>
+			</Canvas>
+		</Canvas>
+	</Grid>
+</UserControl>

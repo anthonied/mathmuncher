@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="ExercisePortSoap11" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:8080/mathmuncher/ws/exercise"
+                binding="basicHttpBinding" bindingConfiguration="ExercisePortSoap11"
+                contract="Exercise.ExercisePort" name="ExercisePortSoap11" />
+        </client>
+    </system.serviceModel>
+</configuration>

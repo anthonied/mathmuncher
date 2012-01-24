@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:sch="http://mathmuncher.co.za/ws/schemas/ex" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://mathmuncher.co.za/ws/schemas/ex" targetNamespace="http://mathmuncher.co.za/ws/schemas/ex" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://mathmuncher.co.za/ws/schemas/ex" xmlns="http://www.w3.org/2001/XMLSchema">
+      <simpleType tns:maxOccurs="1" tns:minOccurs="1" name="exerciseType">
+        <restriction base="string">
+          <enumeration value="MULTIPLICATION" />
+          <enumeration value="DIVISION" />
+          <enumeration value="ADDITION" />
+          <enumeration value="MINUS" />
+        </restriction>
+      </simpleType>
+      <element tns:maxOccurs="1" tns:minOccurs="0" name="anthropodExerciseResponse">
+        <complexType>
+          <sequence>
+            <element minOccurs="0" maxOccurs="unbounded" name="anthropod">
+              <complexType>
+                <simpleContent>
+                  <extension base="string">
+                    <attribute name="body" type="int" use="required" />
+                    <attribute name="legs" type="string" use="required" />
+                  </extension>
+                </simpleContent>
+              </complexType>
+            </element>
+          </sequence>
+          <attribute name="type" type="tns:exerciseType" />
+        </complexType>
+      </element>
+      <element tns:maxOccurs="1" tns:minOccurs="0" name="anthropodExerciseRequest">
+        <complexType>
+          <attribute name="type" type="tns:exerciseType" />
+        </complexType>
+      </element>
+    </schema>
+  </wsdl:types>
+  <wsdl:message name="anthropodExerciseRequest">
+    <wsdl:part name="anthropodExerciseRequest" element="tns:anthropodExerciseRequest" />
+  </wsdl:message>
+  <wsdl:message name="anthropodExerciseResponse">
+    <wsdl:part name="anthropodExerciseResponse" element="tns:anthropodExerciseResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ExercisePort">
+    <wsdl:operation name="anthropodExercise">
+      <wsdl:input name="anthropodExerciseRequest" message="tns:anthropodExerciseRequest" />
+      <wsdl:output name="anthropodExerciseResponse" message="tns:anthropodExerciseResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ExercisePortSoap11" type="tns:ExercisePort">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="anthropodExercise">
+      <soap:operation soapAction="" />
+      <wsdl:input name="anthropodExerciseRequest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="anthropodExerciseResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ExercisePortService">
+    <wsdl:port name="ExercisePortSoap11" binding="tns:ExercisePortSoap11">
+      <soap:address location="http://localhost:8080/mathmuncher/ws/exercise" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

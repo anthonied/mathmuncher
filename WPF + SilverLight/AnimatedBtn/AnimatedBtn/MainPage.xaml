@@ -1,0 +1,613 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	x:Class="AnimatedBtn.MainPage"
+	Width="350" Height="400">
+
+	<UserControl.Resources>
+		<Style x:Key="PlayBtn" TargetType="Button">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Canvas Height="29">
+							<VisualStateManager.VisualStateGroups>
+								<VisualStateGroup x:Name="CommonStates">
+									<VisualState x:Name="Normal"/>
+									<VisualState x:Name="MouseOver">
+										<Storyboard AutoReverse="True" RepeatBehavior="Forever">
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.StartPoint)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.500860035419464,0.501686215400696"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.84969774882,0.502215147018433"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(LineSegment.Point)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="12.6843166351318,13.378212928772"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="27.0331026713053,13.3787517547607"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(LineSegment.Point)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.499450176954269,26.9403285980225"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.8482882181803,26.9408683776855"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[6].(BezierSegment.Point2)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.500860035419464,0.501686215400696"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.84969774882,0.502215147018433"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[6].(BezierSegment.Point3)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.500860035419464,0.501686215400696"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.84969774882,0.502215147018433"/>
+											</PointAnimationUsingKeyFrames>
+											<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="path1">
+												<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+												<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="13.986"/>
+											</DoubleAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point2)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="78.9986114501953,0.500301837921143"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="92.5747807820638,0.500334620475769"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point3)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="78.9986114501953,0.500301837921143"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="92.5747807820638,0.500334620475769"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(LineSegment.Point)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="91.0820617675781,13.4169578552246"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="104.658231099447,13.4169902801514"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(LineSegment.Point)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="79.1652984619141,26.9180335998535"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="92.7414677937825,26.9180660247803"/>
+											</PointAnimationUsingKeyFrames>
+										</Storyboard>
+									</VisualState>
+									<VisualState x:Name="Pressed"/>
+									<VisualState x:Name="Disabled"/>
+								</VisualStateGroup>
+							</VisualStateManager.VisualStateGroups>
+							<Rectangle Fill="Black" Stroke="Black" RadiusX="4" RadiusY="4" Height="29" Width="128"/>
+							<Path x:Name="path1" Data="M79.916664,1.250002 L91.916336,14.25034 L80.083,27.667025 L86.333542,27.667025 L98.166519,14.167019 L86.24942,1.2503396 z" Stretch="Fill" UseLayoutRounding="False" Width="19.239" RenderTransformOrigin="0.5,0.5" Height="27.418" Canvas.Left="81.332" Canvas.Top="0.749" d:LayoutOverrides="HorizontalAlignment">
+								<Path.RenderTransform>
+									<CompositeTransform/>
+								</Path.RenderTransform>
+								<Path.Fill>
+									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+										<GradientStop Color="#FF8FDEFC" Offset="0"/>
+										<GradientStop Color="#FF0B7FA9" Offset="0.936"/>
+										<GradientStop Color="#FE8CDCFB" Offset="1"/>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+							<Path x:Name="path2" Stroke="#FF63676A" UseLayoutRounding="False" Height="27.418" Canvas.Left="0.835" Canvas.Top="0.749" Width="105.498">
+								<Path.Data>
+									<PathGeometry FillRule="EvenOdd">
+										<PathFigure IsFilled="True" IsClosed="True" StartPoint="0.5,3.75008392333984">
+											<BezierSegment Point3="3.91622352600098,0.5" Point2="0.999910593032837,0.5" Point1="0.5,3.75008392333984"/>
+											<BezierSegment Point3="78.9986724853516,0.500334620475769" Point2="78.9986724853516,0.500334620475769" Point1="6.8325366973877,0.5"/>
+											<LineSegment Point="91.0821228027344,13.4169902801514"/>
+											<LineSegment Point="79.1653594970703,26.9180660247803"/>
+											<LineSegment Point="3.66692614555359,26.8347320556641"/>
+											<BezierSegment Point3="0.583663821220398,23.9182052612305" Point2="0.916990160942078,26.5850448608398" Point1="3.66692614555359,26.8347320556641"/>
+											<BezierSegment Point3="0.5,3.75008392333984" Point2="0.5,3.75008392333984" Point1="0.500332236289978,21.168025970459"/>
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+								<Path.Fill>
+									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+										<GradientStop Color="#FF505559" Offset="0"/>
+										<GradientStop Color="#FF292929" Offset="1"/>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+							<Path x:Name="path" UseLayoutRounding="False" Width="37.265" Stroke="#FF272727" Height="27.491" Canvas.Left="89.893" Canvas.Top="0.75">
+								<Path.Data>
+									<PathGeometry FillRule="EvenOdd">
+										<PathFigure IsFilled="True" IsClosed="True" StartPoint="0.500860035419464,0.5022252202034">
+											<LineSegment Point="12.6843166351318,13.3787517547607"/>
+											<LineSegment Point="0.499450176954269,26.9408683776855"/>
+											<LineSegment Point="33.6820983886719,26.9900779724121"/>
+											<BezierSegment Point3="36.7469062805176,23.6832294464111" Point2="36.6844825744629,26.2430629730225" Point1="33.6820983886719,26.9900779724121"/>
+											<BezierSegment Point3="36.6860237121582,3.38305163383484" Point2="36.6860237121582,3.38305163383484" Point1="36.8093376159668,21.1233940124512"/>
+											<BezierSegment Point3="33.8610000610352,0.5" Point2="36.444034576416,0.800189197063446" Point1="36.6860237121582,3.38305163383484"/>
+											<BezierSegment Point3="0.500860035419464,0.5022252202034" Point2="0.500860035419464,0.5022252202034" Point1="31.3013725280762,0.562434852123261"/>
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+								<Path.Fill>
+									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+										<GradientStop Color="#FF333438" Offset="0"/>
+										<GradientStop Color="#FF050505" Offset="1"/>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+							<ContentPresenter Canvas.Left="7" Canvas.Top="6" Width="121"/>
+						</Canvas>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Style x:Key="ButtonStyleGreen" TargetType="Button">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Canvas Height="29">
+							<VisualStateManager.VisualStateGroups>
+								<VisualStateGroup x:Name="CommonStates">
+									<VisualState x:Name="Normal"/>
+									<VisualState x:Name="MouseOver">
+										<Storyboard AutoReverse="True" RepeatBehavior="Forever">
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.StartPoint)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.500860035419464,0.501686215400696"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.84969774882,0.502215147018433"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(LineSegment.Point)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="12.6843166351318,13.378212928772"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="27.0331026713053,13.3787517547607"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(LineSegment.Point)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.499450176954269,26.9403285980225"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.8482882181803,26.9408683776855"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[6].(BezierSegment.Point2)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.500860035419464,0.501686215400696"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.84969774882,0.502215147018433"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[6].(BezierSegment.Point3)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.500860035419464,0.501686215400696"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.84969774882,0.502215147018433"/>
+											</PointAnimationUsingKeyFrames>
+											<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="path1">
+												<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+												<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="13.986"/>
+											</DoubleAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point2)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="78.9986114501953,0.500301837921143"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="92.5747807820638,0.500334620475769"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point3)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="78.9986114501953,0.500301837921143"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="92.5747807820638,0.500334620475769"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(LineSegment.Point)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="91.0820617675781,13.4169578552246"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="104.658231099447,13.4169902801514"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(LineSegment.Point)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="79.1652984619141,26.9180335998535"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="92.7414677937825,26.9180660247803"/>
+											</PointAnimationUsingKeyFrames>
+										</Storyboard>
+									</VisualState>
+									<VisualState x:Name="Pressed"/>
+									<VisualState x:Name="Disabled"/>
+								</VisualStateGroup>
+							</VisualStateManager.VisualStateGroups>
+							<Rectangle Fill="Black" Stroke="Black" RadiusX="4" RadiusY="4" Height="29" Width="128"/>
+							<Path x:Name="path1" Data="M79.916664,1.250002 L91.916336,14.25034 L80.083,27.667025 L86.333542,27.667025 L98.166519,14.167019 L86.24942,1.2503396 z" Stretch="Fill" UseLayoutRounding="False" Width="19.239" RenderTransformOrigin="0.5,0.5" Height="27.418" Canvas.Left="81.332" Canvas.Top="0.749" d:LayoutOverrides="HorizontalAlignment">
+								<Path.RenderTransform>
+									<CompositeTransform/>
+								</Path.RenderTransform>
+								<Path.Fill>
+									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+										<GradientStop Color="#FF00FF28" Offset="0"/>
+										<GradientStop Color="#FF0BA939" Offset="0.91"/>
+										<GradientStop Color="#FE00FF10" Offset="1"/>
+										<GradientStop Color="#FF0AAB38" Offset="0.258"/>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+							<Path x:Name="path2" Stroke="#FF63676A" UseLayoutRounding="False" Height="27.418" Canvas.Left="0.835" Canvas.Top="0.749" Width="105.498">
+								<Path.Data>
+									<PathGeometry FillRule="EvenOdd">
+										<PathFigure IsFilled="True" IsClosed="True" StartPoint="0.5,3.75008392333984">
+											<BezierSegment Point3="3.91622352600098,0.5" Point2="0.999910593032837,0.5" Point1="0.5,3.75008392333984"/>
+											<BezierSegment Point3="78.9986724853516,0.500334620475769" Point2="78.9986724853516,0.500334620475769" Point1="6.8325366973877,0.5"/>
+											<LineSegment Point="91.0821228027344,13.4169902801514"/>
+											<LineSegment Point="79.1653594970703,26.9180660247803"/>
+											<LineSegment Point="3.66692614555359,26.8347320556641"/>
+											<BezierSegment Point3="0.583663821220398,23.9182052612305" Point2="0.916990160942078,26.5850448608398" Point1="3.66692614555359,26.8347320556641"/>
+											<BezierSegment Point3="0.5,3.75008392333984" Point2="0.5,3.75008392333984" Point1="0.500332236289978,21.168025970459"/>
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+								<Path.Fill>
+									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+										<GradientStop Color="#FF505559" Offset="0"/>
+										<GradientStop Color="#FF292929" Offset="1"/>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+							<Path x:Name="path" UseLayoutRounding="False" Width="37.265" Stroke="#FF272727" Height="27.491" Canvas.Left="89.893" Canvas.Top="0.75">
+								<Path.Data>
+									<PathGeometry FillRule="EvenOdd">
+										<PathFigure IsFilled="True" IsClosed="True" StartPoint="0.500860035419464,0.5022252202034">
+											<LineSegment Point="12.6843166351318,13.3787517547607"/>
+											<LineSegment Point="0.499450176954269,26.9408683776855"/>
+											<LineSegment Point="33.6820983886719,26.9900779724121"/>
+											<BezierSegment Point3="36.7469062805176,23.6832294464111" Point2="36.6844825744629,26.2430629730225" Point1="33.6820983886719,26.9900779724121"/>
+											<BezierSegment Point3="36.6860237121582,3.38305163383484" Point2="36.6860237121582,3.38305163383484" Point1="36.8093376159668,21.1233940124512"/>
+											<BezierSegment Point3="33.8610000610352,0.5" Point2="36.444034576416,0.800189197063446" Point1="36.6860237121582,3.38305163383484"/>
+											<BezierSegment Point3="0.500860035419464,0.5022252202034" Point2="0.500860035419464,0.5022252202034" Point1="31.3013725280762,0.562434852123261"/>
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+								<Path.Fill>
+									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+										<GradientStop Color="#FF333438" Offset="0"/>
+										<GradientStop Color="#FF050505" Offset="1"/>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+							<ContentPresenter Canvas.Left="7" Canvas.Top="6" Width="121"/>
+						</Canvas>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Style x:Key="ButtonStyleRed" TargetType="Button">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Canvas Height="29">
+							<VisualStateManager.VisualStateGroups>
+								<VisualStateGroup x:Name="CommonStates">
+									<VisualState x:Name="Normal"/>
+									<VisualState x:Name="MouseOver">
+										<Storyboard AutoReverse="True" RepeatBehavior="Forever">
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.StartPoint)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.500860035419464,0.501686215400696"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.84969774882,0.502215147018433"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(LineSegment.Point)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="12.6843166351318,13.378212928772"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="27.0331026713053,13.3787517547607"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(LineSegment.Point)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.499450176954269,26.9403285980225"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.8482882181803,26.9408683776855"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[6].(BezierSegment.Point2)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.500860035419464,0.501686215400696"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.84969774882,0.502215147018433"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[6].(BezierSegment.Point3)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.500860035419464,0.501686215400696"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.84969774882,0.502215147018433"/>
+											</PointAnimationUsingKeyFrames>
+											<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="path1">
+												<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+												<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="13.986"/>
+											</DoubleAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point2)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="78.9986114501953,0.500301837921143"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="92.5747807820638,0.500334620475769"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point3)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="78.9986114501953,0.500301837921143"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="92.5747807820638,0.500334620475769"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(LineSegment.Point)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="91.0820617675781,13.4169578552246"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="104.658231099447,13.4169902801514"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(LineSegment.Point)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="79.1652984619141,26.9180335998535"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="92.7414677937825,26.9180660247803"/>
+											</PointAnimationUsingKeyFrames>
+										</Storyboard>
+									</VisualState>
+									<VisualState x:Name="Pressed"/>
+									<VisualState x:Name="Disabled"/>
+								</VisualStateGroup>
+							</VisualStateManager.VisualStateGroups>
+							<Rectangle Fill="Black" Stroke="Black" RadiusX="4" RadiusY="4" Height="29" Width="128"/>
+							<Path x:Name="path1" Data="M79.916664,1.250002 L91.916336,14.25034 L80.083,27.667025 L86.333542,27.667025 L98.166519,14.167019 L86.24942,1.2503396 z" Stretch="Fill" UseLayoutRounding="False" Width="19.239" RenderTransformOrigin="0.5,0.5" Height="27.418" Canvas.Left="81.332" Canvas.Top="0.749" d:LayoutOverrides="HorizontalAlignment">
+								<Path.RenderTransform>
+									<CompositeTransform/>
+								</Path.RenderTransform>
+								<Path.Fill>
+									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+										<GradientStop Color="Red" Offset="0.133"/>
+										<GradientStop Color="#FFBC0D0D" Offset="0.914"/>
+										<GradientStop Color="#FEFF0000" Offset="0.996"/>
+										<GradientStop Color="#FFBD0C0C" Offset="0.253"/>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+							<Path x:Name="path2" Stroke="#FF63676A" UseLayoutRounding="False" Height="27.418" Canvas.Left="0.835" Canvas.Top="0.749" Width="105.498">
+								<Path.Data>
+									<PathGeometry FillRule="EvenOdd">
+										<PathFigure IsFilled="True" IsClosed="True" StartPoint="0.5,3.75008392333984">
+											<BezierSegment Point3="3.91622352600098,0.5" Point2="0.999910593032837,0.5" Point1="0.5,3.75008392333984"/>
+											<BezierSegment Point3="78.9986724853516,0.500334620475769" Point2="78.9986724853516,0.500334620475769" Point1="6.8325366973877,0.5"/>
+											<LineSegment Point="91.0821228027344,13.4169902801514"/>
+											<LineSegment Point="79.1653594970703,26.9180660247803"/>
+											<LineSegment Point="3.66692614555359,26.8347320556641"/>
+											<BezierSegment Point3="0.583663821220398,23.9182052612305" Point2="0.916990160942078,26.5850448608398" Point1="3.66692614555359,26.8347320556641"/>
+											<BezierSegment Point3="0.5,3.75008392333984" Point2="0.5,3.75008392333984" Point1="0.500332236289978,21.168025970459"/>
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+								<Path.Fill>
+									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+										<GradientStop Color="#FF505559" Offset="0"/>
+										<GradientStop Color="#FF292929" Offset="1"/>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+							<Path x:Name="path" UseLayoutRounding="False" Width="37.265" Stroke="#FF272727" Height="27.491" Canvas.Left="89.893" Canvas.Top="0.75">
+								<Path.Data>
+									<PathGeometry FillRule="EvenOdd">
+										<PathFigure IsFilled="True" IsClosed="True" StartPoint="0.500860035419464,0.5022252202034">
+											<LineSegment Point="12.6843166351318,13.3787517547607"/>
+											<LineSegment Point="0.499450176954269,26.9408683776855"/>
+											<LineSegment Point="33.6820983886719,26.9900779724121"/>
+											<BezierSegment Point3="36.7469062805176,23.6832294464111" Point2="36.6844825744629,26.2430629730225" Point1="33.6820983886719,26.9900779724121"/>
+											<BezierSegment Point3="36.6860237121582,3.38305163383484" Point2="36.6860237121582,3.38305163383484" Point1="36.8093376159668,21.1233940124512"/>
+											<BezierSegment Point3="33.8610000610352,0.5" Point2="36.444034576416,0.800189197063446" Point1="36.6860237121582,3.38305163383484"/>
+											<BezierSegment Point3="0.500860035419464,0.5022252202034" Point2="0.500860035419464,0.5022252202034" Point1="31.3013725280762,0.562434852123261"/>
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+								<Path.Fill>
+									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+										<GradientStop Color="#FF333438" Offset="0"/>
+										<GradientStop Color="#FF050505" Offset="1"/>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+							<ContentPresenter Canvas.Left="7" Canvas.Top="6" Width="121"/>
+						</Canvas>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Style x:Key="ButtonStyleYellow" TargetType="Button">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Canvas Height="29">
+							<VisualStateManager.VisualStateGroups>
+								<VisualStateGroup x:Name="CommonStates">
+									<VisualState x:Name="Normal"/>
+									<VisualState x:Name="MouseOver">
+										<Storyboard AutoReverse="True" RepeatBehavior="Forever">
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.StartPoint)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.500860035419464,0.501686215400696"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.84969774882,0.502215147018433"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(LineSegment.Point)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="12.6843166351318,13.378212928772"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="27.0331026713053,13.3787517547607"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(LineSegment.Point)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.499450176954269,26.9403285980225"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.8482882181803,26.9408683776855"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[6].(BezierSegment.Point2)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.500860035419464,0.501686215400696"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.84969774882,0.502215147018433"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[6].(BezierSegment.Point3)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.500860035419464,0.501686215400696"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.84969774882,0.502215147018433"/>
+											</PointAnimationUsingKeyFrames>
+											<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="path1">
+												<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+												<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="13.986"/>
+											</DoubleAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point2)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="78.9986114501953,0.500301837921143"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="92.5747807820638,0.500334620475769"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point3)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="78.9986114501953,0.500301837921143"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="92.5747807820638,0.500334620475769"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(LineSegment.Point)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="91.0820617675781,13.4169578552246"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="104.658231099447,13.4169902801514"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(LineSegment.Point)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="79.1652984619141,26.9180335998535"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="92.7414677937825,26.9180660247803"/>
+											</PointAnimationUsingKeyFrames>
+										</Storyboard>
+									</VisualState>
+									<VisualState x:Name="Pressed"/>
+									<VisualState x:Name="Disabled"/>
+								</VisualStateGroup>
+							</VisualStateManager.VisualStateGroups>
+							<Rectangle Fill="Black" Stroke="Black" RadiusX="4" RadiusY="4" Height="29" Width="128"/>
+							<Path x:Name="path1" Data="M79.916664,1.250002 L91.916336,14.25034 L80.083,27.667025 L86.333542,27.667025 L98.166519,14.167019 L86.24942,1.2503396 z" Stretch="Fill" UseLayoutRounding="False" Width="19.239" RenderTransformOrigin="0.5,0.5" Height="27.418" Canvas.Left="81.332" Canvas.Top="0.749" d:LayoutOverrides="HorizontalAlignment">
+								<Path.RenderTransform>
+									<CompositeTransform/>
+								</Path.RenderTransform>
+								<Path.Fill>
+									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+										<GradientStop Color="#FFF6FC8F" Offset="0.12"/>
+										<GradientStop Color="#FFCDD80B" Offset="0.906"/>
+										<GradientStop Color="#FEE6FF00" Offset="0.97"/>
+										<GradientStop Color="#FFCED90F" Offset="0.292"/>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+							<Path x:Name="path2" Stroke="#FF63676A" UseLayoutRounding="False" Height="27.418" Canvas.Left="0.835" Canvas.Top="0.749" Width="105.498">
+								<Path.Data>
+									<PathGeometry FillRule="EvenOdd">
+										<PathFigure IsFilled="True" IsClosed="True" StartPoint="0.5,3.75008392333984">
+											<BezierSegment Point3="3.91622352600098,0.5" Point2="0.999910593032837,0.5" Point1="0.5,3.75008392333984"/>
+											<BezierSegment Point3="78.9986724853516,0.500334620475769" Point2="78.9986724853516,0.500334620475769" Point1="6.8325366973877,0.5"/>
+											<LineSegment Point="91.0821228027344,13.4169902801514"/>
+											<LineSegment Point="79.1653594970703,26.9180660247803"/>
+											<LineSegment Point="3.66692614555359,26.8347320556641"/>
+											<BezierSegment Point3="0.583663821220398,23.9182052612305" Point2="0.916990160942078,26.5850448608398" Point1="3.66692614555359,26.8347320556641"/>
+											<BezierSegment Point3="0.5,3.75008392333984" Point2="0.5,3.75008392333984" Point1="0.500332236289978,21.168025970459"/>
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+								<Path.Fill>
+									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+										<GradientStop Color="#FF505559" Offset="0"/>
+										<GradientStop Color="#FF292929" Offset="1"/>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+							<Path x:Name="path" UseLayoutRounding="False" Width="37.265" Stroke="#FF272727" Height="27.491" Canvas.Left="89.893" Canvas.Top="0.75">
+								<Path.Data>
+									<PathGeometry FillRule="EvenOdd">
+										<PathFigure IsFilled="True" IsClosed="True" StartPoint="0.500860035419464,0.5022252202034">
+											<LineSegment Point="12.6843166351318,13.3787517547607"/>
+											<LineSegment Point="0.499450176954269,26.9408683776855"/>
+											<LineSegment Point="33.6820983886719,26.9900779724121"/>
+											<BezierSegment Point3="36.7469062805176,23.6832294464111" Point2="36.6844825744629,26.2430629730225" Point1="33.6820983886719,26.9900779724121"/>
+											<BezierSegment Point3="36.6860237121582,3.38305163383484" Point2="36.6860237121582,3.38305163383484" Point1="36.8093376159668,21.1233940124512"/>
+											<BezierSegment Point3="33.8610000610352,0.5" Point2="36.444034576416,0.800189197063446" Point1="36.6860237121582,3.38305163383484"/>
+											<BezierSegment Point3="0.500860035419464,0.5022252202034" Point2="0.500860035419464,0.5022252202034" Point1="31.3013725280762,0.562434852123261"/>
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+								<Path.Fill>
+									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+										<GradientStop Color="#FF333438" Offset="0"/>
+										<GradientStop Color="#FF050505" Offset="1"/>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+							<ContentPresenter Canvas.Left="7" Canvas.Top="6" Width="121"/>
+						</Canvas>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Style x:Key="ButtonStylePink" TargetType="Button">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Canvas Height="29">
+							<VisualStateManager.VisualStateGroups>
+								<VisualStateGroup x:Name="CommonStates">
+									<VisualState x:Name="Normal"/>
+									<VisualState x:Name="MouseOver">
+										<Storyboard AutoReverse="True" RepeatBehavior="Forever">
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.StartPoint)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.500860035419464,0.501686215400696"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.84969774882,0.502215147018433"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(LineSegment.Point)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="12.6843166351318,13.378212928772"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="27.0331026713053,13.3787517547607"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(LineSegment.Point)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.499450176954269,26.9403285980225"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.8482882181803,26.9408683776855"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[6].(BezierSegment.Point2)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.500860035419464,0.501686215400696"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.84969774882,0.502215147018433"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[6].(BezierSegment.Point3)" Storyboard.TargetName="path">
+												<EasingPointKeyFrame KeyTime="0" Value="0.500860035419464,0.501686215400696"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="14.84969774882,0.502215147018433"/>
+											</PointAnimationUsingKeyFrames>
+											<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="path1">
+												<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+												<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="13.986"/>
+											</DoubleAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point2)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="78.9986114501953,0.500301837921143"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="92.5747807820638,0.500334620475769"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point3)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="78.9986114501953,0.500301837921143"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="92.5747807820638,0.500334620475769"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(LineSegment.Point)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="91.0820617675781,13.4169578552246"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="104.658231099447,13.4169902801514"/>
+											</PointAnimationUsingKeyFrames>
+											<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(LineSegment.Point)" Storyboard.TargetName="path2">
+												<EasingPointKeyFrame KeyTime="0" Value="79.1652984619141,26.9180335998535"/>
+												<EasingPointKeyFrame KeyTime="0:0:0.3" Value="92.7414677937825,26.9180660247803"/>
+											</PointAnimationUsingKeyFrames>
+										</Storyboard>
+									</VisualState>
+									<VisualState x:Name="Pressed"/>
+									<VisualState x:Name="Disabled"/>
+								</VisualStateGroup>
+							</VisualStateManager.VisualStateGroups>
+							<Rectangle Fill="Black" Stroke="Black" RadiusX="4" RadiusY="4" Height="29" Width="128"/>
+							<Path x:Name="path1" Data="M79.916664,1.250002 L91.916336,14.25034 L80.083,27.667025 L86.333542,27.667025 L98.166519,14.167019 L86.24942,1.2503396 z" Stretch="Fill" UseLayoutRounding="False" Width="19.239" RenderTransformOrigin="0.5,0.5" Height="27.418" Canvas.Left="81.332" Canvas.Top="0.749" d:LayoutOverrides="HorizontalAlignment">
+								<Path.RenderTransform>
+									<CompositeTransform/>
+								</Path.RenderTransform>
+								<Path.Fill>
+									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+										<GradientStop Color="#FFFC8FE4" Offset="0.09"/>
+										<GradientStop Color="#FFD80B98" Offset="0.931"/>
+										<GradientStop Color="#FEFB8CE8" Offset="1"/>
+										<GradientStop Color="#FFD9119B" Offset="0.305"/>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+							<Path x:Name="path2" Stroke="#FF63676A" UseLayoutRounding="False" Height="27.418" Canvas.Left="0.835" Canvas.Top="0.749" Width="105.498">
+								<Path.Data>
+									<PathGeometry FillRule="EvenOdd">
+										<PathFigure IsFilled="True" IsClosed="True" StartPoint="0.5,3.75008392333984">
+											<BezierSegment Point3="3.91622352600098,0.5" Point2="0.999910593032837,0.5" Point1="0.5,3.75008392333984"/>
+											<BezierSegment Point3="78.9986724853516,0.500334620475769" Point2="78.9986724853516,0.500334620475769" Point1="6.8325366973877,0.5"/>
+											<LineSegment Point="91.0821228027344,13.4169902801514"/>
+											<LineSegment Point="79.1653594970703,26.9180660247803"/>
+											<LineSegment Point="3.66692614555359,26.8347320556641"/>
+											<BezierSegment Point3="0.583663821220398,23.9182052612305" Point2="0.916990160942078,26.5850448608398" Point1="3.66692614555359,26.8347320556641"/>
+											<BezierSegment Point3="0.5,3.75008392333984" Point2="0.5,3.75008392333984" Point1="0.500332236289978,21.168025970459"/>
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+								<Path.Fill>
+									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+										<GradientStop Color="#FF505559" Offset="0"/>
+										<GradientStop Color="#FF292929" Offset="1"/>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+							<Path x:Name="path" UseLayoutRounding="False" Width="37.265" Stroke="#FF272727" Height="27.491" Canvas.Left="89.893" Canvas.Top="0.75">
+								<Path.Data>
+									<PathGeometry FillRule="EvenOdd">
+										<PathFigure IsFilled="True" IsClosed="True" StartPoint="0.500860035419464,0.5022252202034">
+											<LineSegment Point="12.6843166351318,13.3787517547607"/>
+											<LineSegment Point="0.499450176954269,26.9408683776855"/>
+											<LineSegment Point="33.6820983886719,26.9900779724121"/>
+											<BezierSegment Point3="36.7469062805176,23.6832294464111" Point2="36.6844825744629,26.2430629730225" Point1="33.6820983886719,26.9900779724121"/>
+											<BezierSegment Point3="36.6860237121582,3.38305163383484" Point2="36.6860237121582,3.38305163383484" Point1="36.8093376159668,21.1233940124512"/>
+											<BezierSegment Point3="33.8610000610352,0.5" Point2="36.444034576416,0.800189197063446" Point1="36.6860237121582,3.38305163383484"/>
+											<BezierSegment Point3="0.500860035419464,0.5022252202034" Point2="0.500860035419464,0.5022252202034" Point1="31.3013725280762,0.562434852123261"/>
+										</PathFigure>
+									</PathGeometry>
+								</Path.Data>
+								<Path.Fill>
+									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+										<GradientStop Color="#FF333438" Offset="0"/>
+										<GradientStop Color="#FF050505" Offset="1"/>
+									</LinearGradientBrush>
+								</Path.Fill>
+							</Path>
+							<ContentPresenter Canvas.Left="7" Canvas.Top="6" Width="121"/>
+						</Canvas>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="239"/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<StackPanel Margin="0,68,0,0">
+			<Button x:Name="button" Content="Button One" Style="{StaticResource PlayBtn}" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,125,0"/>
+			<Button x:Name="button_Copy" Content="Button Two" Style="{StaticResource ButtonStyleGreen}" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,8,125,0"/>
+			<Button x:Name="button_Copy1" Content="Button Three" Style="{StaticResource ButtonStyleRed}" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,8,125,0"/>
+			<Button x:Name="button_Copy2" Content="Button Four" Style="{StaticResource ButtonStyleYellow}" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,8,125,0"/>
+			<Button x:Name="button_Copy3" Content="Button Five" Style="{StaticResource ButtonStylePink}" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,8,125,0"/>
+		</StackPanel>
+	</Grid>
+</UserControl>

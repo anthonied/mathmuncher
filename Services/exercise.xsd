@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://mathmuncher.co.za/ex/schemas" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Exercise" type="sch:ExerciseType" xmlns:sch="http://mathmuncher.co.za/ex/schemas"/>
+  <xs:complexType name="NodesType">
+    <xs:sequence>
+      <xs:element name="Node" maxOccurs="unbounded" minOccurs="1" type="xs:string">
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ClusterType">
+    <xs:sequence>
+      <xs:element type="sch:NodesType" name="Nodes" xmlns:sch="http://mathmuncher.co.za/ex/schemas"/>
+    </xs:sequence>
+    <xs:attribute type="xs:int" name="modifier" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="ExerciseType">
+    <xs:sequence>
+      <xs:element type="xs:dateTime" name="StartDate"/>
+      <xs:element type="xs:dateTime" name="EndDate"/>
+      <xs:element name="Type" maxOccurs="1" minOccurs="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="MULTIPLICATION"/>
+            <xs:enumeration value="DIVISION"/>
+            <xs:enumeration value="ADDITION"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="sch:ClustersType" name="Clusters" xmlns:sch="http://mathmuncher.co.za/ex/schemas"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ClustersType">
+    <xs:sequence>
+      <xs:element type="sch:ClusterType" name="Cluster" maxOccurs="unbounded" minOccurs="0" xmlns:sch="http://mathmuncher.co.za/ex/schemas"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

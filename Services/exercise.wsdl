@@ -1,0 +1,85 @@
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch0="http://mathmuncher.co.za/ws/schema/ex" xmlns:sch1="http://mathmuncher.co.za/ws/schema/ex"xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://mathmuncher.co.za/ws/schema/ex" targetNamespace="http://mathmuncher.co.za/ws/schema/ex">
+<wsdl:types>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://mathmuncher.co.za/ws/schema/ex">
+<element name="exercise" type="tns:exerciseType"/>
+<complexType name="exerciseType">
+<sequence>
+<element name="clusterQuestions" type="tns:clusterQuestionsType"/>
+</sequence>
+<attribute name="startDate" type="dateTime"/>
+<attribute name="endDate" type="dateTime"/>
+<attribute name="type">
+<simpleType>
+<restriction base="string">
+<enumeration value="MULTIPLICATION"/>
+<enumeration value="DIVISION"/>
+<enumeration value="ADDITION"/>
+</restriction>
+</simpleType>
+</attribute>
+</complexType>
+<complexType name="clusterQuestionsType">
+<sequence>
+<element maxOccurs="unbounded" name="clusterQuestion" type="tns:clusterQuestionType"/>
+</sequence>
+</complexType>
+<complexType name="clusterQuestionType">
+<simpleContent>
+<extension base="string">
+<attribute name="modifier" type="string" use="optional"/>
+<attribute name="nodes" type="string" use="optional"/>
+</extension>
+</simpleContent>
+</complexType>
+</schema>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://mathmuncher.co.za/ws/schema/ex">
+<element name="exerciseRequest" type="tns:exerciseRequestType"/>
+<complexType name="clusterQuestionConfigType">
+<simpleContent>
+<extension base="string">
+<attribute name="numberOfQuestions" type="int"/>
+<attribute name="numberOfNodes" type="int"/>
+<attribute name="allowedModifiers" type="string"/>
+<attribute name="allowedNodes" type="string"/>
+</extension>
+</simpleContent>
+</complexType>
+<complexType name="exerciseRequestType">
+<sequence>
+<element name="clusterQuestionConfig" type="tns:clusterQuestionConfigType"/>
+</sequence>
+<attribute name="type">
+<simpleType>
+<restriction base="string">
+<enumeration value="MULTIPLICATION"/>
+<enumeration value="DIVISION"/>
+<enumeration value="ADDITION"/>
+</restriction>
+</simpleType>
+</attribute>
+</complexType>
+</schema>
+</wsdl:types>
+<wsdl:message name="exerciseRequest">
+<wsdl:part element="tns:exerciseRequest" name="exerciseRequest"></wsdl:part>
+</wsdl:message>
+<wsdl:portType name="Exercise">
+<wsdl:operation name="exercise">
+<wsdl:input message="tns:exerciseRequest" name="exerciseRequest"></wsdl:input>
+</wsdl:operation>
+</wsdl:portType>
+<wsdl:binding name="ExerciseSoap11" type="tns:Exercise">
+<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+<wsdl:operation name="exercise">
+<soap:operation soapAction=""/>
+<wsdl:input name="exerciseRequest">
+<soap:body use="literal"/>
+</wsdl:input>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:service name="ExerciseService">
+<wsdl:port binding="tns:ExerciseSoap11" name="ExerciseSoap11">
+<soap:address location="http://localhost:8080/mathmuncher/exerciseService/"/>
+</wsdl:port>
+</wsdl:service>
+</wsdl:definitions>

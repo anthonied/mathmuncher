@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Play Front End 1Site", "Play Front End 1Site\", "{3911BE1A-9009-4E7A-AF01-AE507E2416F7}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Play Front End 1Site"
+		Debug.AspNetCompiler.PhysicalPath = "Play Front End 1Site\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Play Front End 1Site\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Play Front End 1Site"
+		Release.AspNetCompiler.PhysicalPath = "Play Front End 1Site\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Play Front End 1Site\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50521"
+		ProjOutputReferences = "{0cbff903-a894-4310-9744-6274e72bbcad}|ClientBin|false;"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Play Front End 1", "Play Front End 1\Play Front End 1.csproj", "{0CBFF903-A894-4310-9744-6274E72BBCAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3911BE1A-9009-4E7A-AF01-AE507E2416F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3911BE1A-9009-4E7A-AF01-AE507E2416F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3911BE1A-9009-4E7A-AF01-AE507E2416F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3911BE1A-9009-4E7A-AF01-AE507E2416F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CBFF903-A894-4310-9744-6274E72BBCAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CBFF903-A894-4310-9744-6274E72BBCAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CBFF903-A894-4310-9744-6274E72BBCAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CBFF903-A894-4310-9744-6274E72BBCAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

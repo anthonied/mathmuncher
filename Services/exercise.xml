@@ -1,0 +1,6 @@
+<exercise xmlns="http://mathmuncher.co.za/ex/schemas" startDate="2011-05-03 12:15" endDate="2011-05-03 13:30" type="MULTIPLICATION">
+    <clusterQuestions>
+        <clusterQuestion modifier="8" nodes="[3,6,7,8,1]"/>
+        <clusterQuestion modifier="3" nodes="[2,1,5,9,6]"/>
+    </clusterQuestions>
+</exercise>
