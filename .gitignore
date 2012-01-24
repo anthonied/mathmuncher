@@ -38,3 +38,4 @@ _bin_deployableAssemblies*/
 Logs
 ConnectionStrings.xml
 Uploaded files*/
+*.xap
