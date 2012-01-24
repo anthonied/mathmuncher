@@ -659,12 +659,12 @@
     					<CompositeTransform/>
     				</Path.RenderTransform>
     			</Path>
-    			<TextBlock x:Name="textBlock3" TextWrapping="Wrap" Text="? GGF ?" Width="94.217" HorizontalAlignment="Right" Margin="0,-24.589,-119.992,0" FontFamily="AmerType Md BT" FontSize="24" Height="36.544" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+    			<TextBlock x:Name="textBlock3" TextWrapping="Wrap" Text="? GGF ?" Width="94.217" HorizontalAlignment="Right" Margin="0,-24.589,-119.992,0" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Height="36.544" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
     				<TextBlock.RenderTransform>
     					<CompositeTransform/>
     				</TextBlock.RenderTransform>
     			</TextBlock>
-    			<TextBlock x:Name="textBlock4" TextWrapping="Wrap" Text="  ? ? ?" Width="94.217" HorizontalAlignment="Right" Margin="0,5.411,-122.992,0" FontFamily="AmerType Md BT" FontSize="24" Height="36.544" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+    			<TextBlock x:Name="textBlock4" TextWrapping="Wrap" Text="  ? ? ?" Width="94.217" HorizontalAlignment="Right" Margin="0,5.411,-122.992,0" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Height="36.544" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
     				<TextBlock.RenderTransform>
     					<CompositeTransform/>
     				</TextBlock.RenderTransform>
@@ -727,20 +727,20 @@
     					<CompositeTransform/>
     				</Path.RenderTransform>
     			</Path>
-    			<TextBlock x:Name="tbHeading1" TextWrapping="Wrap"  FontFamily="AmerType Md BT" FontSize="32" Foreground="#FFFDFDFD" FontWeight="Bold" Height="37" Canvas.Left="282" Canvas.Top="357" Width="309.969" TextDecorations="Underline" Text="{Binding sMainHeading}"/>
+    			<TextBlock x:Name="tbHeading1" TextWrapping="Wrap"  FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="32" Foreground="#FFFDFDFD" FontWeight="Bold" Height="37" Canvas.Left="282" Canvas.Top="357" Width="309.969" TextDecorations="Underline" Text="{Binding sMainHeading}"/>
     			
-    			<TextBlock x:Name="tbLessonIntro" TextWrapping="Wrap"  FontFamily="AmerType Md BT" FontSize="24" Foreground="#FFFDFDFD" Height="153.693" Canvas.Left="282" Canvas.Top="421" Width="616.929" Text="{Binding sMessageIntroduction}"/>
-    			<TextBlock x:Name="tbBubbleHeading" Height="100" Canvas.Left="464" TextWrapping="Wrap" Canvas.Top="256" Width="364.019" FontFamily="AmerType Md BT" FontSize="22.667" RenderTransformOrigin="0.5,0.5" Text="{Binding sLessonState1Heading}">
+    			<TextBlock x:Name="tbLessonIntro" TextWrapping="Wrap"  FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Foreground="#FFFDFDFD" Height="153.693" Canvas.Left="282" Canvas.Top="421" Width="616.929" Text="{Binding sMessageIntroduction}"/>
+    			<TextBlock x:Name="tbBubbleHeading" Height="100" Canvas.Left="464" TextWrapping="Wrap" Canvas.Top="256" Width="364.019" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="22.667" RenderTransformOrigin="0.5,0.5" Text="{Binding sLessonState1Heading}">
     				<TextBlock.RenderTransform>
     					<CompositeTransform/>
     				</TextBlock.RenderTransform>
     			</TextBlock>
     			<Canvas x:Name="FaktoreVisual1" Height="130.433" Canvas.Left="502.313" Canvas.Top="343.786" Width="279.451" Visibility="Collapsed">
     				<Canvas x:Name="Factor1" Height="35.332" Width="36.132">
-    					<TextBlock x:Name="F" Height="23" TextWrapping="Wrap" Width="11.059" FontFamily="AmerType Md BT" Text="F" FontSize="24"/>
-    					<TextBlock x:Name="Factor" Height="21.332" Canvas.Left="12.059" TextWrapping="Wrap" Canvas.Top="14" Width="24.073" Text="10" FontFamily="AmerType Md BT" FontSize="13.333"/>
+    					<TextBlock x:Name="F" Height="23" TextWrapping="Wrap" Width="11.059" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" Text="F" FontSize="24"/>
+    					<TextBlock x:Name="Factor" Height="21.332" Canvas.Left="12.059" TextWrapping="Wrap" Canvas.Top="14" Width="24.073" Text="10" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="13.333"/>
     				</Canvas>
-    				<TextBlock Height="99.433" Canvas.Left="40.102" TextWrapping="Wrap" Canvas.Top="2" Width="225.206" FontFamily="AmerType Md BT" FontSize="24"><Run Text=" = 10 ÷  1  = 10"/><LineBreak/><Run Text="     10 ÷  2  = 5"/><LineBreak/><Run Text="     10 ÷  5  = 2"/><LineBreak/><Run Text="     10 ÷  10= 1"/></TextBlock>
+    				<TextBlock Height="99.433" Canvas.Left="40.102" TextWrapping="Wrap" Canvas.Top="2" Width="225.206" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24"><Run Text=" = 10 ÷  1  = 10"/><LineBreak/><Run Text="     10 ÷  2  = 5"/><LineBreak/><Run Text="     10 ÷  5  = 2"/><LineBreak/><Run Text="     10 ÷  10= 1"/></TextBlock>
     				<Ellipse Height="27" Canvas.Left="142.65" Canvas.Top="3.458" Width="27" Stroke="Black"/>
     				<Ellipse Height="27" Canvas.Left="144.65" Canvas.Top="32.458" Width="27" Stroke="Black"/>
     				<Ellipse Height="27" Canvas.Left="144.65" Canvas.Top="59.458" Width="27" Stroke="Black"/>
@@ -773,14 +773,14 @@
     			<Canvas x:Name="Faktore_Visual2" Height="91.173" Canvas.Left="479.033" Opacity="0" Canvas.Top="265.827" Width="329.351" Visibility="Collapsed">
     				<Path x:Name="Path" Width="107.536" Height="21.5" Canvas.Left="154" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FF000000" Fill="#FFFFFFFF" Data="F1 M 0.5,21C 0.5,9.67819 14.8269,0.499969 32.5,0.499969C 50.1731,0.499969 64.5,9.67819 64.5,21" Canvas.Top="-16"/>
     				<Path x:Name="Path_Copy" Width="44.533" Height="9" Canvas.Left="182" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FF000000" Fill="#FFFFFFFF" Data="F1 M 0.5,21C 0.5,9.67819 14.8269,0.499969 32.5,0.499969C 50.1731,0.499969 64.5,9.67819 64.5,21" Canvas.Top="-3.5"/>
-    				<TextBlock x:Name="textBlock" Height="34.735" Canvas.Left="33.084" TextWrapping="Wrap" Text="Die" Canvas.Top="22.878" Width="72.129" FontFamily="AmerType Md BT" FontSize="21.333"/>
+    				<TextBlock x:Name="textBlock" Height="34.735" Canvas.Left="33.084" TextWrapping="Wrap" Text="Die" Canvas.Top="22.878" Width="72.129" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="21.333"/>
     				<Canvas x:Name="Factor3" Height="35.332" Width="36.132" Opacity="0">
-    					<TextBlock x:Name="F1" Height="23" TextWrapping="Wrap" Width="11.059" FontFamily="AmerType Md BT" Text="F" FontSize="24"/>
-    					<TextBlock x:Name="Factor2" Height="21.332" Canvas.Left="12.059" TextWrapping="Wrap" Canvas.Top="14" Width="24.073" Text="10" FontFamily="AmerType Md BT" FontSize="13.333"/>
+    					<TextBlock x:Name="F1" Height="23" TextWrapping="Wrap" Width="11.059" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" Text="F" FontSize="24"/>
+    					<TextBlock x:Name="Factor2" Height="21.332" Canvas.Left="12.059" TextWrapping="Wrap" Canvas.Top="14" Width="24.073" Text="10" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="13.333"/>
     				</Canvas>
-    				<TextBlock x:Name="tbLine2" Height="34.735" Canvas.Left="101" TextWrapping="Wrap" Canvas.Top="8" Width="220.351" FontFamily="AmerType Md BT" FontSize="21.333" Opacity="0"/>
-    				<TextBlock x:Name="textBlock_Copy2" Height="31.907" Canvas.Left="127.125" TextWrapping="Wrap" Canvas.Top="39.166" Width="166.393" FontFamily="AmerType Md BT" FontSize="21.333" Opacity="0"/>
-    				<TextBlock x:Name="textBlock_Copy" Height="31.907" Canvas.Left="127.125" TextWrapping="Wrap" Canvas.Top="39.166" Width="139.404" FontFamily="AmerType Md BT" FontSize="21.333" Opacity="0"/>
+    				<TextBlock x:Name="tbLine2" Height="34.735" Canvas.Left="101" TextWrapping="Wrap" Canvas.Top="8" Width="220.351" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="21.333" Opacity="0"/>
+    				<TextBlock x:Name="textBlock_Copy2" Height="31.907" Canvas.Left="127.125" TextWrapping="Wrap" Canvas.Top="39.166" Width="166.393" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="21.333" Opacity="0"/>
+    				<TextBlock x:Name="textBlock_Copy" Height="31.907" Canvas.Left="127.125" TextWrapping="Wrap" Canvas.Top="39.166" Width="139.404" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="21.333" Opacity="0"/>
     			</Canvas>
     			<Ellipse x:Name="ellipse" Height="103.614" Canvas.Left="500.328" Canvas.Top="433.332" Width="31.711" Stroke="Black" Visibility="Collapsed"/>
     			<Ellipse x:Name="ellipse1" Height="103.614" Canvas.Left="557.023" Canvas.Top="433.332" Width="31.711" Stroke="Black" Visibility="Collapsed"/>
@@ -792,7 +792,7 @@
     			<Ellipse x:Name="ellipseanswer" Height="40" Canvas.Left="468.325" Canvas.Top="498.408" Width="40" Stroke="Black" RenderTransformOrigin="0.5,0.5" Fill="#FF001E31" Visibility="Collapsed"/>
     		</Canvas>
     		<TextBox x:Name="txtHidden" Height="10" Canvas.Left="221.848" TextWrapping="Wrap" Text="TextBox" Canvas.Top="624.767" Width="10" BorderThickness="0" FontSize="8" Opacity="0"/>
-    		<TextBlock x:Name="textBlock5" Height="89" TextWrapping="Wrap" Text="Jy soek die Grootste Faktor wat in die 2 getalle se lys Faktore voorkom." Width="321" Foreground="White" FontFamily="AmerType Md BT" FontSize="24" RenderTransformOrigin="0.5,0.5" Canvas.Left="248" Canvas.Top="434" Visibility="Collapsed"/>
+    		<TextBlock x:Name="textBlock5" Height="89" TextWrapping="Wrap" Text="Jy soek die Grootste Faktor wat in die 2 getalle se lys Faktore voorkom." Width="321" Foreground="White" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" RenderTransformOrigin="0.5,0.5" Canvas.Left="248" Canvas.Top="434" Visibility="Collapsed"/>
     		<Viewbox x:Name="Eyes" Height="43" Width="89" RenderTransformOrigin="0.5,0.5" Canvas.Left="321" Canvas.Top="390" Visibility="Collapsed">
     			<Grid Height="42.9809875488281" Width="88.9339942932129">
     				<Path Data="M452.0381,487.4746C462.2991,487.8416,470.3791,494.8246,470.0821,503.0696C469.7871,511.3146,461.2261,517.7006,450.9671,517.3326C440.7031,516.9646,432.6261,509.9826,432.9221,501.7366C433.2171,493.4906,441.7751,487.1066,452.0381,487.4746z" Fill="White" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Margin="12.387,11.093,37.371,0"/>
@@ -851,24 +851,24 @@
     		<Canvas x:Name="cmdPrevious" Height="48.577" Width="181.473" Cursor="Hand" MouseLeftButtonUp="cmdPrevious_MouseLeftButtonUp" Canvas.Left="230" Canvas.Top="584" Visibility="Collapsed">
     			<Path Data="F1M507.1108,51.7349C507.1108,65.1499,496.2358,76.0239,482.8218,76.0239L349.9258,76.0239C336.5118,76.0239,325.6378,65.1499,325.6378,51.7349C325.6378,38.3209,336.5118,27.4469,349.9258,27.4469L482.8218,27.4469C496.2358,27.4469,507.1108,38.3209,507.1108,51.7349" Fill="#FFDD5B03" Height="48.577" Stretch="Fill" Width="181.473"/>
     			<Path Data="F1M506.9097,48.6660000000001C505.4007,36.7020000000001,495.1957,27.4470000000001,482.8227,27.4470000000001L349.9257,27.4470000000001C337.5527,27.4470000000001,327.3467,36.7020000000001,325.8377,48.6660000000001z" Fill="#FFEA9963" Height="21.219" Canvas.Left="0.2" Stretch="Fill" Width="181.072"/>
-    			<TextBlock x:Name="textBlock2" Height="37" TextWrapping="Wrap" Text="&lt;&lt; terug" Canvas.Top="8" Width="163" FontFamily="AmerType Md BT" FontSize="24" Foreground="White" RenderTransformOrigin="0.699,0.27" Canvas.Left="18" Cursor="Hand"/>
+    			<TextBlock x:Name="textBlock2" Height="37" TextWrapping="Wrap" Text="&lt;&lt; terug" Canvas.Top="8" Width="163" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Foreground="White" RenderTransformOrigin="0.699,0.27" Canvas.Left="18" Cursor="Hand"/>
     		</Canvas>
     		<Canvas x:Name="cmdNext" Height="48.577" Width="181.473" Cursor="Hand" MouseLeftButtonUp="cmdNext_MouseLeftButtonUp" Canvas.Left="748" Canvas.Top="586">
     			<Path Data="F1M507.1108,51.7349C507.1108,65.1499,496.2358,76.0239,482.8218,76.0239L349.9258,76.0239C336.5118,76.0239,325.6378,65.1499,325.6378,51.7349C325.6378,38.3209,336.5118,27.4469,349.9258,27.4469L482.8218,27.4469C496.2358,27.4469,507.1108,38.3209,507.1108,51.7349" Fill="#FFDD5B03" Height="48.577" Stretch="Fill" Width="181.473"/>
     			<Path Data="F1M506.9097,48.6660000000001C505.4007,36.7020000000001,495.1957,27.4470000000001,482.8227,27.4470000000001L349.9257,27.4470000000001C337.5527,27.4470000000001,327.3467,36.7020000000001,325.8377,48.6660000000001z" Fill="#FFEA9963" Height="21.219" Canvas.Left="0.2" Stretch="Fill" Width="181.072"/>
-    			<TextBlock x:Name="textBlock1" Height="37" TextWrapping="Wrap" Text="volgende &gt;&gt;" Canvas.Top="8" Width="163" FontFamily="AmerType Md BT" FontSize="24" Foreground="White" RenderTransformOrigin="0.699,0.27" Canvas.Left="18" Cursor="Hand"/>
+    			<TextBlock x:Name="textBlock1" Height="37" TextWrapping="Wrap" Text="volgende &gt;&gt;" Canvas.Top="8" Width="163" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Foreground="White" RenderTransformOrigin="0.699,0.27" Canvas.Left="18" Cursor="Hand"/>
     		</Canvas>
     		<Canvas x:Name="FactorObject" Height="45.3" Width="40.132" Canvas.Top="441.334" Canvas.Left="399.178" Visibility="Collapsed">
-    			<TextBlock x:Name="F12" Height="23" TextWrapping="Wrap" Width="11.059" FontFamily="AmerType Md BT" Text="F" FontSize="29.333" Foreground="White"/>
-    			<TextBlock x:Name="Factor6_text" Height="21.332" Canvas.Left="12.726" TextWrapping="Wrap" Canvas.Top="20.003" Width="43.073" Text="6" FontFamily="AmerType Md BT" FontSize="18.667" Foreground="White" />
+    			<TextBlock x:Name="F12" Height="23" TextWrapping="Wrap" Width="11.059" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" Text="F" FontSize="29.333" Foreground="White"/>
+    			<TextBlock x:Name="Factor6_text" Height="21.332" Canvas.Left="12.726" TextWrapping="Wrap" Canvas.Top="20.003" Width="43.073" Text="6" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="18.667" Foreground="White" />
     		</Canvas>
-    		<TextBlock x:Name="F2_Copy" Height="23" TextWrapping="Wrap" Width="193.082" FontFamily="AmerType Md BT" Text="GGF  =  6" FontSize="29.333" Foreground="White" Opacity="0" Canvas.Left="355.178" Canvas.Top="500" Visibility="Collapsed"/>
-    		<TextBlock x:Name="FactorText6" Height="46.634" Canvas.Left="439.977" TextWrapping="Wrap" Text="= {  1  , 2  , 3  , 6  }" Canvas.Top="440.667" Width="306.575" FontFamily="AmerType Md BT" FontSize="29.333" Foreground="White" Visibility="Collapsed"/>
+    		<TextBlock x:Name="F2_Copy" Height="23" TextWrapping="Wrap" Width="193.082" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" Text="GGF  =  6" FontSize="29.333" Foreground="White" Opacity="0" Canvas.Left="355.178" Canvas.Top="500" Visibility="Collapsed"/>
+    		<TextBlock x:Name="FactorText6" Height="46.634" Canvas.Left="439.977" TextWrapping="Wrap" Text="= {  1  , 2  , 3  , 6  }" Canvas.Top="440.667" Width="306.575" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="29.333" Foreground="White" Visibility="Collapsed"/>
     		<Canvas x:Name="FactorObject12" Height="45.3" Width="40.132" Canvas.Top="492.334" Canvas.Left="399.178" Visibility="Collapsed">
-    			<TextBlock x:Name="F2" Height="23" TextWrapping="Wrap" Width="11.059" FontFamily="AmerType Md BT" Text="F" FontSize="29.333" Foreground="White"/>
-    			<TextBlock x:Name="Factor12_text" Height="21.332" Canvas.Left="12.726" TextWrapping="Wrap" Canvas.Top="20.003" Width="43.073" Text="12" FontFamily="AmerType Md BT" FontSize="18.667" Foreground="White" />
+    			<TextBlock x:Name="F2" Height="23" TextWrapping="Wrap" Width="11.059" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" Text="F" FontSize="29.333" Foreground="White"/>
+    			<TextBlock x:Name="Factor12_text" Height="21.332" Canvas.Left="12.726" TextWrapping="Wrap" Canvas.Top="20.003" Width="43.073" Text="12" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="18.667" Foreground="White" />
     		</Canvas>
-    		<TextBlock x:Name="FactorText16" Height="46.634" Canvas.Left="440.644" TextWrapping="Wrap" Text="= {  1  , 2  , 3 , 4  , 6 , 12  }" Canvas.Top="491" Width="407.273" FontFamily="AmerType Md BT" FontSize="29.333" Foreground="White" Visibility="Collapsed"/>
+    		<TextBlock x:Name="FactorText16" Height="46.634" Canvas.Left="440.644" TextWrapping="Wrap" Text="= {  1  , 2  , 3 , 4  , 6 , 12  }" Canvas.Top="491" Width="407.273" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="29.333" Foreground="White" Visibility="Collapsed"/>
     	</Canvas>
     </Grid>
 </navigation:Page>

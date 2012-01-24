@@ -345,9 +345,9 @@
 				</Canvas>
 			</Canvas>
 			<Path x:Name="path" Data="F1M720.0811,184.6006L395.6011,184.6006C371.3001,184.6006,351.6011,204.2996,351.6011,228.6006L351.6011,241.1286C337.9811,243.0266,316.9681,242.6896,298.6681,228.4566C298.6681,228.4566,315.5321,260.3566,351.6011,269.1826L351.6011,283.0936C351.6011,307.3936,371.3001,327.0936,395.6011,327.0936L720.0811,327.0936C744.3821,327.0936,764.0811,307.3936,764.0811,283.0936L764.0811,228.6006C764.0811,204.2996,744.3821,184.6006,720.0811,184.6006" Fill="White" Height="142.493" Canvas.Left="382.423" Stretch="Fill" Canvas.Top="230.629" Width="465.413" UseLayoutRounding="False"/>
-            <TextBlock x:Name="tbHeading2" Height="112" TextWrapping="Wrap"  FontFamily="AmerType Md BT" FontSize="18.667" Foreground="#FFFDFDFD" Canvas.Left="290" Canvas.Top="471" Width="616" Text="{Binding Path=sLessonMessage,Mode=TwoWay}"/>
-            <TextBlock x:Name="tbHeading1" TextWrapping="Wrap"  FontFamily="AmerType Md BT" FontSize="32" Foreground="#FFFDFDFD" FontWeight="Bold" Height="37" Canvas.Left="286" Canvas.Top="421" Width="616" Text="{Binding Path=sLesson,Mode=TwoWay}"/>
-            <TextBlock x:Name="tbMessage" Height="100" Canvas.Left="460" TextWrapping="Wrap"  Canvas.Top="250" Width="387" FontFamily="AmerType Md BT" FontSize="22.667" Text="{Binding Path=sExerciseMessage, Mode=TwoWay}"/>
+            <TextBlock x:Name="tbHeading2" Height="112" TextWrapping="Wrap"  FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="18.667" Foreground="#FFFDFDFD" Canvas.Left="290" Canvas.Top="471" Width="616" Text="{Binding Path=sLessonMessage,Mode=TwoWay}"/>
+            <TextBlock x:Name="tbHeading1" TextWrapping="Wrap"  FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="32" Foreground="#FFFDFDFD" FontWeight="Bold" Height="37" Canvas.Left="286" Canvas.Top="421" Width="616" Text="{Binding Path=sLesson,Mode=TwoWay}"/>
+            <TextBlock x:Name="tbMessage" Height="100" Canvas.Left="460" TextWrapping="Wrap"  Canvas.Top="250" Width="387" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="22.667" Text="{Binding Path=sExerciseMessage, Mode=TwoWay}"/>
 		</Canvas>
 
 	</Grid>

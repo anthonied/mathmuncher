@@ -317,6 +317,11 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <BlendEmbeddedFont Include="Fonts\amrtypen.ttf">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </BlendEmbeddedFont>
     <Resource Include="Images\konsep2.jpg" />
     <Content Include="ServiceReferences.ClientConfig" />
     <None Include="Service References\Exercise\exercise.wsdl" />
@@ -345,4 +350,5 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Expression\Blend\Silverlight\v4.0\Microsoft.Expression.Blend.Silverlight.targets" />
 </Project>
