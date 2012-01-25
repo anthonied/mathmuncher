@@ -30,7 +30,7 @@ namespace MathMuncherMain.Lessons.Factors.ViewModels
 				if (this._Navigate != value)
 				{
 					this._Navigate = value;
-				//	this.RaisePropertyChanged("Navigate");
+					this.RaisePropertyChanged("Navigate");
 				}
 			}
 		}
@@ -48,7 +48,7 @@ namespace MathMuncherMain.Lessons.Factors.ViewModels
 				if (this._sMainHeading != value)
 				{
 					this._sMainHeading = value;
-				//	this.RaisePropertyChanged("sMainHeading");
+					this.RaisePropertyChanged("sMainHeading");
 				}
 			}
 		}
@@ -66,7 +66,7 @@ namespace MathMuncherMain.Lessons.Factors.ViewModels
 				if (this._sMessageIntroduction != value)
 				{
 					this._sMessageIntroduction = value;
-				//	this.RaisePropertyChanged("sMessageIntroduction");
+					this.RaisePropertyChanged("sMessageIntroduction");
 				}
 			}
 		}
@@ -84,7 +84,7 @@ namespace MathMuncherMain.Lessons.Factors.ViewModels
 				if (this._sLessonState1Heading != value)
 				{
 					this._sLessonState1Heading = value;
-				//	this.RaisePropertyChanged("sLessonState1Heading");
+					this.RaisePropertyChanged("sLessonState1Heading");
 				}
 			}
 		}
@@ -99,7 +99,7 @@ namespace MathMuncherMain.Lessons.Factors.ViewModels
 			set
 			{
 				this._ViewState = value;
-				//this.RaisePropertyChanged("ViewState");
+				this.RaisePropertyChanged("ViewState");
 			}
 		}
 
@@ -110,12 +110,13 @@ namespace MathMuncherMain.Lessons.Factors.ViewModels
 		public PrimeFactorsModel()
 		{
 			MessageBundles = new MessageBundles();
-			PrimeFactor_Messages = new PrimeFactor_Messages();
+            PrimeFactor_Messages = new PrimeFactor_Messages();
+            ViewState = "BaseState";
 		}
 		public void startLesson()
-		{
+        {
 			PrimeFactor_Messages = MessageBundles.Set_G7_PF_Afrikaans();
-			LoadText();
+            LoadText();
 		}
 
 		private void LoadText()
@@ -127,13 +128,13 @@ namespace MathMuncherMain.Lessons.Factors.ViewModels
 		public void NextState()
 		{
 			_iActiveState++;
-			if (_iActiveState < 4)
+			if (_iActiveState < 8)
 			{
 				ViewState = "LessonState" + _iActiveState.ToString();
 			}
 			else
 			{
-				Session.sActiveExercise = "FactorsG7_1";
+				Session.sActiveExercise = "PrimeFactors";
 				Navigate = "/Exercises/Views/ExerciseStart";
 			}
 			
@@ -164,6 +165,15 @@ namespace MathMuncherMain.Lessons.Factors.ViewModels
 				PropertyChanged(this, new PropertyChangedEventArgs(info));
 			}
 		}
+
+        private void RaisePropertyChanged(string name)
+        {
+            if (this.PropertyChanged != null)
+            {
+                this.PropertyChanged(this, new PropertyChangedEventArgs(name));
+            }
+        }
+
 		#endregion
 	}
 }

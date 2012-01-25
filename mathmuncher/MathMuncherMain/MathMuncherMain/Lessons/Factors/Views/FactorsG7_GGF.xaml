@@ -4,7 +4,7 @@
            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
            xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
-           xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="MathMuncherMain.Lessons.Factors.Views.FactorsG7_GGF"
+           xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:ee="http://schemas.microsoft.com/expression/2010/effects" x:Class="MathMuncherMain.Lessons.Factors.Views.FactorsG7_GGF"
            mc:Ignorable="d"
            d:DesignWidth="640" d:DesignHeight="480"
            Title="FactorsG7_GGF Page">
@@ -12,11 +12,7 @@
     	<VisualStateManager.VisualStateGroups>
     		<VisualStateGroup x:Name="VisualStateGroup" ei:ExtendedVisualStateManager.UseFluidLayout="True">
     			<VisualStateGroup.Transitions>
-    				<VisualTransition GeneratedDuration="0:0:0.6">
-    					<VisualTransition.GeneratedEasingFunction>
-    						<CubicEase EasingMode="EaseInOut"/>
-    					</VisualTransition.GeneratedEasingFunction>
-    				</VisualTransition>
+    				<VisualTransition GeneratedDuration="0:0:1"/>
     			</VisualStateGroup.Transitions>
     			<VisualState x:Name="LessonState1">
     				<Storyboard>
@@ -92,9 +88,45 @@
     							</DiscreteObjectKeyFrame.Value>
     						</DiscreteObjectKeyFrame>
     					</ObjectAnimationUsingKeyFrames>
+    					<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock3">
+    						<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+    						<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1"/>
+    					</DoubleAnimationUsingKeyFrames>
+    					<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock4">
+    						<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+    						<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1"/>
+    					</DoubleAnimationUsingKeyFrames>
+    					<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock5">
+    						<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+    						<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1"/>
+    					</DoubleAnimationUsingKeyFrames>
     				</Storyboard>
     			</VisualState>
-    			<VisualState x:Name="BaseState"/>
+    			<VisualState x:Name="BaseState">
+    				<Storyboard>
+    					<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="Wolk">
+    						<DiscreteObjectKeyFrame KeyTime="0">
+    							<DiscreteObjectKeyFrame.Value>
+    								<System:Double>119.597</System:Double>
+    							</DiscreteObjectKeyFrame.Value>
+    						</DiscreteObjectKeyFrame>
+    					</ObjectAnimationUsingKeyFrames>
+    					<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Left)" Storyboard.TargetName="Wolk">
+    						<DiscreteObjectKeyFrame KeyTime="0">
+    							<DiscreteObjectKeyFrame.Value>
+    								<System:Double>381.504</System:Double>
+    							</DiscreteObjectKeyFrame.Value>
+    						</DiscreteObjectKeyFrame>
+    					</ObjectAnimationUsingKeyFrames>
+    					<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Top)" Storyboard.TargetName="Wolk">
+    						<DiscreteObjectKeyFrame KeyTime="0">
+    							<DiscreteObjectKeyFrame.Value>
+    								<System:Double>237.403</System:Double>
+    							</DiscreteObjectKeyFrame.Value>
+    						</DiscreteObjectKeyFrame>
+    					</ObjectAnimationUsingKeyFrames>
+    				</Storyboard>
+    			</VisualState>
     			<VisualState x:Name="LessonState2">
     				<Storyboard>
     					<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Wolk">

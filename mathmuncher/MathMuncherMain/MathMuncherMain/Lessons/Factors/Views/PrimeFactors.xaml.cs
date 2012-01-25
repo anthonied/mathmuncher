@@ -66,5 +66,11 @@ namespace MathMuncherMain
             }
 
         }
+		
+		private void txtFactor_KeyUp(object sender, KeyEventArgs e)
+        {
+           
+        }
+		
 	}
 }

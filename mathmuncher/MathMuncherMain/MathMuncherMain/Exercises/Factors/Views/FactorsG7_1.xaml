@@ -153,7 +153,11 @@
 
     	<toolkit:BusyIndicator x:Name="busyBar"  IsBusy="{Binding bIsBusy}" Grid.ColumnSpan="2">
     		<Grid>
-    			<Canvas x:Name="Exercise_Home" RenderTransformOrigin="0.5,0.5" Margin="-58,-47,58,47" UseLayoutRounding="False" d:LayoutRounding="Auto">
+    			<Grid.ColumnDefinitions>
+    				<ColumnDefinition Width="0.16*"/>
+    				<ColumnDefinition Width="0.84*"/>
+    			</Grid.ColumnDefinitions>
+    			<Canvas x:Name="Exercise_Home" RenderTransformOrigin="0.5,0.5" Margin="-58,-47,58,47" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.ColumnSpan="2">
     				<Canvas.RenderTransform>
     					<CompositeTransform Rotation="0.211"/>
     				</Canvas.RenderTransform>
@@ -614,7 +618,7 @@
     					<clickable:TextBox2 x:Name="txtFactor144_15" Height="37.112" Canvas.Left="801.737" TextWrapping="Wrap" Width="52.421" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Foreground="White" BorderThickness="0,0,0,1" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactorLast_KeyUp" Text="{Binding FormData.iValue144_15, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding FormData.sValueBG144_15}"/>
     				</Canvas>
     			</Canvas>
-    			<Canvas x:Name="RedArrow1" Height="52.77" Width="86.906" Opacity="0" Margin="0,307,310,0" VerticalAlignment="Top" HorizontalAlignment="Right">
+    			<Canvas x:Name="RedArrow1" Height="52.77" Width="86.906" Opacity="0" Margin="0,307,310,0" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="1">
     				<Canvas.OpacityMask>
     					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
     						<GradientStop Color="Black" Offset="0"/>
@@ -633,14 +637,14 @@
     				</Path>
     				<Path Data="F1M279.7954,480.6348C279.7954,480.3438,279.8844,480.0498,280.0714,479.7988C280.5354,479.1778,281.4134,479.0488,282.0344,479.5118L308.5554,499.2568C309.1764,499.7178,309.3054,500.5958,308.8434,501.2158C308.3794,501.8388,307.5014,501.9658,306.8804,501.5038L280.3584,481.7608C279.9904,481.4858,279.7954,481.0628,279.7954,480.6348" Fill="#FFA0CFEA" Height="22.548" Canvas.Left="54.412" Stretch="Fill" Canvas.Top="3.42" Width="29.325"/>
     			</Canvas>
-    			<TextBlock Height="66" Margin="50,47,0,0" TextWrapping="Wrap" Text="Wikkel En Werk" VerticalAlignment="Top" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="48" Foreground="White" HorizontalAlignment="Left" Width="434"/>
-    			<TextBlock Height="49" Margin="55,106,0,0" TextWrapping="Wrap" Text="Bepaal Die Faktore Van:" VerticalAlignment="Top" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="32" Foreground="White" HorizontalAlignment="Left" Width="434" TextDecorations="Underline"/>
-    			<TextBlock Height="88.973" TextWrapping="Wrap" Text="Soek die getalle wat kan indeel SONDER 'n RES!" Width="210.128" Foreground="White" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Margin="0,0,47.013,157.43" UseLayoutRounding="False" VerticalAlignment="Bottom" d:LayoutRounding="Auto">
+    			<TextBlock Height="66" Margin="-114,47,0,0" TextWrapping="Wrap" Text="Wikkel En Werk" VerticalAlignment="Top" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="48" Foreground="White" HorizontalAlignment="Left" Width="434" Grid.Column="1"/>
+    			<TextBlock Height="49" Margin="-109,106,0,0" TextWrapping="Wrap" Text="Bepaal Die Faktore Van:" VerticalAlignment="Top" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="32" Foreground="White" HorizontalAlignment="Left" Width="434" TextDecorations="Underline" Grid.Column="1"/>
+    			<TextBlock Height="88.973" TextWrapping="Wrap" Text="Soek die getalle wat kan indeel SONDER 'n RES!" Width="210.128" Foreground="White" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Margin="0,0,47.013,157.43" UseLayoutRounding="False" VerticalAlignment="Bottom" d:LayoutRounding="Auto" Grid.Column="1">
     				<TextBlock.RenderTransform>
     					<CompositeTransform Rotation="36.488"/>
     				</TextBlock.RenderTransform>
     			</TextBlock>
-    			<Viewbox x:Name="Eyes" Height="42.981" Width="88.934" HorizontalAlignment="Right" Margin="0,0,108.553,281.339" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+    			<Viewbox x:Name="Eyes" Height="42.981" Width="88.934" HorizontalAlignment="Right" Margin="0,0,108.553,281.339" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.Column="1">
     				<Viewbox.RenderTransform>
     					<CompositeTransform Rotation="32.83"/>
     				</Viewbox.RenderTransform>

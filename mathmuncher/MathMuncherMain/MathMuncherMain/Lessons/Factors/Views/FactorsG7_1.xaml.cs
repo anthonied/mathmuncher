@@ -71,7 +71,7 @@ namespace MathMuncherMain.Lessons.Factors.Views
             ViewModel.PreviousState();
         }
 
-        private void LayoutRoot_Loaded(object sender, RoutedEventArgs e)
+        private void LayoutRoot_Loaded(object sender, System.Windows.RoutedEventArgs e)
         {
             this.Focus();
         }
