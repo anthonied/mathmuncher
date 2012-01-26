@@ -65,11 +65,6 @@ namespace MathMuncherMain
             Session.sActiveExercise = "Caterpillar";
         }
 
-        private void Link2_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         
     }
 }

@@ -20,57 +20,57 @@ namespace MathMuncherMain
 	{
 		public PrimeFactors()
 		{
-			this.InitializeComponent(); 
-            this.DataContext = new PrimeFactorsModel();
-            ViewModel.startLesson();
-            ViewModel.PropertyChanged += new System.ComponentModel.PropertyChangedEventHandler(ViewModel_PropertyChanged);
-            this.KeyUp += new KeyEventHandler(PrimeFactors_KeyUp);            
-        }
+            this.InitializeComponent();
+			this.DataContext = new PrimeFactorsModel();
+			ViewModel.startLesson();
+			ViewModel.PropertyChanged += new System.ComponentModel.PropertyChangedEventHandler(ViewModel_PropertyChanged);
+			this.KeyUp += new KeyEventHandler(PrimeFactors_KeyUp);            
+		}
 
-        public PrimeFactorsModel ViewModel
-        {
-            get
-            {
-                return (PrimeFactorsModel)this.DataContext;
-            }
-        }
+		public PrimeFactorsModel ViewModel
+		{
+			get
+			{
+				return (PrimeFactorsModel)this.DataContext;
+			}
+		}
 
-        void ViewModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
-        {
-            switch (e.PropertyName)
-            {
-                case "ViewState":
-                    VisualStateManager.GoToState(this, ViewModel.ViewState, true);
-                    break;
-                case "Navigate":
-                    ((Frame)this.Parent).Navigate(new Uri(ViewModel.Navigate, UriKind.Relative));
-                    break;
-            }
-        }
+		void ViewModel_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+		{
+			switch (e.PropertyName)
+			{
+				case "ViewState":
+					VisualStateManager.GoToState(this, ViewModel.ViewState, true);
+					break;
+				case "Navigate":
+					((Frame)this.Parent).Navigate(new Uri(ViewModel.Navigate, UriKind.Relative));
+					break;
+			}
+		}
 		
 		private void LayoutRoot_Loaded(object sender, System.Windows.RoutedEventArgs e)
 		{
 			this.Focus();
 		}
 
-        void PrimeFactors_KeyUp(object sender, KeyEventArgs e)
-        {
+		void PrimeFactors_KeyUp(object sender, KeyEventArgs e)
+		{
 
-            if (e.Key == Key.Right)
-            {
-                ViewModel.NextState();
-            }
-            else if (e.Key == Key.Left)
-            {
-                ViewModel.PreviousState();
-            }
+			if (e.Key == Key.Right)
+			{
+				ViewModel.NextState();
+			}
+			else if (e.Key == Key.Left)
+			{
+				ViewModel.PreviousState();
+			}
 
-        }
+		}
 		
 		private void txtFactor_KeyUp(object sender, KeyEventArgs e)
-        {
-           
-        }
+		{
+		   
+		}
 		
 	}
 }

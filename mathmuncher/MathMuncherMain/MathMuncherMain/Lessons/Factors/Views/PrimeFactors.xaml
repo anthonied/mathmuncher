@@ -1,4 +1,4 @@
-﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:MathMuncherMain" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" xmlns:MathMuncherMain_Exercises_Factors_Views="clr-namespace:MathMuncherMain.Exercises.Factors.Views" xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:MathMuncherMain" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" xmlns:MathMuncherMain_Lessons_Factors_Views="clr-namespace:MathMuncherMain.Lessons.Factors.Views" xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
 	x:Class="MathMuncherMain.PrimeFactors"
 	d:DesignWidth="640" d:DesignHeight="480" Width="1024" Height="768" mc:Ignorable="d">
 
@@ -90,19 +90,6 @@
 							<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimation Duration="0" To="3.954" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="Wolk" d:IsOptimized="True"/>
-						<DoubleAnimation Duration="0:0:0.4" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Factor4" d:IsOptimized="True"/>
-						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="Factor4">
-							<DiscreteObjectKeyFrame KeyTime="0">
-								<DiscreteObjectKeyFrame.Value>
-									<System:Double>603.6</System:Double>
-								</DiscreteObjectKeyFrame.Value>
-							</DiscreteObjectKeyFrame>
-							<DiscreteObjectKeyFrame KeyTime="0:0:0.4">
-								<DiscreteObjectKeyFrame.Value>
-									<System:Double>900.609</System:Double>
-								</DiscreteObjectKeyFrame.Value>
-							</DiscreteObjectKeyFrame>
-						</ObjectAnimationUsingKeyFrames>
 						<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="path7" d:IsOptimized="True"/>
 						<PointAnimation Duration="0" To="8.77118743620141,7.97147066594725" Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(BezierSegment.Point1)" Storyboard.TargetName="path11" d:IsOptimized="True"/>
 						<PointAnimation Duration="0" To="28.6939878198585,7.24960981811406" Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(BezierSegment.Point2)" Storyboard.TargetName="path11" d:IsOptimized="True"/>
@@ -175,7 +162,6 @@
 							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
 							<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
 						</DoubleAnimationUsingKeyFrames>
-						<DoubleAnimation Duration="0:0:0.4" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Factor4" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="-16.71" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="tbLessonIntro" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="-56.939" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="tbLessonIntro" d:IsOptimized="True"/>
 					</Storyboard>
@@ -238,12 +224,16 @@
 						<DoubleAnimation Duration="0" To="0.009" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.SkewY)" Storyboard.TargetName="Wolk2" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="-4.005" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="path13" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="-1.235" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="path13" d:IsOptimized="True"/>
-						<DoubleAnimation Duration="0:0:0.5" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="PrimeFactor1" d:IsOptimized="True"/>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="PrimeFactor1">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimation Duration="0" To="-4.341" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="path15" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="-1.984" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="path15" d:IsOptimized="True"/>
 						<ColorAnimation Duration="0:0:0.4" To="White" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="path7" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0:0:0.4" To="0.53" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="path7" d:IsOptimized="True"/>
 						<ColorAnimation Duration="0:0:0.4" To="#FF00999D" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="path7" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="18.667" Storyboard.TargetProperty="(TextBlock.FontSize)" Storyboard.TargetName="txtFactor1comment" d:IsOptimized="True"/>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="LessonState5">
@@ -290,6 +280,7 @@
 								</DiscreteObjectKeyFrame.Value>
 							</DiscreteObjectKeyFrame>
 						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimation Duration="0:0:1.3" To="18.667" Storyboard.TargetProperty="(TextBlock.FontSize)" Storyboard.TargetName="txtFactor1comment" d:IsOptimized="True"/>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="LessonState6">
@@ -351,6 +342,45 @@
 								</DiscreteObjectKeyFrame.Value>
 							</DiscreteObjectKeyFrame>
 						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.Text)" Storyboard.TargetName="txtFactor1comment">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="3 gaan in 9 in 3 keer 3 gaan in 3 in 1 keer"/>
+							<DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="  9 = 3 x 3  = 3² "/>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="txtWomanHead">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Thickness>51.182,44.611,23.079,62.48</Thickness>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="txtWomanHead">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<System:Double>NaN</System:Double>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.VerticalAlignment)" Storyboard.TargetName="txtWomanHead">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<VerticalAlignment>Stretch</VerticalAlignment>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="txtFactor1comment">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<System:Double>167.761</System:Double>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="txtFactor1comment">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Thickness>101.874000549316,45.0810012817383,0,19.193000793457</Thickness>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.TextAlignment)" Storyboard.TargetName="txtFactor1comment">
 							<DiscreteObjectKeyFrame KeyTime="0">
 								<DiscreteObjectKeyFrame.Value>
@@ -358,87 +388,16 @@
 								</DiscreteObjectKeyFrame.Value>
 							</DiscreteObjectKeyFrame>
 						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="txtFactor1comment">
-							<DiscreteObjectKeyFrame KeyTime="0">
-								<DiscreteObjectKeyFrame.Value>
-									<System:Double>NaN</System:Double>
-								</DiscreteObjectKeyFrame.Value>
-							</DiscreteObjectKeyFrame>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="txtFactor1comment">
-							<DiscreteObjectKeyFrame KeyTime="0">
-								<DiscreteObjectKeyFrame.Value>
-									<Thickness>110.652000427246,28.3899993896484,255.648011779785,52.2680015563965</Thickness>
-								</DiscreteObjectKeyFrame.Value>
-							</DiscreteObjectKeyFrame>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.HorizontalAlignment)" Storyboard.TargetName="txtFactor1comment">
-							<DiscreteObjectKeyFrame KeyTime="0">
-								<DiscreteObjectKeyFrame.Value>
-									<HorizontalAlignment>Stretch</HorizontalAlignment>
-								</DiscreteObjectKeyFrame.Value>
-							</DiscreteObjectKeyFrame>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.Text)" Storyboard.TargetName="txtFactor1comment">
-							<DiscreteObjectKeyFrame KeyTime="0" Value="  9 = 3 x 3  = 3² "/>
-						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimation Duration="0:0:0.5" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="WomanCharacter" d:IsOptimized="True"/>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="txtFactor1comment">
 							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
 							<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
 						</DoubleAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Left)" Storyboard.TargetName="WomanCharacter">
-							<DiscreteObjectKeyFrame KeyTime="0">
-								<DiscreteObjectKeyFrame.Value>
-									<System:Double>735.232</System:Double>
-								</DiscreteObjectKeyFrame.Value>
-							</DiscreteObjectKeyFrame>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Top)" Storyboard.TargetName="WomanCharacter">
-							<DiscreteObjectKeyFrame KeyTime="0">
-								<DiscreteObjectKeyFrame.Value>
-									<System:Double>390</System:Double>
-								</DiscreteObjectKeyFrame.Value>
-							</DiscreteObjectKeyFrame>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="Eye1">
-							<DiscreteObjectKeyFrame KeyTime="0">
-								<DiscreteObjectKeyFrame.Value>
-									<Thickness>71.363,0,0,57.693</Thickness>
-								</DiscreteObjectKeyFrame.Value>
-							</DiscreteObjectKeyFrame>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="Eye2">
-							<DiscreteObjectKeyFrame KeyTime="0">
-								<DiscreteObjectKeyFrame.Value>
-									<Thickness>0,0,75.248,57.693</Thickness>
-								</DiscreteObjectKeyFrame.Value>
-							</DiscreteObjectKeyFrame>
-						</ObjectAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="WomanCharacter">
-							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1"/>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.FontSize)" Storyboard.TargetName="txtFactor1comment">
+							<EasingDoubleKeyFrame KeyTime="0" Value="18.667"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="26.667"/>
 						</DoubleAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="txtWomanHead">
-							<DiscreteObjectKeyFrame KeyTime="0">
-								<DiscreteObjectKeyFrame.Value>
-									<Thickness>32.183,0,42.078,0</Thickness>
-								</DiscreteObjectKeyFrame.Value>
-							</DiscreteObjectKeyFrame>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="txtWomanHead">
-							<DiscreteObjectKeyFrame KeyTime="0">
-								<DiscreteObjectKeyFrame.Value>
-									<System:Double>78.2</System:Double>
-								</DiscreteObjectKeyFrame.Value>
-							</DiscreteObjectKeyFrame>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.VerticalAlignment)" Storyboard.TargetName="txtWomanHead">
-							<DiscreteObjectKeyFrame KeyTime="0">
-								<DiscreteObjectKeyFrame.Value>
-									<VerticalAlignment>Top</VerticalAlignment>
-								</DiscreteObjectKeyFrame.Value>
-							</DiscreteObjectKeyFrame>
-						</ObjectAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="LessonState7">
@@ -487,14 +446,14 @@
 						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Left)" Storyboard.TargetName="WomanCharacter">
 							<DiscreteObjectKeyFrame KeyTime="0">
 								<DiscreteObjectKeyFrame.Value>
-									<System:Double>724.874</System:Double>
+									<System:Double>706.572</System:Double>
 								</DiscreteObjectKeyFrame.Value>
 							</DiscreteObjectKeyFrame>
 						</ObjectAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Top)" Storyboard.TargetName="WomanCharacter">
 							<DiscreteObjectKeyFrame KeyTime="0">
 								<DiscreteObjectKeyFrame.Value>
-									<System:Double>400.709</System:Double>
+									<System:Double>337.709</System:Double>
 								</DiscreteObjectKeyFrame.Value>
 							</DiscreteObjectKeyFrame>
 						</ObjectAnimationUsingKeyFrames>
@@ -504,7 +463,7 @@
 						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="txtWomanHead">
 							<DiscreteObjectKeyFrame KeyTime="0">
 								<DiscreteObjectKeyFrame.Value>
-									<Thickness>17.14,25.25,16.675,52.302</Thickness>
+									<Thickness>29.738,61.563,4.077,15.989</Thickness>
 								</DiscreteObjectKeyFrame.Value>
 							</DiscreteObjectKeyFrame>
 						</ObjectAnimationUsingKeyFrames>
@@ -523,20 +482,6 @@
 							</DiscreteObjectKeyFrame>
 						</ObjectAnimationUsingKeyFrames>
 						<DoubleAnimation Duration="0" To="16" Storyboard.TargetProperty="(TextBlock.FontSize)" Storyboard.TargetName="txtWomanHead" d:IsOptimized="True"/>
-						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="Eye1">
-							<DiscreteObjectKeyFrame KeyTime="0">
-								<DiscreteObjectKeyFrame.Value>
-									<Thickness>71.817,0,0,59.252</Thickness>
-								</DiscreteObjectKeyFrame.Value>
-							</DiscreteObjectKeyFrame>
-						</ObjectAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="Eye2">
-							<DiscreteObjectKeyFrame KeyTime="0">
-								<DiscreteObjectKeyFrame.Value>
-									<Thickness>0,0,74.627,59.252</Thickness>
-								</DiscreteObjectKeyFrame.Value>
-							</DiscreteObjectKeyFrame>
-						</ObjectAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="StarCharacter">
 							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
 							<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0.995"/>
@@ -644,6 +589,9 @@
 							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
 							<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
 						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.Text)" Storyboard.TargetName="txtFactor1comment">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="  9 = 3 x 3  = 3² "/>
+						</ObjectAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 			</VisualStateGroup>
@@ -1049,18 +997,6 @@
 							<Grid x:Name="grid1" Height="140" Opacity="0" Width="139"/>
 						</InlineUIContainer></Paragraph>
 				</RichTextBox>
-				<Canvas x:Name="Factor4" Height="47.301" Canvas.Left="282" Canvas.Top="426.918" Width="615.6" Visibility="{Binding FormData.sFactorVisibility144}" Opacity="0">
-					<TextBlock x:Name="FactorText9" Height="46.634" Canvas.Left="30.623" TextWrapping="Wrap" Text="{}{ 2  ,    ,    ,    ,    ,    ,    ,    ,    ,    }" Canvas.Top="0.667" Width="542.1" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="29.333" Foreground="White"/>
-					<MathMuncherMain_Exercises_Factors_Views:TextBox2 x:Name="txtFactor_1" Height="37.112" Canvas.Left="100.886" TextWrapping="Wrap" Width="38.986" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24"  Foreground="White" BorderThickness="0,0,0,1" MaxLength="2" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactor_KeyUp" Text="{Binding FormData.iValue144_1, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding FormData.sValueBG144_1}"/>
-					<MathMuncherMain_Exercises_Factors_Views:TextBox2 x:Name="txtFactor_2" Height="37.112" Canvas.Left="147.032" TextWrapping="Wrap" Width="38.986" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Foreground="White" BorderThickness="0,0,0,1" MaxLength="2" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactor_KeyUp" Text="{Binding FormData.iValue144_2, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding FormData.sValueBG144_2}"/>
-					<MathMuncherMain_Exercises_Factors_Views:TextBox2 x:Name="txtFactor_3" Height="37.112" Canvas.Left="192.354" TextWrapping="Wrap" Width="38.986" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Foreground="White" BorderThickness="0,0,0,1" MaxLength="2" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactor_KeyUp" Text="{Binding FormData.iValue144_3, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding FormData.sValueBG144_3}"/>
-					<MathMuncherMain_Exercises_Factors_Views:TextBox2 x:Name="txtFactor_4" Height="37.112" Canvas.Left="239.044" TextWrapping="Wrap" Width="38.986" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24"  Foreground="White" BorderThickness="0,0,0,1" MaxLength="2" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactor_KeyUp" Text="{Binding FormData.iValue144_4, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding FormData.sValueBG144_4}"/>
-					<MathMuncherMain_Exercises_Factors_Views:TextBox2 x:Name="txtFactor_5" Height="37.112" Canvas.Left="286.401" TextWrapping="Wrap" Width="38.986" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24"  Foreground="White" BorderThickness="0,0,0,1" MaxLength="2" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactor_KeyUp" Text="{Binding FormData.iValue144_5, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding FormData.sValueBG144_5}"/>
-					<MathMuncherMain_Exercises_Factors_Views:TextBox2 x:Name="txtFactor_6" Height="37.112" Canvas.Left="331.756" TextWrapping="Wrap" Width="38.986" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Foreground="White" BorderThickness="0,0,0,1" MaxLength="2" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactor_KeyUp" Text="{Binding FormData.iValue144_6, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding FormData.sValueBG144_6}"/>
-					<MathMuncherMain_Exercises_Factors_Views:TextBox2 x:Name="txtFactor_7" Height="37.112" Canvas.Left="377.496" TextWrapping="Wrap" Width="38.986" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Foreground="White" BorderThickness="0,0,0,1" MaxLength="2" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactor_KeyUp" Text="{Binding FormData.iValue144_7, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding FormData.sValueBG144_7}"/>
-					<MathMuncherMain_Exercises_Factors_Views:TextBox2 x:Name="txtFactor_8" Height="37.112" Canvas.Left="422.725" TextWrapping="Wrap" Width="38.986" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Foreground="White" BorderThickness="0,0,0,1" MaxLength="2" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactor_KeyUp" Text="{Binding FormData.iValue144_8, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding FormData.sValueBG144_8}"/>
-					<MathMuncherMain_Exercises_Factors_Views:TextBox2 x:Name="txtFactor_9" Height="37.112" Canvas.Left="469.23" TextWrapping="Wrap" Width="38.986" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Foreground="White" BorderThickness="0,0,0,1" MaxLength="2" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactor_KeyUp" Text="{Binding FormData.iValue144_9, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding FormData.sValueBG144_9}"/>
-				</Canvas>
 			</Canvas>
 			<TextBox x:Name="txtHidden" Height="10" Canvas.Left="221.848" TextWrapping="Wrap" Text="TextBox" Canvas.Top="624.767" Width="10" BorderThickness="0" FontSize="8" Opacity="0"/>
 			<TextBlock x:Name="textBlock5" Height="89" TextWrapping="Wrap" Text="Jy soek die Grootste Faktor wat in die 2 getalle se lys Faktore voorkom." Width="321" Foreground="White" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" RenderTransformOrigin="0.5,0.5" Canvas.Left="248" Canvas.Top="434" Visibility="Collapsed"/>
@@ -1200,7 +1136,7 @@
 						<CompositeTransform Rotation="2.593"/>
 					</ed:RegularPolygon.RenderTransform>
 				</ed:RegularPolygon>
-				<TextBlock x:Name="txtFactor1comment" HorizontalAlignment="Left" Margin="88.358,39.481,0,41.177" TextWrapping="Wrap" Width="136.2" RenderTransformOrigin="0.5,0.5" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="18.667"><TextBlock.RenderTransform>
+				<TextBlock x:Name="txtFactor1comment" HorizontalAlignment="Left" Margin="88.358,39.481,0,41.177" TextWrapping="Wrap" Width="136.2" RenderTransformOrigin="0.5,0.5" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="26.667" Foreground="White"><TextBlock.RenderTransform>
 						<CompositeTransform/>
 					</TextBlock.RenderTransform><Run Text="3 gaan in 9 in"/><LineBreak/><Run Text="3 keer"/><LineBreak/><Run Text="3 gaan in 3 in"/><LineBreak/><Run Text="1 keer"/></TextBlock>
 				<Path x:Name="path17" Data="M19.50399,1 L1,4.077961" HorizontalAlignment="Left" Height="5.078" Margin="63.854,48.973,0,0" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Stroke="DeepSkyBlue" StrokeMiterLimit="10" StrokeLineJoin="Miter" VerticalAlignment="Top" Width="20.504"/>
@@ -1221,71 +1157,126 @@
 					</Ellipse.Stroke>
 				</Ellipse>
 			</Grid>
-			<Grid x:Name="WomanCharacter" Height="185.291" Canvas.Left="285.8" Canvas.Top="382.567" Width="194.241" Opacity="0">
-				<Path Data="M47.918533,113.32451 C43.067432,108.50901 36.253296,112.86699 36.435307,117.03301 C36.617317,121.19904 39.159821,133.68726 45.145557,129.83231 C51.131294,125.97736 51.120247,122.97771 51.120247,122.97771" HorizontalAlignment="Left" Height="21.994" Margin="38.757,0,0,55.223" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="11.86" Fill="#FFFFD664"/>
-				<Path Data="M47.918533,113.32451 C43.067432,108.50901 36.253296,112.86699 36.435307,117.03301 C36.617317,121.19904 39.159821,133.68726 45.145557,129.83231 C51.131294,125.97736 51.120247,122.97771 51.120247,122.97771" HorizontalAlignment="Right" Height="21.994" Margin="0,0,40.274,57.942" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="11.385" Fill="#FFFFD664" RenderTransformOrigin="0.5,0.5">
-					<Path.Effect>
-						<DropShadowEffect/>
-					</Path.Effect>
-					<Path.RenderTransform>
-						<CompositeTransform ScaleX="-1"/>
-					</Path.RenderTransform>
-				</Path>
-				<Path Data="M48.343178,115.48962 C46.5028,113.57972 44.3391,113.33731 43.932564,116.08883 C43.526028,118.84035 42.624279,123.76134 45.203686,122.75173 C47.783092,121.74212 49.360382,120.15253 49.360382,120.15253" HorizontalAlignment="Right" Height="9.847" Margin="0,0,44.292,64.624" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="6.641" RenderTransformOrigin="0.5,0.5">
-					<Path.RenderTransform>
-						<CompositeTransform ScaleX="-1"/>
-					</Path.RenderTransform>
-				</Path>
-				<Path Data="M36.390606,26.834871 C39.165279,56.158184 45.177128,59.469299 53.880562,69.437317 C62.583996,79.405334 106.61298,87.243874 117.85046,61.202042 C129.08794,35.16021 125.68842,17.172346 125.68842,17.172346 L120.26926,-6.1420937 L34.975887,4.8391018 z" Stretch="Fill" Fill="#FFFFD664" Margin="45.991,77.967,48.075,21.423" Stroke="Black" StrokeThickness="2">
-					<Path.Effect>
-						<DropShadowEffect/>
-					</Path.Effect>
-				</Path>
-				<Path Data="M371.8046,475.5563 C362.52042,488.92392 343.16226,482.32819 341.80441,475.66678 C340.44653,469.0054 342.76743,465.66406 342.76743,465.66406 C342.76743,465.66406 322.80023,474.73724 318.0918,463.42194 C313.38336,452.10666 324.65897,436.39877 329.65286,434.71381 C334.64676,433.02884 341.97879,432.66879 341.97879,432.66879 C341.97879,432.66879 310.31784,434.45187 308.29572,428.45963 C306.27359,422.46738 306.88174,406.46533 316.87201,403.76199 C326.86227,401.05865 335.53156,401.69351 335.53156,401.69351 C335.53156,401.69351 331.48245,388.37521 336.7937,382.3559 C342.10495,376.33658 354.78149,378.95676 354.78149,378.95676 L360.80115,384.26782 C360.80115,384.26782 358.05099,361.61227 368.03632,357.57568 C378.02164,353.53909 388.02655,354.83594 393.37463,358.81604 C398.72272,362.79614 401.41129,368.78577 401.41129,368.78577 C401.41129,368.78577 405.37161,358.10498 414.69019,354.07086 C424.00876,350.03674 434.68015,351.33096 440.71204,359.97501 C446.74393,368.61905 445.41769,370.62418 445.41769,370.62418 C445.41769,370.62418 460.69492,355.23538 473.37872,359.8551 C486.06253,364.47482 492.11676,379.11844 490.13638,384.4588 C488.15604,389.79916 488.83041,391.79657 488.83041,391.79657 C488.83041,391.79657 506.81815,388.39719 512.17114,393.71054 C517.52411,399.0239 518.23236,410.35403 516.23969,412.36127 C514.24707,414.3685 514.26178,418.36823 514.26178,418.36823 C514.26178,418.36823 520.94812,423.67667 522.97266,430.33554 C524.99719,436.99442 522.35431,443.33716 520.8623,445.50922 C519.3703,447.68127 506.20709,448.72968 506.20709,448.72968 C506.20709,448.72968 510.41916,461.04688 500.44617,468.41656 C490.47318,475.78625 476.41425,459.83884 476.41425,459.83884 C476.41425,459.83884 479.79178,471.82578 471.81631,478.52148 C463.84085,485.21719 447.76965,465.944 447.76965,465.944 C447.76965,465.944 434.53207,491.99142 422.51733,488.03589 C410.50259,484.08032 410.44122,467.41492 410.44122,467.41492 C410.44122,467.41492 405.85559,489.43073 391.19626,491.48459 C376.53696,493.53848 371.8046,475.5563 371.8046,475.5563 z" Fill="Black" Stretch="Fill" Margin="-16.457,-40.1,-5.644,72.944" StrokeThickness="0"/>
-				<Ellipse Fill="White" HorizontalAlignment="Left" Height="24.915" Margin="69.904,0,0,52.302" VerticalAlignment="Bottom" Width="24.916" Stroke="Black"/>
-				<Ellipse Fill="White" HorizontalAlignment="Right" Height="24.915" Margin="0,0,63.926,52.302" VerticalAlignment="Bottom" Width="24.916" Stroke="Black"/>
-				<Ellipse x:Name="Eye1" HorizontalAlignment="Left" Height="11.965" Margin="81.295,0,0,58.962" VerticalAlignment="Bottom" Width="11.965">
-					<Ellipse.Fill>
-						<RadialGradientBrush GradientOrigin="0.663,0.15">
+			<Grid x:Name="WomanCharacter" Height="185.291" Canvas.Left="706.572" Canvas.Top="337.709" Width="194.241" Opacity="0">
+				<Path Data="F1M45.325,225.592C45.325,233.483,51.723,239.88,59.616,239.88L59.616,239.88C67.507,239.88,73.904,233.483,73.904,225.592L73.904,225.592C73.904,217.7,67.507,211.301,59.616,211.301L59.616,211.301C51.723,211.301,45.325,217.7,45.325,225.592" Height="28.579" Stretch="Fill" Width="28.579" HorizontalAlignment="Left" Margin="24.147,0,0,-7.246" VerticalAlignment="Bottom">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.731" RadiusX="0.674">
 							<GradientStop Color="White" Offset="0"/>
-							<GradientStop Color="#FF000268" Offset="0.511"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
 						</RadialGradientBrush>
-					</Ellipse.Fill>
-				</Ellipse>
-				<Ellipse x:Name="Eye2" HorizontalAlignment="Right" Height="11.965" Margin="0,0,65.316,58.962" VerticalAlignment="Bottom" Width="11.965">
-					<Ellipse.Fill>
-						<RadialGradientBrush GradientOrigin="0.663,0.15">
-							<GradientStop Color="White" Offset="0"/>
-							<GradientStop Color="#FF000268" Offset="0.511"/>
-						</RadialGradientBrush>
-					</Ellipse.Fill>
-				</Ellipse>
-				<Path Data="M109.41075,112.347 L107.06699,108.07401" HorizontalAlignment="Right" Height="3.894" Margin="0,0,83.249,73.658" Stretch="Fill" VerticalAlignment="Bottom" Width="3.343" Stroke="Black"/>
-				<Path Data="M112.15675,110.00459 L110.68568,106.55164" HorizontalAlignment="Right" Height="4.453" Margin="0,0,80.295,75.217" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="2.471"/>
-				<Path Data="M115.69255,108.40822 L115.26332,104.99312" HorizontalAlignment="Right" Height="4.789" Margin="0,0,76.633,76.277" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="1.64"/>
-				<Path Data="M119.7342,108.074 L120.47021,104.59895" HorizontalAlignment="Right" Height="4.475" Margin="0,0,72.771,76.217" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="1.736"/>
-				<Path Data="M122.77892,109.07399 L124.7654,105.54144" HorizontalAlignment="Right" Height="4.533" Margin="0,0,68.476,75.217" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="2.986"/>
-				<Path Data="M126.28733,111.49422 L128.92499,108.074" HorizontalAlignment="Right" Height="4.42" Margin="0,0,64.316,72.797" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="3.638"/>
-				<Path Data="M109.41075,112.347 L107.06699,108.07401" HorizontalAlignment="Left" Height="3.894" Margin="71.817,0,0,73.658" Stretch="Fill" VerticalAlignment="Bottom" Width="3.343" Stroke="Black"/>
-				<Path Data="M112.15675,110.00459 L110.68568,106.55164" HorizontalAlignment="Left" Height="4.453" Margin="75.643,0,0,75.217" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="2.471"/>
-				<Path Data="M115.69255,108.40822 L115.26332,104.99312" HorizontalAlignment="Left" Height="4.789" Margin="80.136,0,0,76.277" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="1.64"/>
-				<Path Data="M119.7342,108.074 L120.47021,104.59895" HorizontalAlignment="Left" Height="4.475" Margin="83.902,0,0,76.217" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="1.736"/>
-				<Path Data="M122.77892,109.07399 L124.7654,105.54144" HorizontalAlignment="Left" Height="4.533" Margin="86.947,0,0,75.217" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="2.986"/>
-				<Path Data="M126.28733,111.49422 L128.92499,108.074" HorizontalAlignment="Left" Height="4.42" Margin="90.455,0,0,72.797" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="3.638"/>
-				<Path Data="M94.91851,135.85991 C94.927719,138.35989 96.057281,139.73062 98.556808,139.59642 C101.05633,139.46222 102.42549,137.70692 102.41951,136.08214" Height="3.746" Margin="96.294,0,90.447,45.815" Stretch="Fill" VerticalAlignment="Bottom" Stroke="Black"/>
-				<Path Data="M73.433846,140.06406 C75.722496,150.55569 86.238396,153.89206 100.74014,154.33865 C115.24188,154.78525 121.96613,148.63519 125.19267,142.24846" Height="15.298" Margin="72.934,0,68.549,30.429" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom"/>
-				<Path Data="M76.059746,140.30438 C73.556999,139.5636 73.303055,137.56491 71.69326,141.69586" HorizontalAlignment="Left" Height="3.529" Margin="71.363,0,0,42.597" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="5.366"/>
-				<Path Data="M76.059746,140.30438 C73.556999,139.5636 73.303055,137.56491 71.69326,141.69586" HorizontalAlignment="Right" Height="3.529" Margin="0,0,66.475,40.331" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="5.366" RenderTransformOrigin="0.5,0.5">
-					<Path.RenderTransform>
-						<CompositeTransform Rotation="46.285"/>
-					</Path.RenderTransform>
+					</Path.Fill>
 				</Path>
-				<Path Data="M48.343178,115.48962 C46.5028,113.57972 44.3391,113.33731 43.932564,116.08883 C43.526028,118.84035 42.624279,123.76134 45.203686,122.75173 C47.783092,121.74212 49.360382,120.15253 49.360382,120.15253" HorizontalAlignment="Left" Height="9.847" Margin="42.943,0,0,61.905" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="6.917"/>
+				<Path Data="M73.9048,225.5913C73.9048,233.4833,67.5068,239.8803,59.6158,239.8803C51.7228,239.8803,45.3248,233.4833,45.3248,225.5913C45.3248,217.6993,51.7228,211.3003,59.6158,211.3003C67.5068,211.3003,73.9048,217.6993,73.9048,225.5913z" Height="30.58" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="30.58" HorizontalAlignment="Left" Margin="23.147,0,0,-8.246" VerticalAlignment="Bottom"/>
+				<Path Data="F1M186.678,223.406C186.678,231.298,193.076,237.694,200.969,237.694L200.969,237.694C208.86,237.694,215.257,231.298,215.257,223.406L215.257,223.406C215.257,215.513,208.86,209.115,200.969,209.115L200.969,209.115C193.076,209.115,186.678,215.513,186.678,223.406" Height="28.579" Stretch="Fill" Width="28.579" HorizontalAlignment="Right" Margin="0,0,0.162,-5.06" VerticalAlignment="Bottom">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.731" RadiusX="0.674">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M215.2578,223.4053C215.2578,231.2973,208.8598,237.6943,200.9688,237.6943C193.0758,237.6943,186.6778,231.2973,186.6778,223.4053C186.6778,215.5133,193.0758,209.1153,200.9688,209.1153C208.8598,209.1153,215.2578,215.5133,215.2578,223.4053z" Height="30.579" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="30.58" HorizontalAlignment="Right" Margin="0,0,-0.839,-6.06" VerticalAlignment="Bottom"/>
+				<Path Data="F1M54.922,226.526L69.681,224.531C68.919,222.899,67.475,222.306,65.778,222.306L65.778,222.306C61.251,222.306,54.922,226.526,54.922,226.526" Height="4.22" Stretch="Fill" Width="14.759" HorizontalAlignment="Left" Margin="33.744,0,0,6.108" VerticalAlignment="Bottom">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="2.263" RadiusX="0.368">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M54.9219,226.5259C54.9219,226.5259,66.8879,218.5469,69.6809,224.5309" Height="6.22" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="16.759" HorizontalAlignment="Left" Margin="32.744,0,0,5.108" VerticalAlignment="Bottom"/>
+				<Path Data="F1M63.975,217.736C63.975,254.376,93.678,284.076,130.324,284.076L130.324,284.076C166.961,284.076,196.664,254.376,196.664,217.736L196.664,217.736C196.664,181.093,166.961,151.388,130.324,151.388L130.324,151.388C93.678,151.388,63.975,181.093,63.975,217.736" Height="132.688" Stretch="Fill" Margin="42.797,0,18.755,-51.442" VerticalAlignment="Bottom">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.731" RadiusX="0.674">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M196.6646,217.7354C196.6646,254.3764,166.9606,284.0754,130.3246,284.0754C93.6786,284.0754,63.9756,254.3764,63.9756,217.7354C63.9756,181.0934,93.6786,151.3884,130.3246,151.3884C166.9606,151.3884,196.6646,181.0934,196.6646,217.7354z" Height="134.687" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Margin="41.798,0,17.754,-52.441" VerticalAlignment="Bottom"/>
+				<Path Data="F1M52.565,68.852C51.795,76.14,57.036,83.357,66.134,89.169L66.134,89.169C42.436,89.742,23.17,102.482,21.322,120.053L21.322,120.053C19.967,132.908,28.273,145.175,41.853,152.989L41.853,152.989C35.39,158.077,31.061,165.078,30.211,173.143L30.211,173.143C28.308,191.212,44.51,207.73,66.401,210.035L66.401,210.035C75.294,210.97,83.732,209.385,90.774,206L90.774,206C97.286,213.273,107.251,218.491,118.852,219.714L118.852,219.714C129.178,220.8,138.89,218.516,146.467,213.948L146.467,213.948C149.889,214.71,153.427,215.303,157.071,215.687L157.071,215.687C190.962,219.251,220.323,204.223,222.649,182.113L222.649,182.113C222.902,179.714,222.809,177.335,222.428,174.987L222.428,174.987C237.903,172.251,249.411,163.655,250.6,152.361L250.6,152.361C252.105,138.051,236.541,124.513,215.122,120.766L215.122,120.766C230.047,116.736,240.889,107.093,242.178,94.833L242.178,94.833C244.069,76.875,224.764,60.122,199.064,57.417L199.064,57.417C181.76,55.5940000000001,166.002,60.622,156.951,69.5700000000001L156.951,69.5700000000001C149.897,59.0940000000001,131.437,50.299,109.057,47.943L109.057,47.943C105.208,47.537,101.43,47.343,97.77,47.343L97.77,47.343C73.234,47.342,53.907,56.088,52.565,68.852" Stretch="Fill" Margin="0,0,-35.282,12.653" StrokeThickness="2" Stroke="Black">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.514" GradientOrigin="0.5,0.514" RadiusY="-0.495" RadiusX="-0.495">
+							<GradientStop Color="#FF006DFF" Offset="0"/>
+							<GradientStop Color="Black" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M90.3677,258.0566L96.7087,250.7126C96.7087,250.7126,112.7337,271.4126,128.0927,272.0776C143.4487,272.7476,157.9427,263.7496,160.4347,260.7306C162.1377,258.6736,163.1457,250.7126,163.1457,250.7126L172.2367,257.4866" Height="23.4" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Margin="68.19,0,42.182,-40.479" VerticalAlignment="Bottom"/>
+				<Path Data="M119.8389,224.1167C127.8939,224.4057,134.2369,229.8867,134.0039,236.3597C133.7729,242.8317,127.0509,247.8457,118.9979,247.5567C110.9409,247.2677,104.5999,241.7867,104.8319,235.3127C105.0629,228.8397,111.7819,223.8277,119.8389,224.1167z" Fill="White" Height="25.464" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Margin="82.648,0,80.409,-15.935" VerticalAlignment="Bottom"/>
+				<Path Data="F1M106.624,231.124L100.017,222.362C100.017,222.362,101.309,227.964,106.624,231.124" Height="8.762" Stretch="Fill" Width="6.607" HorizontalAlignment="Left" Margin="78.839,0,0,1.51" VerticalAlignment="Bottom">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="-0.448" RadiusX="-0.338">
+							<GradientStop Color="#FF1470B7" Offset="0"/>
+							<GradientStop Color="#FF009EE3" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M100.0166,222.3628C100.0166,222.3628,101.3086,227.9638,106.6236,231.1238" Height="10.761" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="8.607" HorizontalAlignment="Left" Margin="77.839,0,0,0.51" VerticalAlignment="Bottom"/>
+				<Path Data="F1M108.635,227.692L102.515,216.115C102.515,216.115,104.756,224.46,108.635,227.692" Height="11.577" Stretch="Fill" Width="6.12" HorizontalAlignment="Left" Margin="81.337,0,0,4.942" VerticalAlignment="Bottom">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="-0.405" RadiusX="-0.435">
+							<GradientStop Color="#FF1470B7" Offset="0"/>
+							<GradientStop Color="#FF009EE3" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M102.5156,216.1147C102.5156,216.1147,104.7566,224.4607,108.6346,227.6917" Height="13.577" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="8.119" HorizontalAlignment="Left" Margin="80.338,0,0,3.942" VerticalAlignment="Bottom"/>
+				<Path Data="F1M105.032,233.415L95.101,228.748C95.101,228.748,98.858,233.097,105.032,233.415" Height="4.667" Stretch="Fill" Width="9.931" HorizontalAlignment="Left" Margin="73.923,0,0,-0.781" VerticalAlignment="Bottom">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="-0.187" RadiusX="-0.05">
+							<GradientStop Color="#FF1470B7" Offset="0"/>
+							<GradientStop Color="#FF009EE3" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M95.1016,228.7476C95.1016,228.7476,98.8576,233.0976,105.0316,233.4156" Height="6.668" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="11.93" HorizontalAlignment="Left" Margin="72.924,0,0,-1.782" VerticalAlignment="Bottom"/>
+				<Path Data="M149.1763,223.3994C157.2303,223.6874,163.5743,229.1694,163.3423,235.6414C163.1093,242.1134,156.3893,247.1274,148.3353,246.8394C140.2773,246.5504,133.9373,241.0684,134.1693,234.5954C134.4013,228.1214,141.1193,223.1104,149.1763,223.3994z" Fill="White" Height="25.464" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="31.185" HorizontalAlignment="Right" Margin="0,0,51.071,-15.217" VerticalAlignment="Bottom"/>
+				<Path Data="M152.0703,227.1572C155.4463,227.2782,158.0503,231.0562,157.8873,235.5962C157.7243,240.1382,154.8563,243.7202,151.4813,243.5992C148.1053,243.4772,145.5003,239.7002,145.6643,235.1592C145.8263,230.6192,148.6953,227.0362,152.0703,227.1572z" Fill="#FF1D1D1B" Height="18.448" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="14.238" HorizontalAlignment="Right" Margin="0,0,65.083,-11.811" VerticalAlignment="Bottom"/>
+				<Path Data="F1M152.6875,233.2666C155.2465,233.3596,157.2635,235.0106,157.1935,236.9566C157.1245,238.9026,154.9945,240.4056,152.4345,240.3146C149.8765,240.2226,147.8585,238.5706,147.9295,236.6256C147.9995,234.6786,150.1295,233.1746,152.6875,233.2666" Fill="White" Height="7.056" Stretch="Fill" Width="9.268" HorizontalAlignment="Right" Margin="0,0,70.053,-6.06" VerticalAlignment="Bottom"/>
+				<Path Data="F1M134.877,230.406L128.27,221.644C128.27,221.644,129.562,227.246,134.877,230.406" Height="8.762" Stretch="Fill" Width="6.607" HorizontalAlignment="Right" Margin="0,0,80.542,2.228" VerticalAlignment="Bottom">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="-0.448" RadiusX="-0.338">
+							<GradientStop Color="#FF1470B7" Offset="0"/>
+							<GradientStop Color="#FF009EE3" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M128.2695,221.6445C128.2695,221.6445,129.5625,227.2455,134.8765,230.4055" Height="10.761" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="8.607" HorizontalAlignment="Right" Margin="0,0,79.542,1.228" VerticalAlignment="Bottom"/>
+				<Path Data="F1M136.887,226.973L130.768,215.397C130.768,215.397,133.009,223.742,136.887,226.973" Height="11.576" Stretch="Fill" Width="6.119" HorizontalAlignment="Right" Margin="0,0,78.532,5.661" VerticalAlignment="Bottom">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="-0.405" RadiusX="-0.435">
+							<GradientStop Color="#FF1470B7" Offset="0"/>
+							<GradientStop Color="#FF009EE3" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M130.7686,215.3965C130.7686,215.3965,133.0096,223.7425,136.8876,226.9735" Height="13.577" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="8.119" HorizontalAlignment="Right" Margin="0,0,77.531,4.66" VerticalAlignment="Bottom"/>
+				<Path Data="M122.7329,227.8755C126.1089,227.9965,128.7129,231.7745,128.5499,236.3145C128.3869,240.8555,125.5199,244.4385,122.1429,244.3175C118.7689,244.1955,116.1629,240.4185,116.3279,235.8765C116.4889,231.3375,119.3579,227.7535,122.7329,227.8755z" Fill="#FF1D1D1B" Height="18.448" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Margin="85.584,0,94.42,-12.529" VerticalAlignment="Bottom"/>
+				<Path Data="F1M123.3506,233.9849C125.9086,234.0769,127.9266,235.7289,127.8556,237.6749C127.7866,239.6219,125.6566,241.1239,123.0966,241.0329C120.5396,240.9409,118.5216,239.2889,118.5926,237.3429C118.6616,235.3969,120.7916,233.8929,123.3506,233.9849" Fill="White" Height="7.056" Stretch="Fill" Margin="85.583,0,0,-6.778" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="9.267"/>
+				<Path Data="F1M204.902,224.531C203.705,222.936,203.305,222.536,196.126,222.138L196.126,222.138z" Height="2.393" Stretch="Fill" Width="8.776" HorizontalAlignment="Right" Margin="0,0,10.517,8.103" VerticalAlignment="Bottom">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="2.365" RadiusX="0.366">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M196.126,222.1372C203.306,222.5362,203.705,222.9352,204.902,224.5312" Height="4.394" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="10.776" HorizontalAlignment="Right" Margin="0,0,9.517,7.103" VerticalAlignment="Bottom"/>
+				<Path Data="F1M131.108,253.649C136.692,259.234,139.086,246.47,139.086,246.47L139.086,246.47z" Height="8.593" Stretch="Fill" Width="7.978" HorizontalAlignment="Right" Margin="0,0,76.333,-22.429" VerticalAlignment="Bottom">
+					<Path.Fill>
+						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.849" RadiusX="0.52">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="#FFECECEC" Offset="1"/>
+						</RadialGradientBrush>
+					</Path.Fill>
+				</Path>
+				<Path Data="M139.0859,246.4697C139.0859,246.4697,136.6919,259.2337,131.1079,253.6497" Height="10.593" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="9.978" HorizontalAlignment="Right" Margin="0,0,75.333,-23.429" VerticalAlignment="Bottom"/>
 				<TextBlock x:Name="txtWomanHead" Height="62.171" Margin="53.86,0,20.401,30.429" TextWrapping="Wrap" Text="Onthou produk beteken X" VerticalAlignment="Bottom" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="21.333" Foreground="White" TextAlignment="Center"/>
 			</Grid>
 			<Grid x:Name="PrimeFactor2" Height="227.806" Canvas.Left="504.987" Canvas.Top="340.052" Width="197.585" Background="#00FFFBFB" Opacity="0">
 				<TextBlock TextWrapping="Wrap" Margin="54.924,35.989,29.534,37.293" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="21.333" Foreground="White"><Run Text="3  27"/><LineBreak/><Run Text="3  9"/><LineBreak/><Run Text="3  3"/><LineBreak/><Run Text="    1"/></TextBlock>
-				<TextBlock Height="51.464" TextWrapping="Wrap" Margin="0,0,-17.341,8" VerticalAlignment="Bottom" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="21.333"><Run Text="     3 x 3 x 3 = 27"/><LineBreak/><Run Text="of  3"/><Span><Run Text="³ = 27"/></Span><LineBreak/><Run/></TextBlock>
+				<TextBlock Height="51.464" TextWrapping="Wrap" Margin="0,0,-17.341,8" VerticalAlignment="Bottom" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Foreground="White"><Run Text="     3 x 3 x 3 = 27"/><LineBreak/><Run Text="of  3"/><Span><Run Text="³ = 27"/></Span><LineBreak/><Run/></TextBlock>
 				<Path Data="M73.523987,39.221367 L73.523987,136.03" HorizontalAlignment="Left" Margin="73.59,38.221,0,85.786" Stretch="Fill" Stroke="Black" StrokeThickness="2" Width="2"/>
 				<Path Data="M31.502655,115.45989 L100.26902,115.45989" Height="2" Margin="46.051,59.652,80.768,0" Stretch="Fill" Stroke="Black" StrokeThickness="2" VerticalAlignment="Top"/>
 				<Path Data="M31.502655,115.45989 L100.26902,115.45989" Height="2" Margin="46.051,111.156,80.768,0" Stretch="Fill" Stroke="Black" StrokeThickness="2" VerticalAlignment="Top"/>
