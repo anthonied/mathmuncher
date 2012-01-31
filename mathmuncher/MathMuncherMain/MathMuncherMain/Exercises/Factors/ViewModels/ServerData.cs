@@ -12,12 +12,19 @@ using System.Collections.Generic;
 
 namespace MathMuncherMain.Exercises.Factors.ViewModels
 {
+
+    
+    public class ServerData_PF
+    {
+        public List<string> lFactorsNumbers_PF_1 = new List<string>(new string[] { "3", "5", "7", "11", "13", "17", "19", "23", "29" });
+    }
    
     public class ServerData_G7_1
     {
         //public List<string> lFactorsNumbers_G7_1 = new List<string>(new string[] { "10", "16", "18","24","30","40","81","75","56","100","64","144"});
         public List<string> lFactorsNumbers_G7_1 = new List<string>(new string[] { "10", "16"});      
     }
+
 
     public class ServerData_G7_GGF
     {

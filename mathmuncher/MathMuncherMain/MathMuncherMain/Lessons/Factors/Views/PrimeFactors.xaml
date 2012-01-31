@@ -1,4 +1,5 @@
 ﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:MathMuncherMain" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" xmlns:MathMuncherMain_Lessons_Factors_Views="clr-namespace:MathMuncherMain.Lessons.Factors.Views" xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+	xmlns:MathMuncherMain_Exercises_Factors_Views="clr-namespace:MathMuncherMain.Exercises.Factors.Views"
 	x:Class="MathMuncherMain.PrimeFactors"
 	d:DesignWidth="640" d:DesignHeight="480" Width="1024" Height="768" mc:Ignorable="d">
 
@@ -17,8 +18,8 @@
 				</VisualStateGroup.Transitions>
 				<VisualState x:Name="BaseState">
 					<Storyboard>
-						<DoubleAnimation Duration="0" To="437.544" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="grid" d:IsOptimized="True"/>
-						<DoubleAnimation Duration="0" To="418.392" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="grid" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="437.544" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="Star" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="418.392" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="Star" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Wolk2_Copy" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="2.25" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)" Storyboard.TargetName="Wolk2_Copy" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="-30.408" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="Wolk2_Copy" d:IsOptimized="True"/>
@@ -31,7 +32,7 @@
 						<DoubleAnimation Duration="0" To="14.906" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="txtPrimefactors" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="29.333" Storyboard.TargetProperty="(TextBlock.FontSize)" Storyboard.TargetName="txtPrimefactors" d:IsOptimized="True"/>
 						<ColorAnimation Duration="0" To="#FF00EDFF" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="Wolk2_Copy" d:IsOptimized="True"/>
-						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid">
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Star">
 							<DiscreteObjectKeyFrame KeyTime="0">
 								<DiscreteObjectKeyFrame.Value>
 									<Visibility>Visible</Visibility>
@@ -50,35 +51,55 @@
 								</DiscreteObjectKeyFrame.Value>
 							</DiscreteObjectKeyFrame>
 						</ObjectAnimationUsingKeyFrames>
-						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid">
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Star">
 							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-							<EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="1"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tbLessonIntro">
 							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
 							<EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.99"/>
 						</DoubleAnimationUsingKeyFrames>
-						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="cmdPrevious">
-							<DiscreteObjectKeyFrame KeyTime="0">
-								<DiscreteObjectKeyFrame.Value>
-									<Visibility>Visible</Visibility>
-								</DiscreteObjectKeyFrame.Value>
-							</DiscreteObjectKeyFrame>
-						</ObjectAnimationUsingKeyFrames>
-						<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="cmdPrevious" d:IsOptimized="True"/>
 						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.Text)" Storyboard.TargetName="tbBubbleHeading">
 							<DiscreteObjectKeyFrame KeyTime="0" Value="Nou gaan jy kennis maak met"/>
 						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Left)" Storyboard.TargetName="Star">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<System:Double>17.671</System:Double>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+							<DiscreteObjectKeyFrame KeyTime="0:0:1.6">
+								<DiscreteObjectKeyFrame.Value>
+									<System:Double>439.31</System:Double>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Top)" Storyboard.TargetName="Star">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<System:Double>-63.243</System:Double>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+							<DiscreteObjectKeyFrame KeyTime="0:0:1.6">
+								<DiscreteObjectKeyFrame.Value>
+									<System:Double>381.207</System:Double>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tbBubbleHeading">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="LessonState1">
-					<Storyboard>
+                    <Storyboard Completed="Storyboard_Completed">
 						<DoubleAnimation Duration="0" To="-0.011" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Storyboard.TargetName="Wolk" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="6.12" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="Wolk" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="0.01" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Wolk" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tbBubbleHeading" d:IsOptimized="True"/>
 						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.Text)" Storyboard.TargetName="tbLessonIntro">
-							<DiscreteObjectKeyFrame KeyTime="0" Value="Kom ons voltooi eers die ry priemgetalle"/>
+							<DiscreteObjectKeyFrame KeyTime="0" Value="Priemgetalle is baie belangrik wanneer mens priemfaktore probeer bereken, daarom gaan ons gou weer na priemgetalle kyk"/>
 						</ObjectAnimationUsingKeyFrames>
 						<DoubleAnimation Duration="0" To="40.279" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="tbLessonIntro" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="-60.149" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="tbLessonIntro" d:IsOptimized="True"/>
@@ -95,10 +116,11 @@
 						<PointAnimation Duration="0" To="28.6939878198585,7.24960981811406" Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(BezierSegment.Point2)" Storyboard.TargetName="path11" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="224.998" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="StarCharacter" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="-0.829" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="StarCharacter" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="cmdPrevious" d:IsOptimized="True"/>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="LessonState2">
-					<Storyboard>
+					<Storyboard Completed="Storyboard_Completed2">
 						<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="StarCharacter" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Wolk" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tbBubbleHeading" d:IsOptimized="True"/>
@@ -149,6 +171,7 @@
 						<PointAnimation Duration="0" To="28.3614872905493,6.39643475571169" Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(BezierSegment.Point2)" Storyboard.TargetName="path11" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="-26.983" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="txtTip" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="4.599" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="txtTip" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="cmdPrevious" d:IsOptimized="True"/>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="LessonState3">
@@ -164,6 +187,12 @@
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimation Duration="0" To="-16.71" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="tbLessonIntro" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="-56.939" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="tbLessonIntro" d:IsOptimized="True"/>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="PrimeFactor">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="cmdPrevious" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="cmdNext" d:IsOptimized="True"/>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="LessonState4">
@@ -234,6 +263,7 @@
 						<DoubleAnimation Duration="0:0:0.4" To="0.53" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="path7" d:IsOptimized="True"/>
 						<ColorAnimation Duration="0:0:0.4" To="#FF00999D" Storyboard.TargetProperty="(Shape.Fill).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="path7" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0" To="18.667" Storyboard.TargetProperty="(TextBlock.FontSize)" Storyboard.TargetName="txtFactor1comment" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="cmdPrevious" d:IsOptimized="True"/>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="LessonState5">
@@ -256,16 +286,22 @@
 							<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0"/>
 						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimation Duration="0:0:0.6" To="15" Storyboard.TargetProperty="(Shape.StrokeThickness)" Storyboard.TargetName="ellipse3" d:IsOptimized="True"/>
-						<ColorAnimation Duration="0:0:0.6" To="#00FFD200" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="ellipse3" d:IsOptimized="True"/>
-						<DoubleAnimation Duration="0:0:0.6" To="0.643" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" Storyboard.TargetName="ellipse3" d:IsOptimized="True"/>
-						<ColorAnimation Duration="0:0:0.6" To="DeepSkyBlue" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="ellipse3" d:IsOptimized="True"/>
-						<ColorAnimation Duration="0:0:0.6" To="#0000FF33" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="ellipse3" d:IsOptimized="True"/>
-						<DoubleAnimation Duration="0:0:0.6" To="1" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="ellipse3" d:IsOptimized="True"/>
-						<DoubleAnimation Duration="0:0:0.6" To="0.617" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[3].(GradientStop.Offset)" Storyboard.TargetName="ellipse3" d:IsOptimized="True"/>
-						<ColorAnimation Duration="0:0:0.6" To="#C7000000" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[3].(GradientStop.Color)" Storyboard.TargetName="ellipse3" d:IsOptimized="True"/>
+						<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[1].(GradientStop.Color)" Storyboard.TargetName="ellipse3" RepeatBehavior="Forever">
+							<EasingColorKeyFrame KeyTime="0:0:0.6" Value="#67000000"/>
+							<EasingColorKeyFrame KeyTime="0:0:1.2" Value="#67000000"/>
+							<EasingColorKeyFrame KeyTime="0:0:1.5" Value="#676F4693"/>
+						</ColorAnimationUsingKeyFrames>
+						<ColorAnimationUsingKeyFrames RepeatBehavior="Forever" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="ellipse3">
+							<EasingColorKeyFrame KeyTime="0:0:0.6" Value="#0000FF33"/>
+						</ColorAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames RepeatBehavior="Forever" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[1].(GradientStop.Offset)" Storyboard.TargetName="ellipse3">
+							<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.817"/>
+						</DoubleAnimationUsingKeyFrames>
 						<DoubleAnimation Duration="0:0:0.6" To="1.369" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)" Storyboard.TargetName="ellipse3" d:IsOptimized="True"/>
 						<DoubleAnimation Duration="0:0:0.6" To="1.369" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Storyboard.TargetName="ellipse3" d:IsOptimized="True"/>
-						<DoubleAnimation Duration="0:0:0.6" To="0.448" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[0].(GradientStop.Offset)" Storyboard.TargetName="ellipse3" d:IsOptimized="True"/>
+						<DoubleAnimationUsingKeyFrames RepeatBehavior="Forever" Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[0].(GradientStop.Offset)" Storyboard.TargetName="ellipse3">
+							<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.087"/>
+						</DoubleAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Left)" Storyboard.TargetName="Wolk">
 							<DiscreteObjectKeyFrame KeyTime="0">
 								<DiscreteObjectKeyFrame.Value>
@@ -281,6 +317,33 @@
 							</DiscreteObjectKeyFrame>
 						</ObjectAnimationUsingKeyFrames>
 						<DoubleAnimation Duration="0:0:1.3" To="18.667" Storyboard.TargetProperty="(TextBlock.FontSize)" Storyboard.TargetName="txtFactor1comment" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="cmdPrevious" d:IsOptimized="True"/>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" Storyboard.TargetName="ellipse3" RepeatBehavior="Forever">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0.483"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.93"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0.483"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="ellipse3" RepeatBehavior="Forever">
+							<EasingColorKeyFrame KeyTime="0" Value="#837B7B7B"/>
+							<EasingColorKeyFrame KeyTime="0:0:0.6" Value="#FF8800FF"/>
+							<EasingColorKeyFrame KeyTime="0:0:1.2" Value="#837B7B7B"/>
+						</ColorAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[3].(GradientStop.Offset)" Storyboard.TargetName="ellipse3" RepeatBehavior="Forever">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0.504"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.7"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0.504"/>
+						</DoubleAnimationUsingKeyFrames>
+						<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[4].(GradientStop.Color)" Storyboard.TargetName="ellipse3" RepeatBehavior="Forever">
+							<EasingColorKeyFrame KeyTime="0" Value="#FF8800FF"/>
+							<EasingColorKeyFrame KeyTime="0:0:0.6" Value="#058800FF"/>
+							<EasingColorKeyFrame KeyTime="0:0:1.2" Value="#FF8800FF"/>
+						</ColorAnimationUsingKeyFrames>
+						<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Stroke).(GradientBrush.GradientStops)[3].(GradientStop.Color)" Storyboard.TargetName="ellipse3" RepeatBehavior="Forever">
+							<EasingColorKeyFrame KeyTime="0" Value="#C7FF00DE"/>
+							<EasingColorKeyFrame KeyTime="0:0:0.6" Value="#C7BE74FF"/>
+							<EasingColorKeyFrame KeyTime="0:0:1.2" Value="#C7FF00DE"/>
+							<EasingColorKeyFrame KeyTime="0:0:1.5" Value="#C7FF00DE"/>
+						</ColorAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
 				<VisualState x:Name="LessonState6">
@@ -343,7 +406,7 @@
 							</DiscreteObjectKeyFrame>
 						</ObjectAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.Text)" Storyboard.TargetName="txtFactor1comment">
-							<DiscreteObjectKeyFrame KeyTime="0" Value="3 gaan in 9 in 3 keer 3 gaan in 3 in 1 keer"/>
+							<DiscreteObjectKeyFrame KeyTime="0" Value="3 gaan in 9 in 3 keer 3 gaan in 3 in 1 keer"/>
 							<DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="  9 = 3 x 3  = 3² "/>
 						</ObjectAnimationUsingKeyFrames>
 						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="txtWomanHead">
@@ -397,6 +460,11 @@
 						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.FontSize)" Storyboard.TargetName="txtFactor1comment">
 							<EasingDoubleKeyFrame KeyTime="0" Value="18.667"/>
 							<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="26.667"/>
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="cmdPrevious" d:IsOptimized="True"/>
+						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="txtWomanHead">
+							<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+							<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
 						</DoubleAnimationUsingKeyFrames>
 					</Storyboard>
 				</VisualState>
@@ -592,6 +660,7 @@
 						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.Text)" Storyboard.TargetName="txtFactor1comment">
 							<DiscreteObjectKeyFrame KeyTime="0" Value="  9 = 3 x 3  = 3² "/>
 						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="cmdPrevious" d:IsOptimized="True"/>
 					</Storyboard>
 				</VisualState>
 			</VisualStateGroup>
@@ -990,9 +1059,9 @@
 						<CompositeTransform/>
 					</RichTextBox.RenderTransform>
 					<Paragraph><Run FontWeight="Bold" Text="ONTHOU!" TextDecorations="Underline"/></Paragraph>
-					<Paragraph><Run Text="- 1 is NOOIT n Priemgetal nie "/></Paragraph>
-					<Paragraph><Run Text="- 2 is die enigste heelgetal wat ook n priemgetal is"/></Paragraph>
 					<Paragraph><Run Text="- 'n Priemgetal het net 2 faktore, 1 en die getal self"/></Paragraph>
+					<Paragraph><Run Text="- 1 is NOOIT n Priemgetal nie "/></Paragraph>
+					<Paragraph><Run Text="- 2 is die enigste heelgetal wat  ook n priemgetal is"/></Paragraph>
 					<Paragraph><Run Text="- 'n Saamgestelde getal is enige getal met meer as 2 faktore"/><InlineUIContainer>
 							<Grid x:Name="grid1" Height="140" Opacity="0" Width="139"/>
 						</InlineUIContainer></Paragraph>
@@ -1058,12 +1127,12 @@
 					<Path Data="F1M456.5117,500.0449C459.7707,500.1619,462.3407,502.2659,462.2507,504.7449C462.1617,507.2249,459.4497,509.1389,456.1887,509.0229C452.9307,508.9049,450.3607,506.8009,450.4497,504.3219C450.5377,501.8429,453.2517,499.9279,456.5117,500.0449" Fill="White" Height="8.988" Stretch="Fill" Width="11.806" HorizontalAlignment="Left" Margin="30.92,0,0,9.319" VerticalAlignment="Bottom"/>
 				</Grid>
 			</Viewbox>
-			<Canvas x:Name="cmdPrevious" Height="48.577" Width="181.473" Cursor="Hand" Canvas.Left="230" Canvas.Top="584">
+			<Canvas x:Name="cmdPrevious" Height="48.577" Width="181.473" Cursor="Hand" Canvas.Left="230" Canvas.Top="584" MouseLeftButtonUp="cmdPrevious_MouseLeftButtonUp" Opacity="0">
 				<Path Data="F1M507.1108,51.7349C507.1108,65.1499,496.2358,76.0239,482.8218,76.0239L349.9258,76.0239C336.5118,76.0239,325.6378,65.1499,325.6378,51.7349C325.6378,38.3209,336.5118,27.4469,349.9258,27.4469L482.8218,27.4469C496.2358,27.4469,507.1108,38.3209,507.1108,51.7349" Fill="#FFDD5B03" Height="48.577" Stretch="Fill" Width="181.473"/>
 				<Path Data="F1M506.9097,48.6660000000001C505.4007,36.7020000000001,495.1957,27.4470000000001,482.8227,27.4470000000001L349.9257,27.4470000000001C337.5527,27.4470000000001,327.3467,36.7020000000001,325.8377,48.6660000000001z" Fill="#FFEA9963" Height="21.219" Canvas.Left="0.2" Stretch="Fill" Width="181.072"/>
 				<TextBlock x:Name="textBlock2" Height="37" TextWrapping="Wrap" Text="&lt;&lt; terug" Canvas.Top="8" Width="163" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Foreground="White" RenderTransformOrigin="0.699,0.27" Canvas.Left="18" Cursor="Hand"/>
 			</Canvas>
-			<Canvas x:Name="cmdNext" Height="48.577" Width="181.473" Cursor="Hand" Canvas.Left="748" Canvas.Top="586">
+			<Canvas x:Name="cmdNext" Height="48.577" Width="181.473" Cursor="Hand" Canvas.Left="748" Canvas.Top="586" MouseLeftButtonUp="cmdNext_MouseLeftButtonUp">
 				<i:Interaction.Triggers>
 					<i:EventTrigger EventName="MouseLeftButtonDown">
 						<i:Interaction.Behaviors>
@@ -1091,16 +1160,16 @@
 				<TextBlock x:Name="Factor12_text" Height="21.332" Canvas.Left="12.726" TextWrapping="Wrap" Canvas.Top="20.003" Width="43.073" Text="12" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="18.667" Foreground="White" />
 			</Canvas>
 			<TextBlock x:Name="FactorText16" Height="46.634" Canvas.Left="440.644" TextWrapping="Wrap" Text="= {  1  , 2  , 3 , 4  , 6 , 12  }" Canvas.Top="491" Width="407.273" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="29.333" Foreground="White" Visibility="Collapsed"/>
-			<Grid x:Name="grid" Height="118.793" Canvas.Left="25.98" Canvas.Top="-47.589" Width="224.286" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+			<Grid x:Name="Star" Height="118.793" Canvas.Left="439.31" Canvas.Top="381.207" Width="224.286" RenderTransformOrigin="0.5,0.5" Opacity="0.005">
 				<Grid.RenderTransform>
 					<CompositeTransform/>
 				</Grid.RenderTransform>
-				<Path x:Name="Wolk2_Copy" Data="M53.2827,496.416L30.3977,453.238L73.1437,465.328L98.1867,447.193L105.9597,461.01C105.9597,461.01,133.5937,445.034,135.3207,447.193C137.0487,449.353,152.5917,461.441,152.5917,461.441L173.3177,444.171L189.2927,456.261L239.3797,444.171L225.1307,474.827L248.0147,486.917L221.2447,508.506L248.0147,522.755L212.6087,531.39L228.1537,554.706L204.5527,556.865L207.4277,580.181L185.4077,571.113L185.4077,599.611L156.0467,572.409L128.4117,599.611L105.0957,565.068L64.9407,592.703L62.7817,542.616L26.0807,542.616L53.2827,496.416z" Fill="#FFF6F6F6" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" RenderTransformOrigin="0.5,0.5" Opacity="0" Margin="81.208,0,0,0">
+				<Path x:Name="Wolk2_Copy" Data="M53.2827,496.416L30.3977,453.238L73.1437,465.328L98.1867,447.193L105.9597,461.01C105.9597,461.01,133.5937,445.034,135.3207,447.193C137.0487,449.353,152.5917,461.441,152.5917,461.441L173.3177,444.171L189.2927,456.261L239.3797,444.171L225.1307,474.827L248.0147,486.917L221.2447,508.506L248.0147,522.755L212.6087,531.39L228.1537,554.706L204.5527,556.865L207.4277,580.181L185.4077,571.113L185.4077,599.611L156.0467,572.409L128.4117,599.611L105.0957,565.068L64.9407,592.703L62.7817,542.616L26.0807,542.616L53.2827,496.416z" Fill="#FFF6F6F6" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" RenderTransformOrigin="0.5,0.5" Opacity="0.665" Margin="81.208,0,0,0">
 					<Path.RenderTransform>
 						<CompositeTransform/>
 					</Path.RenderTransform>
 				</Path>
-				<TextBlock x:Name="txtPrimefactors" TextWrapping="Wrap" Text="? GGF ?" Width="201.2" HorizontalAlignment="Right" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" RenderTransformOrigin="0.5,0.5" Opacity="0" Margin="0,23,23.086,59.249">
+				<TextBlock x:Name="txtPrimefactors" TextWrapping="Wrap" Width="201.2" HorizontalAlignment="Right" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" RenderTransformOrigin="0.5,0.5" Opacity="0" Margin="0,23,23.086,59.249">
 					<TextBlock.RenderTransform>
 						<CompositeTransform/>
 					</TextBlock.RenderTransform>
@@ -1153,6 +1222,7 @@
 							<GradientStop Color="White" Offset="1"/>
 							<GradientStop Color="#837B7B7B" Offset="0.483"/>
 							<GradientStop Color="#C7FF0000" Offset="0.504"/>
+							<GradientStop Color="#FF8800FF" Offset="0.987"/>
 						</RadialGradientBrush>
 					</Ellipse.Stroke>
 				</Ellipse>
@@ -1162,7 +1232,7 @@
 					<Path.Fill>
 						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.731" RadiusX="0.674">
 							<GradientStop Color="White" Offset="0"/>
-							<GradientStop Color="#FFECECEC" Offset="1"/>
+							<GradientStop Color="#FFFE9563" Offset="1"/>
 						</RadialGradientBrush>
 					</Path.Fill>
 				</Path>
@@ -1171,7 +1241,7 @@
 					<Path.Fill>
 						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.731" RadiusX="0.674">
 							<GradientStop Color="White" Offset="0"/>
-							<GradientStop Color="#FFECECEC" Offset="1"/>
+							<GradientStop Color="#FFFE9462" Offset="1"/>
 						</RadialGradientBrush>
 					</Path.Fill>
 				</Path>
@@ -1189,7 +1259,7 @@
 					<Path.Fill>
 						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.731" RadiusX="0.674">
 							<GradientStop Color="White" Offset="0"/>
-							<GradientStop Color="#FFECECEC" Offset="1"/>
+							<GradientStop Color="#FFFF6923" Offset="1"/>
 						</RadialGradientBrush>
 					</Path.Fill>
 				</Path>
@@ -1197,8 +1267,8 @@
 				<Path Data="F1M52.565,68.852C51.795,76.14,57.036,83.357,66.134,89.169L66.134,89.169C42.436,89.742,23.17,102.482,21.322,120.053L21.322,120.053C19.967,132.908,28.273,145.175,41.853,152.989L41.853,152.989C35.39,158.077,31.061,165.078,30.211,173.143L30.211,173.143C28.308,191.212,44.51,207.73,66.401,210.035L66.401,210.035C75.294,210.97,83.732,209.385,90.774,206L90.774,206C97.286,213.273,107.251,218.491,118.852,219.714L118.852,219.714C129.178,220.8,138.89,218.516,146.467,213.948L146.467,213.948C149.889,214.71,153.427,215.303,157.071,215.687L157.071,215.687C190.962,219.251,220.323,204.223,222.649,182.113L222.649,182.113C222.902,179.714,222.809,177.335,222.428,174.987L222.428,174.987C237.903,172.251,249.411,163.655,250.6,152.361L250.6,152.361C252.105,138.051,236.541,124.513,215.122,120.766L215.122,120.766C230.047,116.736,240.889,107.093,242.178,94.833L242.178,94.833C244.069,76.875,224.764,60.122,199.064,57.417L199.064,57.417C181.76,55.5940000000001,166.002,60.622,156.951,69.5700000000001L156.951,69.5700000000001C149.897,59.0940000000001,131.437,50.299,109.057,47.943L109.057,47.943C105.208,47.537,101.43,47.343,97.77,47.343L97.77,47.343C73.234,47.342,53.907,56.088,52.565,68.852" Stretch="Fill" Margin="0,0,-35.282,12.653" StrokeThickness="2" Stroke="Black">
 					<Path.Fill>
 						<RadialGradientBrush Center="0.5,0.514" GradientOrigin="0.5,0.514" RadiusY="-0.495" RadiusX="-0.495">
-							<GradientStop Color="#FF006DFF" Offset="0"/>
-							<GradientStop Color="Black" Offset="1"/>
+							<GradientStop Color="#FFBC5F00" Offset="0"/>
+							<GradientStop Color="#FF411E00" Offset="1"/>
 						</RadialGradientBrush>
 					</Path.Fill>
 				</Path>
@@ -1263,16 +1333,8 @@
 					</Path.Fill>
 				</Path>
 				<Path Data="M196.126,222.1372C203.306,222.5362,203.705,222.9352,204.902,224.5312" Height="4.394" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="10.776" HorizontalAlignment="Right" Margin="0,0,9.517,7.103" VerticalAlignment="Bottom"/>
-				<Path Data="F1M131.108,253.649C136.692,259.234,139.086,246.47,139.086,246.47L139.086,246.47z" Height="8.593" Stretch="Fill" Width="7.978" HorizontalAlignment="Right" Margin="0,0,76.333,-22.429" VerticalAlignment="Bottom">
-					<Path.Fill>
-						<RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusY="0.849" RadiusX="0.52">
-							<GradientStop Color="White" Offset="0"/>
-							<GradientStop Color="#FFECECEC" Offset="1"/>
-						</RadialGradientBrush>
-					</Path.Fill>
-				</Path>
 				<Path Data="M139.0859,246.4697C139.0859,246.4697,136.6919,259.2337,131.1079,253.6497" Height="10.593" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="9.978" HorizontalAlignment="Right" Margin="0,0,75.333,-23.429" VerticalAlignment="Bottom"/>
-				<TextBlock x:Name="txtWomanHead" Height="62.171" Margin="53.86,0,20.401,30.429" TextWrapping="Wrap" Text="Onthou produk beteken X" VerticalAlignment="Bottom" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="21.333" Foreground="White" TextAlignment="Center"/>
+				<TextBlock x:Name="txtWomanHead" Margin="48.155,48.521,26.106,74.599" TextWrapping="Wrap" Text="Onthou produk beteken X" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="21.333" Foreground="White" TextAlignment="Center" Opacity="0"/>
 			</Grid>
 			<Grid x:Name="PrimeFactor2" Height="227.806" Canvas.Left="504.987" Canvas.Top="340.052" Width="197.585" Background="#00FFFBFB" Opacity="0">
 				<TextBlock TextWrapping="Wrap" Margin="54.924,35.989,29.534,37.293" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="21.333" Foreground="White"><Run Text="3  27"/><LineBreak/><Run Text="3  9"/><LineBreak/><Run Text="3  3"/><LineBreak/><Run Text="    1"/></TextBlock>
@@ -1283,6 +1345,18 @@
 				<Path Data="M31.502655,115.45989 L100.26902,115.45989" Height="2" Margin="46.051,0,80.768,85.786" Stretch="Fill" Stroke="Black" StrokeThickness="2" VerticalAlignment="Bottom"/>
 				<Path Data="M31.502655,115.45989 L100.26902,115.45989" Height="2" Margin="46.051,0,80.768,82.285" Stretch="Fill" Stroke="Black" StrokeThickness="2" VerticalAlignment="Bottom"/>
 			</Grid>
+		</Canvas>
+		<Canvas x:Name="PrimeFactor" Height="47.301" Margin="239,0,231,332" VerticalAlignment="Bottom" Opacity="0">
+			<TextBlock x:Name="FactorText9" Height="46.634" Canvas.Left="41.466" TextWrapping="Wrap" Text="{}{ 2  ,    ,    ,    ,    ,    ,    ,    ,    ,    }" Canvas.Top="0.667" Width="851.143" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="29.333" Foreground="White"/>
+			<MathMuncherMain_Exercises_Factors_Views:TextBox2 x:Name="txtPrimeFactor_1" Height="37.112" Canvas.Left="110" TextWrapping="Wrap" Width="38.986" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24"  Foreground="White" BorderThickness="0,0,0,1" MaxLength="2" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactor_KeyUp" Text="{Binding iPrimeValue1, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding sPrimeBackColor1}"/>
+			<MathMuncherMain_Exercises_Factors_Views:TextBox2 x:Name="txtPrimeFactor_2" Height="37.112" Canvas.Left="157" TextWrapping="Wrap" Width="38.986" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Foreground="White" BorderThickness="0,0,0,1" MaxLength="2" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactor_KeyUp" Text="{Binding iPrimeValue2, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding sPrimeBackColor2}"/>
+			<MathMuncherMain_Exercises_Factors_Views:TextBox2 x:Name="txtPrimeFactor_3" Height="37.112" Canvas.Left="203" TextWrapping="Wrap" Width="38.986" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Foreground="White" BorderThickness="0,0,0,1" MaxLength="2" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactor_KeyUp" Text="{Binding iPrimeValue3, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding sPrimeBackColor3}"/>
+			<MathMuncherMain_Exercises_Factors_Views:TextBox2 x:Name="txtPrimeFactor_4" Height="37.112" Canvas.Left="249" TextWrapping="Wrap" Width="38.986" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24"  Foreground="White" BorderThickness="0,0,0,1" MaxLength="2" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactor_KeyUp" Text="{Binding iPrimeValue4, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding sPrimeBackColor4}"/>
+			<MathMuncherMain_Exercises_Factors_Views:TextBox2 x:Name="txtPrimeFactor_5" Height="37.112" Canvas.Left="295" TextWrapping="Wrap" Width="38.986" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24"  Foreground="White" BorderThickness="0,0,0,1" MaxLength="2" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactor_KeyUp" Text="{Binding iPrimeValue5, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding sPrimeBackColor5}"/>
+			<MathMuncherMain_Exercises_Factors_Views:TextBox2 x:Name="txtPrimeFactor_6" Height="37.112" Canvas.Left="342" TextWrapping="Wrap" Width="38.986" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Foreground="White" BorderThickness="0,0,0,1" MaxLength="2" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactor_KeyUp" Text="{Binding iPrimeValue6, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding sPrimeBackColor6}"/>
+			<MathMuncherMain_Exercises_Factors_Views:TextBox2 x:Name="txtPrimeFactor_7" Height="37.112" Canvas.Left="388" TextWrapping="Wrap" Width="38.986" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Foreground="White" BorderThickness="0,0,0,1" MaxLength="2" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactor_KeyUp" Text="{Binding iPrimeValue7, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding sPrimeBackColor7}"/>
+			<MathMuncherMain_Exercises_Factors_Views:TextBox2 x:Name="txtPrimeFactor_8" Height="37.112" Canvas.Left="434" TextWrapping="Wrap" Width="38.986" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Foreground="White" BorderThickness="0,0,0,1" MaxLength="2" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactor_KeyUp" Text="{Binding iPrimeValue8, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding sPrimeBackColor8}"/>
+			<MathMuncherMain_Exercises_Factors_Views:TextBox2 x:Name="txtPrimeFactor_9" Height="37.112" Canvas.Left="480" TextWrapping="Wrap" Width="38.986" FontFamily="/MathMuncherMain;component/Fonts/Fonts.zip#AmerType Md BT" FontSize="24" Foreground="White" BorderThickness="0,0,0,1" MaxLength="2" Visibility="{Binding FormData.sFactorInputVisibility144}" KeyUp="txtFactorLast_KeyUp" Text="{Binding iPrimeValue9, Mode=TwoWay}" IsReadOnly="{Binding FormData.sFactorReadOnly144}" Background="{Binding sPrimeBackColor9}"/>
 		</Canvas>
 	</Grid>
 </UserControl>

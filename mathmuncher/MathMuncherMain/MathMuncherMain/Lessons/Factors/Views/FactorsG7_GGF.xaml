@@ -12,7 +12,11 @@
     	<VisualStateManager.VisualStateGroups>
     		<VisualStateGroup x:Name="VisualStateGroup" ei:ExtendedVisualStateManager.UseFluidLayout="True">
     			<VisualStateGroup.Transitions>
-    				<VisualTransition GeneratedDuration="0:0:1"/>
+    				<VisualTransition GeneratedDuration="0:0:0.4">
+    					<VisualTransition.GeneratedEasingFunction>
+    						<CubicEase EasingMode="EaseInOut"/>
+    					</VisualTransition.GeneratedEasingFunction>
+    				</VisualTransition>
     			</VisualStateGroup.Transitions>
     			<VisualState x:Name="LessonState1">
     				<Storyboard>
@@ -81,13 +85,6 @@
     							</DiscreteObjectKeyFrame.Value>
     						</DiscreteObjectKeyFrame>
     					</ObjectAnimationUsingKeyFrames>
-    					<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="tbBubbleHeading">
-    						<DiscreteObjectKeyFrame KeyTime="0">
-    							<DiscreteObjectKeyFrame.Value>
-    								<Visibility>Collapsed</Visibility>
-    							</DiscreteObjectKeyFrame.Value>
-    						</DiscreteObjectKeyFrame>
-    					</ObjectAnimationUsingKeyFrames>
     					<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock3">
     						<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
     						<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1"/>
@@ -100,6 +97,28 @@
     						<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
     						<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1"/>
     					</DoubleAnimationUsingKeyFrames>
+    					<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="tbBubbleHeading" d:IsOptimized="True"/>
+    					<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.HorizontalAlignment)" Storyboard.TargetName="path15">
+    						<DiscreteObjectKeyFrame KeyTime="0">
+    							<DiscreteObjectKeyFrame.Value>
+    								<HorizontalAlignment>Right</HorizontalAlignment>
+    							</DiscreteObjectKeyFrame.Value>
+    						</DiscreteObjectKeyFrame>
+    					</ObjectAnimationUsingKeyFrames>
+    					<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="path15">
+    						<DiscreteObjectKeyFrame KeyTime="0">
+    							<DiscreteObjectKeyFrame.Value>
+    								<Thickness>0,25.164,39.478,0</Thickness>
+    							</DiscreteObjectKeyFrame.Value>
+    						</DiscreteObjectKeyFrame>
+    					</ObjectAnimationUsingKeyFrames>
+    					<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="path13">
+    						<DiscreteObjectKeyFrame KeyTime="0">
+    							<DiscreteObjectKeyFrame.Value>
+    								<Thickness>40.314,25.164,0,0</Thickness>
+    							</DiscreteObjectKeyFrame.Value>
+    						</DiscreteObjectKeyFrame>
+    					</ObjectAnimationUsingKeyFrames>
     				</Storyboard>
     			</VisualState>
     			<VisualState x:Name="BaseState">
@@ -685,7 +704,7 @@
     			<Path x:Name="path12" Data="M104.2153,378.9072C104.2153,384.1922,100.7733,388.4772,96.5263,388.4772C92.2783,388.4772,88.8363,384.1922,88.8363,378.9072C88.8363,373.6212,92.2783,369.3372,96.5263,369.3372C100.7733,369.3372,104.2153,373.6212,104.2153,378.9072z" Fill="White" Height="21.14" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="17.379" Margin="36.283,21.618,53.526,0" VerticalAlignment="Top" d:LayoutOverrides="Height"/>
     			<Path x:Name="path13" Data="M101.9194,383.6533C101.9194,385.8683,99.5044,387.6633,96.5254,387.6633C93.5464,387.6633,91.1324,385.8683,91.1324,383.6533C91.1324,381.4383,93.5464,379.6433,96.5254,379.6433C99.5044,379.6433,101.9194,381.4383,101.9194,383.6533z" Fill="#FF1D1D1B" Height="10.02" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="12.787" HorizontalAlignment="Left" Margin="38.579,31.924,0,0" VerticalAlignment="Top" d:LayoutOverrides="Width, Height"/>
     			<Path x:Name="path14" Data="M118.7134,378.9072C118.7134,384.1922,115.2714,388.4772,111.0244,388.4772C106.7764,388.4772,103.3344,384.1922,103.3344,378.9072C103.3344,373.6212,106.7764,369.3372,111.0244,369.3372C115.2714,369.3372,118.7134,373.6212,118.7134,378.9072z" Fill="White" Height="21.14" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="17.379" Margin="50.781,21.618,39.028,0" VerticalAlignment="Top" d:LayoutOverrides="Height"/>
-    			<Path x:Name="path15" Data="M116.4175,383.6533C116.4175,385.8683,114.0025,387.6633,111.0235,387.6633C108.0445,387.6633,105.6305,385.8683,105.6305,383.6533C105.6305,381.4383,108.0445,379.6433,111.0235,379.6433C114.0025,379.6433,116.4175,381.4383,116.4175,383.6533z" Fill="#FF1D1D1B" Height="10.02" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="12.787" Margin="53.077,31.924,41.324,0" VerticalAlignment="Top" d:LayoutOverrides="Height"/>
+    			<Path x:Name="path15" Data="M116.4175,383.6533C116.4175,385.8683,114.0025,387.6633,111.0235,387.6633C108.0445,387.6633,105.6305,385.8683,105.6305,383.6533C105.6305,381.4383,108.0445,379.6433,111.0235,379.6433C114.0025,379.6433,116.4175,381.4383,116.4175,383.6533z" Fill="#FF1D1D1B" Height="10.02" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="12.787" Margin="53.077,31.924,41.324,0" VerticalAlignment="Top"/>
     			<Path x:Name="Wolk2" Data="M53.2827,496.416L30.3977,453.238L73.1437,465.328L98.1867,447.193L105.9597,461.01C105.9597,461.01,133.5937,445.034,135.3207,447.193C137.0487,449.353,152.5917,461.441,152.5917,461.441L173.3177,444.171L189.2927,456.261L239.3797,444.171L225.1307,474.827L248.0147,486.917L221.2447,508.506L248.0147,522.755L212.6087,531.39L228.1537,554.706L204.5527,556.865L207.4277,580.181L185.4077,571.113L185.4077,599.611L156.0467,572.409L128.4117,599.611L105.0957,565.068L64.9407,592.703L62.7817,542.616L26.0807,542.616L53.2827,496.416z" Fill="#FFF6F6F6" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="#FF1D1D1B" StrokeThickness="2" StrokeMiterLimit="10" StrokeLineJoin="Miter" Margin="0,-47.589,-143.078,32.346" HorizontalAlignment="Right" Width="143.078" RenderTransformOrigin="0.5,0.5">
     				<Path.RenderTransform>
     					<CompositeTransform/>

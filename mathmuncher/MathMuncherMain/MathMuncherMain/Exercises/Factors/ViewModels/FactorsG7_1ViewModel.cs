@@ -35,7 +35,7 @@ namespace MathMuncherMain.Exercises.Factors.ViewModels
                 this.RaisePropertyChanged("SetInputFocus");
             }
         }
-
+        
         public ServerData_G7_1 ServerData { get; set; }
         public FormData FormData { get; set; }
         //end properties
@@ -50,7 +50,6 @@ namespace MathMuncherMain.Exercises.Factors.ViewModels
         {
           //  ServerData.GetServerData_G7_1();
             BuildFrontEnd();
-
         }
 
         public void BuildFrontEnd()

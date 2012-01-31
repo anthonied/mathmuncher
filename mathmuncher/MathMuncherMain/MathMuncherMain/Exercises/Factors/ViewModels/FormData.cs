@@ -341,7 +341,25 @@ namespace MathMuncherMain.Exercises.Factors.ViewModels
         private string _sExerciseBG8;
         private string _sExerciseBG9;
         private string _sExerciseBG10;
+        private string _sValuePF_1;
 
+        public string sValuePF_1
+        {
+            get
+            {
+                return this._sValuePF_1;
+            }
+            set
+            {
+                if (this._sValuePF_1 != value)
+                {
+                    this.ValidateProperty("sValuePF_1", value);
+                    this._sValuePF_1 = value;
+                    this.RaisePropertyChanged("sValuePF_1");
+                }
+
+            }
+        }
 
         public string sFactorVisibility4
         {
