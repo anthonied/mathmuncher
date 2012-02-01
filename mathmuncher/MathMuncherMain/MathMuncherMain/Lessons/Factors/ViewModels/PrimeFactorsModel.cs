@@ -11,7 +11,6 @@ using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using System.ComponentModel;
 using MathMuncherMain.Classes;
-using MathMuncherMain.Exercises.Factors.ViewModels;
 
 namespace MathMuncherMain.Lessons.Factors.ViewModels
 {
@@ -199,6 +198,18 @@ namespace MathMuncherMain.Lessons.Factors.ViewModels
             }
         }
 
+        private string _sBtnMarkText = "mark > >";
+
+        public string sBtnMarkText
+        {
+            get { return _sBtnMarkText; }
+            set
+            {
+                _sBtnMarkText = value;
+                this.RaisePropertyChanged("sBtnMarkText");
+            }
+        }
+
 private string _sPrimeBackColor1 = "transparent";
 public string sPrimeBackColor1
 {
@@ -222,7 +233,6 @@ public string sPrimeBackColor2
 }
 
 private string _sPrimeBackColor3 = "transparent";
-
 public string sPrimeBackColor3
 {
     get { return _sPrimeBackColor3; }
@@ -232,8 +242,8 @@ public string sPrimeBackColor3
         this.RaisePropertyChanged("sPrimeBackColor3");
     }
 }
-private string _sPrimeBackColor4 = "transparent";
 
+private string _sPrimeBackColor4 = "transparent";
 public string sPrimeBackColor4
 {
     get { return _sPrimeBackColor4; }
@@ -243,8 +253,8 @@ public string sPrimeBackColor4
         this.RaisePropertyChanged("sPrimeBackColor4");
     }
 }
-private string _sPrimeBackColor5 = "transparent";
 
+private string _sPrimeBackColor5 = "transparent";
 public string sPrimeBackColor5
 {
     get { return _sPrimeBackColor5; }
@@ -254,8 +264,8 @@ public string sPrimeBackColor5
         this.RaisePropertyChanged("sPrimeBackColor5");
     }
 }
-private string _sPrimeBackColor6 = "transparent";
 
+private string _sPrimeBackColor6 = "transparent";
 public string sPrimeBackColor6
 {
     get { return _sPrimeBackColor6; }
@@ -265,8 +275,8 @@ public string sPrimeBackColor6
         this.RaisePropertyChanged("sPrimeBackColor6");
     }
 }
-private string _sPrimeBackColor7 = "transparent";
 
+private string _sPrimeBackColor7 = "transparent";
 public string sPrimeBackColor7
 {
     get { return _sPrimeBackColor7; }
@@ -276,8 +286,8 @@ public string sPrimeBackColor7
         this.RaisePropertyChanged("sPrimeBackColor7");
     }
 }
-private string _sPrimeBackColor8 = "transparent";
 
+private string _sPrimeBackColor8 = "transparent";
 public string sPrimeBackColor8
 {
     get { return _sPrimeBackColor8; }
@@ -285,8 +295,8 @@ public string sPrimeBackColor8
     this.RaisePropertyChanged("sPrimeBackColor8");
     }
 }
-private string _sPrimeBackColor9 = "transparent";
 
+private string _sPrimeBackColor9 = "transparent";
 public string sPrimeBackColor9
 {
     get { return _sPrimeBackColor9; }
@@ -346,7 +356,6 @@ public string sPrimeBackColor9
 
         //=======================================================
         //=======================================================
-        public ServerData_PF ServerData { get; set; }
 
         private string _SetInputFocus;
         public string SetInputFocus
@@ -362,7 +371,6 @@ public string sPrimeBackColor9
             }
         }
 
-
         private int _iActiveInput = 1;
 
         public void NextAnswer(int iActiveInput)
@@ -376,24 +384,39 @@ public string sPrimeBackColor9
         {
             bool bPass = true;
             List<string> lFactorsNumbers_PF_1 = new List<string>(new string[] { "3", "5", "7", "11", "13", "17", "19", "23", "29" });
+ 
+                string[] sPositions = new string[10];
    
-            for (int i = 1; i <= 9; i++)
-            {
-                if (lAnswers[i-1] == (lFactorsNumbers_PF_1[i - 1].ToString()))
-                    this.GetType().GetProperty("sPrimeBackColor" + i.ToString()).SetValue(this, "#5000FF33", null);
-                else
-                {
-                    this.GetType().GetProperty("sPrimeBackColor" + i.ToString()).SetValue(this, "#6CFF5D00", null);
-                    bPass = false;
-                }
-            }
+                for (int i2 = 1; i2 <= 9; i2++)
+                    for (int j = 1; j <= 9; j++)
+                        if (lAnswers[i2-1] == (lFactorsNumbers_PF_1[j-1].ToString()))
+                            sPositions[j] = lAnswers[i2-1];
 
+                
+                for (int i3 = 1; i3 <= 9; i3++)
+                {
+                    if (Convert.ToInt32(sPositions[i3]) != 0)
+                    {
+                        this.GetType().GetProperty("iPrimeValue" + (i3.ToString())).SetValue(this, Convert.ToInt32(sPositions[i3]), null);
+                        this.GetType().GetProperty("sPrimeBackColor" + i3.ToString()).SetValue(this, "#5000FF33", null);
+                    }
+                    else
+                    {
+                        bPass = false;
+                        this.GetType().GetProperty("iPrimeValue" + (i3.ToString())).SetValue(this, 0, null);
+                        this.GetType().GetProperty("sPrimeBackColor" + i3.ToString()).SetValue(this, "#99DD0303", null);
+                       // this.GetType().GetProperty("sBtnMarkText").SetValue(this, "probeer weer >", null);
+
+                    }
+                }
+                
             if (bPass)
             {
-                for (int i = 1; i <= 9; i++)
-                    this.GetType().GetProperty("sPrimeBackColor" + i.ToString()).SetValue(this, "transparent", null);
-
-                NextState();
+                ViewState = "LessonState4";
+            }
+            else
+            {
+                ViewState = "LessonState3_2";
             }
 
         }

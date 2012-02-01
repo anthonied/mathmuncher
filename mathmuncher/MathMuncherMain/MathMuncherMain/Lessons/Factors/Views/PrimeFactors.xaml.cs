@@ -52,11 +52,17 @@ namespace MathMuncherMain
 
                 case "SetInputFocus":
                     ((TextBox)this.FindName(ViewModel.SetInputFocus)).Focus();
+					break;
+
+                    //==========================================
+                    /*
+                    case "sBtnMarkText":
+                    ((TextBox)this.FindName("sBtnMarkText")).Text;
                     break;
+                     */
+                    //==========================================
 			}
 		}
-		
-		 
 		
 		private void LayoutRoot_Loaded(object sender, System.Windows.RoutedEventArgs e)
 		{
@@ -71,11 +77,10 @@ namespace MathMuncherMain
 			{
 				ViewModel.NextState();
 			}
-            else if ((e.Key == Key.Left) && (ViewModel.ViewState != "LessonState3"))
+			else if ((e.Key == Key.Left) && (ViewModel.ViewState != "LessonState3"))
 			{
 				ViewModel.PreviousState();
 			}
-
 		}
 		
 		private void txtFactor_KeyUp(object sender, KeyEventArgs e)
@@ -84,63 +89,82 @@ namespace MathMuncherMain
 			{
 				
 				if (((TextBox)sender).Text != "")
-                {
+				{
 					string[] aInput = ((TextBox)sender).Name.Split("_".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
 					if (aInput.Length > 0)
-                    {                        
-                        ViewModel.NextAnswer(Convert.ToInt32(aInput[1]));
+					{ 
+						ViewModel.NextAnswer(Convert.ToInt32(aInput[1]));
 					}
 				}
 			}
 		}
 
-        private void txtFactorLast_KeyUp(object sender, KeyEventArgs e)
-        {
-            if ((e.Key == Key.Enter) || (e.Key == Key.Tab))
-            { 
-
-                List<string> lAnswers = new List<string>();
-
-                for (int i = 1; i<=9 ; i++)
-                {
-                    lAnswers.Add(((TextBox)this.FindName("txtPrimeFactor_" + i.ToString())).Text); 
-                }
-                
-                ViewModel.MarkExercise(lAnswers);
-
-            }
-        }
-
-
 		private void cmdNext_MouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-           
-                ViewModel.NextState();
-		
+		{
+				ViewModel.NextState();
 		}
 
 		private void cmdPrevious_MouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
 		{
 			ViewModel.PreviousState();// TODO: Add event handler implementation here.
-
 		}
 
-        private void Storyboard_Completed(object sender, EventArgs e)
-        {
-            txtPrimeFactor_1.Focus();
-        }
+		private void Storyboard_Completed(object sender, EventArgs e)
+		{
+			if (txtPrimeFactor_9.Text != "")
+				txtPrimeFactor_9.Focus();
+			else
+				txtPrimeFactor_1.Focus();
+		}
 
         private void Storyboard_Completed2(object sender, EventArgs e)
         {
-            for (int i = 1; i <= 9; i++)
-            {
-                ((TextBox)this.FindName("txtPrimeFactor_" + i.ToString())).Text = "";
-            }
-
-            txtPrimeFactor_1.Focus();
+            this.Focus();
         }
+
+        private void Storyboard_Completed3(object sender, EventArgs e)
+        {
+            this.Focus();
+        }
+
+        private void Storyboard_Completed4(object sender, EventArgs e)
+        {
+            for (int i=9 ; i>=1 ; i--)
+            {
+                if (((TextBox)this.FindName("txtPrimeFactor_" + i.ToString())).Text == "0")
+                    ((TextBox)this.FindName("txtPrimeFactor_" + i.ToString())).Focus();
+            }
+        }
+
+		private void txtPrimeFactor_9_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+		{
+			// TODO: Add event handler implementation here.
+			if (     ((e.Key == Key.Enter) || (e.Key == Key.Tab)) && (txtPrimeFactor_9.Text != "")     )
+			{ 
+				List<string> lAnswers = new List<string>();
+
+				for (int i = 1; i<=9 ; i++)
+				{
+					lAnswers.Add(((TextBox)this.FindName("txtPrimeFactor_" + i.ToString())).Text); 
+				}
+				
+				ViewModel.MarkExercise(lAnswers);	
+			}
+		}
+
+		private void cmdMark_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+		{
+				List<string> lAnswers = new List<string>();
+
+				for (int i = 1; i<=9 ; i++)
+				{
+					lAnswers.Add(((TextBox)this.FindName("txtPrimeFactor_" + i.ToString())).Text); 
+				}
+				
+				ViewModel.MarkExercise(lAnswers);
+
+		}
 		
-		
-		
+				
 	}
 }
